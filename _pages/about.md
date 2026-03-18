@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-nav: true
+nav: False
 subtitle: Data Science and System Informatics (DSSI) Lab at the <a href="https://engineering.uga.edu/">University of Georgia</a>.
 
 profile:
