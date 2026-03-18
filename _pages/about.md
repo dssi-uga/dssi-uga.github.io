@@ -2,33 +2,35 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Data Science and System Informatics (DSSI) Lab at the <a href="https://engineering.uga.edu/">University of Georgia</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>1040B I-STEM Complex, Bldg 1</p>
+    <p>302 East Campus Road</p>
+    <p>Athens, GA 30602</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: true # includes a list of news items
+latest_posts: false # includes a list of the newest blog posts
+selected_papers: true # includes a list of papers marked "selected={true}"
 social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome to the **Data Science and System Informatics (DSSI) Lab**!
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+We are located in the College of Engineering at the University of Georgia (UGA). The lab is directed by **Dr. Hongyue Sun**, an Associate Professor in Mechanical Engineering. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Our research focuses on data analytics and artificial intelligence (AI) in advanced manufacturing, occupational safety, and healthcare systems. Our work addresses hands-on, simulation, and computational research, including human-robot collaboration, digital twin development, and AI for process modeling and control.
+
+### About the Principal Investigator
+
+Prior to joining the University of Georgia, Dr. Sun served as an assistant professor in Industrial Engineering at the University at Buffalo. He holds a highly multidisciplinary background, having earned a Ph.D. in Industrial Engineering from Virginia Tech (2017), an M.S. in Statistics from Virginia Tech (2015), and a B.S. in Mechanical Engineering from the Beijing Institute of Technology (2012). 
+
+Dr. Sun's research has been broadly supported by the NSF, NIOSH, the U.S. Navy, and MxD. His work has been recognized with several best paper awards from INFORMS and IISE, as well as the Outstanding Young Manufacturing Engineer Award from SME. He is an active member of IISE, INFORMS, IEEE, and ASME.
+
+***
+
+**Prospective Students:** We are actively looking for self-motivated undergraduate and graduate students to join our lab. If you are interested in AI-enabled smart manufacturing, process analytics, or human-robot collaboration, please reach out!
