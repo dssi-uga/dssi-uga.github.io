@@ -7,7 +7,7 @@ subtitle: Data Science and System Informatics (DSSI) Lab at the <a href="https:/
 
 profile:
   align: right
-  image: sun.jpg
+  image: Sun.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>1040B I-STEM Complex, Bldg 1</p>
