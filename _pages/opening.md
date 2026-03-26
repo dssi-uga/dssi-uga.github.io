@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: opening
+title: Opening
 description: Course materials, schedules, and resources for classes taught.
 nav: True
 nav_order: 4
