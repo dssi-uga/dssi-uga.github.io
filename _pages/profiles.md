@@ -49,11 +49,18 @@ profiles:
     more_info: >
       <p>Adam M Tayara (Undergraduate Researcher, Mechanical Engineering)</p>
       <p>Email: adamtayara805@gmail.com</p>
-  - align: right
+  - align: left
     image: Dawson.jpg
     content: profile_dawson_gulasa.md
     image_circular: false
     more_info: >
       <p>Dawson Gulasa (Undergraduate Researcher, CSE)</p>
       <p>Email: djg58388@uga.edu</p>
+  - align: right
+    image: Dawson.jpg
+    content: profile_bhidek_khatiwada.md
+    image_circular: false
+    more_info: >
+      <p>Bhidek Khatiwada (PhD Student, ECAM)</p>
+      <p>Email: Bidhek.Khatiwada@uga.edup>
 ---
