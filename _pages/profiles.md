@@ -57,10 +57,17 @@ profiles:
       <p>Dawson Gulasa (Undergraduate Researcher, CSE)</p>
       <p>Email: djg58388@uga.edu</p>
   - align: right
-    image: Dawson.jpg
+    image: 
     content: profile_bhidek_khatiwada.md
     image_circular: false
     more_info: >
       <p>Bhidek Khatiwada (PhD Student, ECAM)</p>
       <p>Email: Bidhek.Khatiwada@uga.edu</p>
+   - align: left
+    image: 
+    content: profile_chenyu_xu.md
+    image_circular: false
+    more_info: >
+      <p>Chenyu Xu (PhD Student, School of Electrical Engineering & Computing)</p>
+      <p>Email: cyxu0805@gmail.com</p>
 ---
