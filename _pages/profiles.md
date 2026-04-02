@@ -62,5 +62,5 @@ profiles:
     image_circular: false
     more_info: >
       <p>Bhidek Khatiwada (PhD Student, ECAM)</p>
-      <p>Email: Bidhek.Khatiwada@uga.edu<p>
+      <p>Email: Bidhek.Khatiwada@uga.edu</p>
 ---
