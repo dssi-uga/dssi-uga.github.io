@@ -63,7 +63,7 @@ profiles:
     more_info: >
       <p>Bidhek Khatiwada (PhD Student, ECAM)</p>
       <p>Email: Bidhek.Khatiwada@uga.edu</p>
-   - align: left
+  - align: left
     image: Dawson.jpg
     content: profile_chenyu_xu.md
     image_circular: false
