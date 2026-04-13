@@ -58,12 +58,12 @@ profiles:
       <p>Email: djg58388@uga.edu</p>
   - align: right
     image: Dawson.jpg
-    content: profile_bhidek_khatiwada.md
+    content: profile_bidhek_khatiwada.md
     image_circular: false
     more_info: >
-      <p>Bhidek Khatiwada (PhD Student, ECAM)</p>
+      <p>Bidhek Khatiwada (PhD Student, ECAM)</p>
       <p>Email: Bidhek.Khatiwada@uga.edu</p>
-   - align: left
+  - align: left
     image: Dawson.jpg
     content: profile_chenyu_xu.md
     image_circular: false
