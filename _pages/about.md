@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: about-modern
 title: About
 permalink: /
 nav: False
