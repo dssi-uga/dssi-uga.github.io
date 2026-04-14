@@ -24,13 +24,6 @@ $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 
-// Custom DSSI Lab Colors
-$dssi-primary: #BA0C2F !default; // UGA Red
-$dssi-secondary: #002855 !default; // UGA Navy
-$dssi-accent: #F2A900 !default; // UGA Gold
-$dssi-light: #F8F8F8 !default; // Light gray
-$dssi-dark: #1a1a1a !default; // Dark gray
-
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 $grey-color-dark: #1c1c1d;
