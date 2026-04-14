@@ -2,8 +2,8 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header" style="background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url('{{ '/assets/img/gallery/lab-equipment-1.jpg' | relative_url }}'); background-size: cover; background-position: center; background-attachment: fixed; padding: 4rem 0; border-radius: 8px; margin-bottom: 2rem;">
-    <h1 class="post-title" style="color: var(--global-text-color); text-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <header class="post-header" style="background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('{{ '/assets/img/gallery/lab-equipment-1.jpg' | relative_url }}'); background-size: cover; background-position: center; background-attachment: fixed; padding: 6rem 0; border-radius: 8px; margin-bottom: 2rem;">
+    <h1 class="post-title" style="color: var(--global-text-color); text-shadow: 0 2px 4px rgba(0,0,0,0.3); font-size: 3.5rem; font-weight: 700;">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
@@ -11,7 +11,7 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc" style="color: var(--global-text-color-light); text-shadow: 0 1px 2px rgba(0,0,0,0.1);">{{ page.subtitle }}</p>
+    <p class="desc" style="color: var(--global-text-color-light); text-shadow: 0 1px 2px rgba(0,0,0,0.2); font-size: 1.3rem;">{{ page.subtitle }}</p>
   </header>
 
   <article>
