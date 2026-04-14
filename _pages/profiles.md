@@ -57,17 +57,61 @@ profiles:
       <p>Dawson Gulasa (Undergraduate Researcher, CSE)</p>
       <p>Email: djg58388@uga.edu</p>
   - align: right
-    image: Dawson.jpg
+    image: Bidhek Khatiwada.jpeg
     content: profile_bidhek_khatiwada.md
     image_circular: false
     more_info: >
       <p>Bidhek Khatiwada (PhD Student, ECAM)</p>
       <p>Email: Bidhek.Khatiwada@uga.edu</p>
   - align: left
-    image: Dawson.jpg
+    image: Chenyu Xu.jpg
     content: profile_chenyu_xu.md
     image_circular: false
     more_info: >
       <p>Chenyu Xu (PhD Student, School of Electrical Engineering & Computing)</p>
       <p>Email: cyxu0805@gmail.com</p>
+  - align: right
+    image: Kadin Relefourd.jpg
+    content: profile_kadin_relefourd.md
+    image_circular: false
+    more_info: >
+      <p>Kadin Relefourd (Undergraduate Researcher, School of Computing)</p>
+      <p>Email: kjr99204@uga.edu</p>
+  - align: left
+    image: Owen.jpg
+    content: profile_owen_connell.md
+    image_circular: false
+    more_info: >
+      <p>Owen Connell (Lab Alumni, College of Engineering)</p>
+      <p>Email: opconnell@gmail.com</p>
+  - align: right
+    image: Wuyang.jpg
+    content: profile_wuyang_chen.md
+    image_circular: false
+    more_info: >
+      <p>Wuyang Chen (PhD Student, ECE)</p>
+      <p>Email: wc20592@uga.edu</p>
+  - align: left
+    image: Zhengyao.jpg
+    content: profile_zhengyao_liew.md
+    image_circular: false
+    more_info: >
+      <p>Zhengyao Liew (Undergraduate Researcher, School of Computing & School of Engineering)</p>
+      <p>Email: zyliew7@gmail.com</p>
+      <p><a href="https://www.linkedin.com/in/zhengyaoliew/">LinkedIn</a></p>
+  - align: right
+    image: John Bodamer.jpeg
+    content: profile_john_bodamer.md
+    image_circular: false
+    more_info: >
+      <p>John Bodamer (Undergraduate Researcher, Electrical Engineering)</p>
+      <p>Email: John.Bodamer@uga.edu</p>
+  - align: left
+    image: JohnBraswell.jpg
+    content: profile_john_braswell.md
+    image_circular: false
+    more_info: >
+      <p>John Braswell (Undergraduate Researcher, College of Engineering)</p>
+      <p>Email: jhb60560@uga.edu</p>
+      <p><a href="https://www.linkedin.com/in/john-h-braswell/">LinkedIn</a></p>
 ---
