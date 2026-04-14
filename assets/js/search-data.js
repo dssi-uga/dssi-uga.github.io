@@ -23,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-opening",
-          title: "Opening",
-          description: "Course materials, schedules, and resources for classes taught.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
         },{id: "nav-gallery",
           title: "Gallery",
           description: "Photos and images from the DSSI Lab",
           section: "Navigation",
           handler: () => {
             window.location.href = "/gallery/";
+          },
+        },{id: "nav-opening",
+          title: "Opening",
+          description: "Course materials, schedules, and resources for classes taught.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
           },
         },{id: "post-a-post-with-plotly-js",
         
