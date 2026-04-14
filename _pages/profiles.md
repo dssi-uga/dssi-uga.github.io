@@ -98,7 +98,6 @@ profiles:
     more_info: >
       <p>Zhengyao Liew (Undergraduate Researcher, School of Computing & School of Engineering)</p>
       <p>Email: zyliew7@gmail.com</p>
-      <p><a href="https://www.linkedin.com/in/zhengyaoliew/">LinkedIn</a></p>
   - align: right
     image: John Bodamer.jpeg
     content: profile_john_bodamer.md
@@ -107,11 +106,10 @@ profiles:
       <p>John Bodamer (Undergraduate Researcher, Electrical Engineering)</p>
       <p>Email: John.Bodamer@uga.edu</p>
   - align: left
-    image: JohnBraswell.jpg
+    image: John_Braswell.jpg
     content: profile_john_braswell.md
     image_circular: false
     more_info: >
       <p>John Braswell (Undergraduate Researcher, College of Engineering)</p>
       <p>Email: jhb60560@uga.edu</p>
-      <p><a href="https://www.linkedin.com/in/john-h-braswell/">LinkedIn</a></p>
 ---
