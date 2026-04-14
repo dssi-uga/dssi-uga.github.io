@@ -3,66 +3,62 @@ layout: about
 title: About
 permalink: /
 nav: False
-subtitle: Data Science and System Informatics (DSSI) Lab at the <a href="https://engineering.uga.edu/">University of Georgia</a>.
+
+navigation_cards:
+  - title: "Our Research"
+    description: "Explore our work in data analytics, AI, and advanced manufacturing systems including human-robot collaboration and digital twin development."
+    image: "/assets/img/gallery/lab-equipment-2.jpg"
+    link: "/projects/"
+  - title: "Meet the Team"
+    description: "Get to know our diverse team of researchers, students, and collaborators working on cutting-edge manufacturing technologies."
+    image: "/assets/img/gallery/celebration.jpg"
+    link: "/people/"
+  - title: "Publications"
+    description: "Browse our latest research papers, conference proceedings, and academic publications in manufacturing and data science."
+    image: "/assets/img/gallery/conference.jpg"
+    link: "/publications/"
+  - title: "News & Updates"
+    description: "Stay current with our latest achievements, events, and announcements from the DSSI Lab community."
+    image: "/assets/img/gallery/lab-equipment-3.jpg"
+    link: "/news/"
+  - title: "Resources"
+    description: "Access our research repositories, software tools, and educational materials for the manufacturing community."
+    image: "/assets/img/gallery/lab-equipment-4.jpg"
+    link: "/repositories/"
+  - title: "Contact Us"
+    description: "Connect with our team for collaborations, research opportunities, or to learn more about our work."
+    image: "/assets/img/gallery/lab-equipment-5.jpg"
+    link: "/about/"
 
 profile:
   align: right
   image: Sun.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
     <p>1040B I-STEM Complex, Bldg 1</p>
     <p>302 East Campus Road</p>
     <p>Athens, GA 30602</p>
 
-news: true # includes a list of news items
-latest_posts: false # includes a list of the newest blog posts
-selected_papers: true # includes a list of papers marked "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: true
+latest_posts: false
+selected_papers: true
+social: true
 ---
 
-Welcome to the **Data Science and System Informatics (DSSI) Lab**!
+## About the DSSI Lab
 
-We are located in the College of Engineering at the University of Georgia (UGA). The lab is directed by **Dr. Hongyue Sun**, an Associate Professor in Mechanical Engineering.
+The **Data Science and System Informatics (DSSI) Lab** at the University of Georgia focuses on data analytics and artificial intelligence (AI) in advanced manufacturing, occupational safety, and healthcare systems. Our work addresses hands-on, simulation, and computational research, including human-robot collaboration, digital twin development, and AI for process modeling and control.
 
-{% include figure.liquid
-  path="assets/img/gallery/lab-equipment-2.jpg"
-  title="Digital Twin Testbed"
-  class="img-fluid rounded shadow-sm"
-  width="100%"
-  caption="Our cyber-physical testbed for validating digital twin technologies"
-%}
+## Principal Investigator
 
-Our research focuses on data analytics and artificial intelligence (AI) in advanced manufacturing, occupational safety, and healthcare systems. Our work addresses hands-on, simulation, and computational research, including human-robot collaboration, digital twin development, and AI for process modeling and control.
+**Dr. Hongyue Sun** is an Associate Professor in Mechanical Engineering and the Director of the DSSI Lab. Prior to joining the University of Georgia, Dr. Sun served as an assistant professor in Industrial Engineering at the University at Buffalo.
 
-{% include figure.liquid
-  path="assets/img/gallery/lab-equipment-3.jpg"
-  title="IoT Sensor Network"
-  class="img-fluid rounded shadow-sm"
-  width="100%"
-  caption="Connected sensors for real-time monitoring and data collection"
-%}
+Dr. Sun holds a highly multidisciplinary background with a Ph.D. in Industrial Engineering from Virginia Tech (2017), an M.S. in Statistics from Virginia Tech (2015), and a B.S. in Mechanical Engineering from the Beijing Institute of Technology (2012).
 
-### About the Principal Investigator
-Prior to joining the University of Georgia, Dr. Sun served as an assistant professor in Industrial Engineering at the University at Buffalo. He holds a highly multidisciplinary background, having earned a Ph.D. in Industrial Engineering from Virginia Tech (2017), an M.S. in Statistics from Virginia Tech (2015), and a B.S. in Mechanical Engineering from the Beijing Institute of Technology (2012).
-
-{% include figure.liquid
-  path="assets/img/gallery/conference.jpg"
-  title="Research Presentation"
-  class="img-fluid rounded shadow-sm"
-  width="100%"
-  caption="Presenting research findings at academic conferences"
-%}
+## Research Excellence
 
 Dr. Sun's research has been broadly supported by the NSF, NIOSH, the U.S. Navy, and MxD. His work has been recognized with several best paper awards from INFORMS and IISE, as well as the Outstanding Young Manufacturing Engineer Award from SME. He is an active member of IISE, INFORMS, IEEE, and ASME.
 
-{% include figure.liquid
-  path="assets/img/gallery/celebration.jpg"
-  title="Team Achievements"
-  class="img-fluid rounded shadow-sm"
-  width="100%"
-  caption="Celebrating research milestones and successful project completions"
-%}
+## Join Our Team
 
-***
-
-**Prospective Students:** We are actively looking for self-motivated undergraduate and graduate students to join our lab. If you are interested in AI-enabled smart manufacturing, process analytics, or human-robot collaboration, please reach out!
+We are actively looking for self-motivated undergraduate and graduate students to join our lab. If you are interested in AI-enabled smart manufacturing, process analytics, or human-robot collaboration, please reach out!

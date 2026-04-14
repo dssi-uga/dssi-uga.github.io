@@ -1,80 +1,99 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header" style="background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('{{ '/assets/img/gallery/lab-equipment-1.jpg' | relative_url }}'); background-size: cover; background-position: center; background-attachment: fixed; padding: 6rem 0; border-radius: 8px; margin-bottom: 2rem;">
-    <h1 class="post-title" style="color: var(--global-text-color); text-shadow: 0 2px 4px rgba(0,0,0,0.3); font-size: 3.5rem; font-weight: 700;">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc" style="color: var(--global-text-color-light); text-shadow: 0 1px 2px rgba(0,0,0,0.2); font-size: 1.3rem;">{{ page.subtitle }}</p>
-  </header>
+<!-- Hero Section -->
+<div class="hero-section" style="position: relative; height: 70vh; background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ '/assets/img/gallery/lab-equipment-1.jpg' | relative_url }}'); background-size: cover; background-position: center; background-attachment: fixed; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+  <div class="hero-content" style="max-width: 800px; padding: 0 2rem;">
+    <h1 style="font-size: 4rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">DSSI Lab</h1>
+    <p style="font-size: 1.5rem; margin-bottom: 2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Data Science and System Informatics Lab</p>
+    <p style="font-size: 1.2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">University of Georgia • College of Engineering</p>
+  </div>
+</div>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+<!-- Navigation Cards Section -->
+<div class="container" style="margin-top: -4rem; position: relative; z-index: 10;">
+  <div class="row">
+    {% if page.navigation_cards %}
+      {% for card in page.navigation_cards %}
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm" style="border: none; border-radius: 12px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 8px rgba(0,0,0,0.1)';">
+            {% if card.image %}
+              <div class="card-img-wrapper" style="height: 200px; overflow: hidden;">
+                {% include figure.liquid path=card.image class="card-img-top" style="height: 100%; width: 100%; object-fit: cover;" %}
+              </div>
+            {% endif %}
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title" style="color: var(--global-theme-color); font-weight: 600;">{{ card.title }}</h5>
+              <p class="card-text flex-grow-1">{{ card.description }}</p>
+              <a href="{{ card.link | relative_url }}" class="btn btn-outline-primary mt-auto" style="border-color: var(--global-theme-color); color: var(--global-theme-color);">Learn More</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+<!-- Content Section -->
+<div class="container mt-5">
+  <div class="post">
+    <article>
+      {% if page.profile %}
+        <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+            {% endif %}
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
-    {% endif %}
+          {% if page.profile.more_info %}
+            <div class="more-info">{{ page.profile.more_info }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+      <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
+      <!-- News -->
+      {% if page.announcements and page.announcements.enabled %}
+        <h2>
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        </h2>
+        {% include news.liquid limit=true %}
+      {% endif %}
 
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
+      <!-- Latest posts -->
+      {% if page.latest_posts and page.latest_posts.enabled %}
+        <h2>
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
+      {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
+      <!-- Selected papers -->
+      {% if page.selected_papers %}
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        </h2>
+        {% include selected_papers.liquid %}
+      {% endif %}
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
+      <!-- Social -->
+      {% if page.social %}
+        <div class="social">
+          <div class="contact-icons">{% social_links %}</div>
 
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
+          <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
+      {% endif %}
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+      {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+        {% include newsletter.liquid center=true %}
+      {% endif %}
+    </article>
+  </div>
 </div>
