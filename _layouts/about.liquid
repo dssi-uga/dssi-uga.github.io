@@ -1,31 +1,104 @@
 ---
 layout: default
 ---
+<style>
+.hero-section {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  min-height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('{{ '/assets/img/gallery/lab-equipment-1.jpg' | relative_url }}');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+.hero-content {
+  max-width: 900px;
+  padding: 0 2rem;
+}
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.about-nav-grid {
+  margin-top: -5rem;
+  position: relative;
+  z-index: 10;
+}
+.about-nav-grid .nav-card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  min-height: 450px;
+}
+.about-nav-grid .nav-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 48px rgba(0,0,0,0.16);
+}
+.about-nav-grid .nav-card-img {
+  height: 58%;
+  overflow: hidden;
+}
+.about-nav-grid .nav-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-nav-grid .nav-card-body {
+  padding: 1.5rem;
+}
+.about-nav-grid .nav-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+}
+.about-nav-grid .nav-card-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.1rem;
+}
+.about-content {
+  margin-top: 4rem;
+}
+</style>
+
 <!-- Hero Section -->
-<div class="hero-section" style="position: relative; height: 70vh; width: 100vw; margin-left: calc(-50vw + 50%); background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('{{ '/assets/img/gallery/lab-equipment-1.jpg' | relative_url }}'); background-size: cover; background-position: center; background-attachment: fixed; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
-  <div class="hero-content" style="max-width: 800px; padding: 0 2rem;">
-    <h1 style="font-size: 4rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">DSSI Lab</h1>
-    <p style="font-size: 1.5rem; margin-bottom: 2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Data Science and System Informatics Lab</p>
-    <p style="font-size: 1.2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">University of Georgia • College of Engineering</p>
+<div class="hero-section scroll-reveal">
+  <div class="hero-content">
+    <h1 style="font-size: 4.5rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.75);">DSSI Lab</h1>
+    <p style="font-size: 1.7rem; margin-bottom: 2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">Data Science and System Informatics Lab</p>
+    <p style="font-size: 1.25rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">University of Georgia • College of Engineering</p>
   </div>
 </div>
 
 <!-- Navigation Cards Section -->
-<div class="container" style="margin-top: -6rem; position: relative; z-index: 10;">
+<div class="container about-nav-grid">
   <div class="row justify-content-center">
     {% if page.navigation_cards %}
       {% for card in page.navigation_cards %}
-        <div class="col-12 col-md-6 mb-4" style="max-width: 400px;">
-          <div class="card shadow-lg" style="border: none; border-radius: 15px; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; aspect-ratio: 1.2;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
+        <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
+          <div class="nav-card scroll-reveal">
             {% if card.image %}
-              <div class="card-img-wrapper" style="height: 65%; overflow: hidden;">
+              <div class="nav-card-img">
                 {% include figure.liquid path=card.image class="card-img-top" style="height: 100%; width: 100%; object-fit: cover;" %}
               </div>
             {% endif %}
-            <div class="card-body d-flex flex-column" style="height: 35%; padding: 1.5rem;">
-              <h5 class="card-title" style="color: var(--global-theme-color); font-weight: 600; font-size: 1.1rem; margin-bottom: 0.75rem;">{{ card.title }}</h5>
-              <p class="card-text" style="font-size: 0.9rem; line-height: 1.4; margin-bottom: 1rem;">{{ card.description }}</p>
-              <a href="{{ card.link | relative_url }}" class="btn btn-outline-primary mt-auto" style="border-color: var(--global-theme-color); color: var(--global-theme-color); font-size: 0.85rem; padding: 0.5rem 1rem;">Learn More</a>
+            <div class="nav-card-body">
+              <div class="nav-card-title">{{ card.title }}</div>
+              <p class="nav-card-text">{{ card.description }}</p>
+              <a href="{{ card.link | relative_url }}" class="btn btn-outline-primary" style="border-color: var(--global-theme-color); color: var(--global-theme-color); font-size: 0.95rem; padding: 0.65rem 1.25rem;">Learn More</a>
             </div>
           </div>
         </div>
@@ -35,7 +108,7 @@ layout: default
 </div>
 
 <!-- Content Section -->
-<div class="container mt-5">
+<div class="container mt-5 about-content scroll-reveal">
   <div class="post">
     <article>
       {% if page.profile %}
@@ -97,3 +170,17 @@ layout: default
     </article>
   </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const reveals = document.querySelectorAll('.scroll-reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(el => observer.observe(el));
+});
+</script>

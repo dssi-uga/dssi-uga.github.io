@@ -6,6 +6,16 @@ description: Meet the Members of our Lab
 nav: true
 nav_order: 1
 
+principal:
+  image: Sun.jpg
+  content: profile_dr_hongyue_sun.md
+  image_circular: false
+  more_info: >
+    <p><strong>Dr. Hongyue Sun</strong></p>
+    <p>Director, DSSI Lab</p>
+    <p>Associate Professor, Mechanical Engineering</p>
+    <p>Email: <a href="mailto:hongyuesun@uga.edu">hongyuesun@uga.edu</a></p>
+
 profiles:
   - align: left
     image: Minsung.jpg
