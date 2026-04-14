@@ -2,11 +2,24 @@
 
 This directory contains images for the lab gallery page. Place your lab photos here and they will automatically appear on the `/gallery/` page.
 
-## Image Naming Convention
+## Required Images
 
-- `lab-equipment-1.jpg`, `lab-equipment-2.jpg`, etc. - Equipment and facilities photos
-- `team-meeting.jpg`, `conference.jpg`, `workshop.jpg`, `celebration.jpg` - Team activities
-- `research-1.jpg`, `research-2.jpg`, etc. - Research in action photos
+Replace these placeholder files with your actual lab photos:
+
+### Lab Equipment & Facilities (3 images needed)
+- `lab-equipment-1.jpg` - Advanced Manufacturing Equipment
+- `lab-equipment-2.jpg` - Digital Twin Testbed
+- `lab-equipment-3.jpg` - IoT Sensor Network
+
+### Team Activities & Events (4 images needed)
+- `team-meeting.jpg` - Research Team Meeting
+- `conference.jpg` - Conference Presentation
+- `workshop.jpg` - Industry Workshop
+- `celebration.jpg` - Achievement Celebration
+
+### Research in Action (2 images needed)
+- `research-1.jpg` - AI Model Development
+- `research-2.jpg` - Sustainable Manufacturing
 
 ## Image Requirements
 
@@ -17,16 +30,11 @@ This directory contains images for the lab gallery page. Place your lab photos h
 
 ## How to Add Images
 
-1. Add your image files to this directory
-2. Update the image paths in `_pages/gallery.md` if you change filenames
-3. Commit and push the changes
-4. The gallery page will automatically update
-
-## Current Gallery Sections
-
-- **Lab Equipment & Facilities**: Showcase your research equipment and lab space
-- **Team Activities & Events**: Photos of meetings, conferences, workshops, celebrations
-- **Research in Action**: Images of ongoing research activities and experiments
+1. Take or select your lab photos
+2. Resize/optimize them for web (optional but recommended)
+3. Replace the placeholder files with the same filenames
+4. Commit and push the changes
+5. The gallery page will automatically update
 
 ## Tips for Great Gallery Photos
 
@@ -34,3 +42,12 @@ This directory contains images for the lab gallery page. Place your lab photos h
 - Include people to show the human side of research
 - Capture different angles and perspectives
 - Include captions that tell a story about the image
+- Show both equipment and people using it
+- Include before/after shots of research projects
+- Capture team collaboration moments
+
+## Current Status
+
+✅ Gallery page created and live at `/gallery/`  
+🔄 Placeholder images created - replace with real photos  
+📝 README documentation added
