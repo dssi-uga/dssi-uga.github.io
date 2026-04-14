@@ -423,7 +423,32 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "teachings-data-science-fundamentals",
+          section: "News",},{id: "projects-additive-and-sustainable-manufacturing",
+          title: 'Additive and Sustainable Manufacturing',
+          description: "Next-generation additive manufacturing and sustainable production workflows with process monitoring, material behavior modeling, and quality assurance.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/additive-and-sustainable-manufacturing/";
+            },},{id: "projects-ai-enabled-smart-manufacturing",
+          title: 'AI-Enabled Smart Manufacturing',
+          description: "Machine learning, embedded intelligence, and IoT technologies for predictive modeling, fault detection, and adaptive process control.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ai-enabled-smart-manufacturing/";
+            },},{id: "projects-digital-twins-and-cyber-physical-testbeds",
+          title: 'Digital Twins and Cyber–Physical Testbeds',
+          description: "High-fidelity digital twins for monitoring, simulation, validation, and optimization of manufacturing processes.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/digital-twins-cyber-physical-testbeds/";
+            },},{id: "projects-ethical-and-secure-manufacturing",
+          title: 'Ethical and Secure Manufacturing',
+          description: "Privacy-preserving, trustworthy, and resilient manufacturing systems that embed legality, accountability, and security across digital design, production, and AI-driven decision-making.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ethical-and-secure-manufacturing/";
+            },},{id: "projects-future-distributed-manufacturing-systems",
+          title: 'Future Distributed Manufacturing Systems',
+          description: "Cyber-coordinated, multi-stage manufacturing architectures for real-time synchronization across distributed production systems.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/future-distributed-manufacturing-systems/";
+            },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
           section: "Teachings",handler: () => {
