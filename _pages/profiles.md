@@ -5,157 +5,6 @@ title: People
 description: Meet the Members of our Lab
 nav: true
 nav_order: 1
----
-
-<!-- Principal Investigator Section -->
-<section class="pi-section mb-5">
-  <div class="row align-items-center">
-    <div class="col-lg-4 text-center mb-4 mb-lg-0">
-      {% assign profile_image_path = 'Sun.jpg' | prepend: 'assets/img/' %}
-      <img src="{{ profile_image_path | relative_url }}" alt="Dr. Hongyue Sun" class="img-fluid rounded shadow" style="max-width: 300px;">
-    </div>
-    <div class="col-lg-8">
-      <h2 class="mb-3">Principal Investigator</h2>
-      <h3 class="text-primary mb-3">Dr. Hongyue Sun</h3>
-      <p class="lead mb-3">Associate Professor, Mechanical Engineering<br>Director, Data Science and System Informatics (DSSI) Lab</p>
-
-      <div class="pi-info mb-4">
-        <p><strong>Education:</strong></p>
-        <ul class="mb-3">
-          <li>Ph.D. in Industrial Engineering, Virginia Tech (2017)</li>
-          <li>M.S. in Statistics, Virginia Tech (2015)</li>
-          <li>B.S. in Mechanical Engineering, Beijing Institute of Technology (2012)</li>
-        </ul>
-
-        <p><strong>Previous Position:</strong><br>
-        Assistant Professor, Industrial Engineering, University at Buffalo</p>
-
-        <p><strong>Research Interests:</strong><br>
-        Data analytics and artificial intelligence in advanced manufacturing, occupational safety, and healthcare systems</p>
-
-        <p><strong>Awards & Recognition:</strong><br>
-        Best paper awards from INFORMS and IISE, Outstanding Young Manufacturing Engineer Award from SME</p>
-
-        <p><strong>Professional Memberships:</strong><br>
-        IISE, INFORMS, IEEE, ASME</p>
-
-        <p><strong>Funding Support:</strong><br>
-        NSF, NIOSH, U.S. Navy, MxD</p>
-      </div>
-
-      <div class="contact-info">
-        <h5>Contact Information</h5>
-        <p><strong>Email:</strong> <a href="mailto:hongyuesun@uga.edu">hongyuesun@uga.edu</a></p>
-        <p><strong>Office:</strong> 1040B I-STEM Complex, Bldg 1</p>
-        <p><strong>Address:</strong> 302 East Campus Road, Athens, GA 30602</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
-.pi-section {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 3rem 0;
-  border-radius: 10px;
-  margin-bottom: 3rem;
-}
-
-.pi-section img {
-  border: 3px solid #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.pi-section h2 {
-  color: var(--global-theme-color, #007bff);
-  font-weight: 600;
-  border-bottom: 2px solid var(--global-theme-color, #007bff);
-  padding-bottom: 0.5rem;
-  display: inline-block;
-}
-
-.pi-section h3 {
-  color: var(--global-text-color, #333);
-  font-weight: 500;
-}
-
-.pi-section .lead {
-  color: var(--global-text-color-light, #666);
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.pi-info {
-  background: rgba(255,255,255,0.8);
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
-.pi-info ul {
-  padding-left: 1.2rem;
-}
-
-.pi-info li {
-  margin-bottom: 0.5rem;
-}
-
-.contact-info {
-  background: rgba(255,255,255,0.9);
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid var(--global-theme-color, #007bff);
-}
-
-.contact-info h5 {
-  color: var(--global-theme-color, #007bff);
-  margin-bottom: 1rem;
-}
-
-.contact-info a {
-  color: var(--global-theme-color, #007bff);
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-.section-title {
-  color: var(--global-theme-color, #007bff);
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.section-title::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--global-theme-color, #007bff);
-  margin: 0.5rem auto;
-  border-radius: 2px;
-}
-
-@media (max-width: 768px) {
-  .pi-section {
-    padding: 2rem 1rem;
-  }
-
-  .pi-section .row {
-    text-align: center;
-  }
-
-  .pi-section .col-lg-4 {
-    margin-bottom: 2rem;
-  }
-}
-</style>
-
-<!-- Lab Members Section -->
-<h2 class="section-title mb-4">Lab Members</h2>
 
 profiles:
   - align: left
@@ -264,3 +113,156 @@ profiles:
       <p>John Braswell (Undergraduate Researcher, College of Engineering)</p>
       <p>Email: jhb60560@uga.edu</p>
 ---
+
+<!-- Principal Investigator Section -->
+<section class="pi-section mb-5">
+  <div class="row align-items-center">
+    <div class="col-lg-4 text-center mb-4 mb-lg-0">
+      {% assign profile_image_path = 'Sun.jpg' | prepend: 'assets/img/' %}
+      <img src="{{ profile_image_path | relative_url }}" alt="Dr. Hongyue Sun" class="img-fluid rounded shadow" style="max-width: 300px;">
+    </div>
+    <div class="col-lg-8">
+      <h2 class="mb-3">Principal Investigator</h2>
+      <h3 class="text-primary mb-3">Dr. Hongyue Sun</h3>
+      <p class="lead mb-3">Associate Professor, Mechanical Engineering<br>Director, Data Science and System Informatics (DSSI) Lab</p>
+
+      <div class="pi-info mb-4">
+        <p><strong>Education:</strong></p>
+        <ul class="mb-3">
+          <li>Ph.D. in Industrial Engineering, Virginia Tech (2017)</li>
+          <li>M.S. in Statistics, Virginia Tech (2015)</li>
+          <li>B.S. in Mechanical Engineering, Beijing Institute of Technology (2012)</li>
+        </ul>
+
+        <p><strong>Previous Position:</strong><br>
+        Assistant Professor, Industrial Engineering, University at Buffalo</p>
+
+        <p><strong>Research Interests:</strong><br>
+        Data analytics and artificial intelligence in advanced manufacturing, occupational safety, and healthcare systems</p>
+
+        <p><strong>Awards & Recognition:</strong><br>
+        Best paper awards from INFORMS and IISE, Outstanding Young Manufacturing Engineer Award from SME</p>
+
+        <p><strong>Professional Memberships:</strong><br>
+        IISE, INFORMS, IEEE, ASME</p>
+
+        <p><strong>Funding Support:</strong><br>
+        NSF, NIOSH, U.S. Navy, MxD</p>
+      </div>
+
+      <div class="contact-info">
+        <h5>Contact Information</h5>
+        <p><strong>Email:</strong> <a href="mailto:hongyuesun@uga.edu">hongyuesun@uga.edu</a></p>
+        <p><strong>Office:</strong> 1040B I-STEM Complex, Bldg 1</p>
+        <p><strong>Address:</strong> 302 East Campus Road, Athens, GA 30602</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lab Members Section -->
+<h2 class="section-title mb-4">Lab Members</h2>
+
+<style>
+.pi-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 3rem 0;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.pi-section img {
+  border: 3px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.pi-section h2 {
+  color: var(--global-theme-color, #007bff);
+  font-weight: 600;
+  border-bottom: 2px solid var(--global-theme-color, #007bff);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.pi-section h3 {
+  color: var(--global-text-color, #333);
+  font-weight: 500;
+}
+
+.pi-section .lead {
+  color: var(--global-text-color-light, #666);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.pi-info {
+  background: rgba(255,255,255,0.8);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.pi-info ul {
+  padding-left: 1.2rem;
+}
+
+.pi-info li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info {
+  background: rgba(255,255,255,0.9);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--global-theme-color, #007bff);
+}
+
+.contact-info h5 {
+  color: var(--global-theme-color, #007bff);
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  color: var(--global-theme-color, #007bff);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.section-title {
+  color: var(--global-theme-color, #007bff);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--global-theme-color, #007bff);
+  margin: 0.5rem auto;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .pi-section {
+    padding: 2rem 1rem;
+  }
+
+  .pi-section .row {
+    text-align: center;
+  }
+
+  .pi-section .col-lg-4 {
+    margin-bottom: 2rem;
+  }
+}
+</style>
+
+<!-- Lab Members Section -->
+<h2 class="section-title mb-4">Lab Members</h2>
