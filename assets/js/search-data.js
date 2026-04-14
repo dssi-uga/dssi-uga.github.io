@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-people",
           title: "People",
-          description: "members of the lab or group",
+          description: "Meet the Members of our Lab",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
@@ -36,6 +36,13 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
+          },
+        },{id: "nav-gallery",
+          title: "Gallery",
+          description: "Photos and images from the DSSI Lab",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/gallery/";
           },
         },{id: "post-a-post-with-plotly-js",
         
