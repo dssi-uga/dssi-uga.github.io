@@ -19,7 +19,7 @@ navigation_cards:
     link: "/publications/"
   - title: "Contact Us"
     description: "Connect with our team for collaborations, research opportunities, or to learn more about our work."
-    image: "/assets/img/gallery/lab-equipment-5.jpg"
+    image: "/assets/img/gallery/lab-equipment-6.jpg"
     link: "/about/"
 
 profile:
