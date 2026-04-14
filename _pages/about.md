@@ -6,19 +6,19 @@ nav: False
 
 navigation_cards:
   - title: "Meet the Team"
-    description: "Get to know our diverse team of researchers, students, and collaborators working on cutting-edge manufacturing technologies."
+    description: "Get to know our diverse team of researchers, students, and collaborators"
     image: "/assets/img/gallery/lab-equipment-2.jpg"
     link: "/people/"
   - title: "Our Projects"
-    description: "Explore our work in data analytics, AI, and advanced manufacturing systems including human-robot collaboration and digital twin development."
+    description: "Explore our work in data analytics, advanced manufacturing systems and human-robot collaboration"
     image: "/assets/img/gallery/lab-equipment-4.jpg"
     link: "/projects/"
   - title: "Publications"
-    description: "Browse our latest research papers, conference proceedings, and academic publications in manufacturing and data science."
+    description: "Browse our latest research papers and academic publications"
     image: "/assets/img/gallery/lab-equipment-3.jpg"
     link: "/publications/"
   - title: "Contact Us"
-    description: "Connect with our team for collaborations, research opportunities, or to learn more about our work."
+    description: "Connect with our team"
     image: "/assets/img/gallery/lab-equipment-6.jpg"
     link: "/about/"
 
