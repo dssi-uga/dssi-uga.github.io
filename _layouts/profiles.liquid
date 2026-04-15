@@ -2,71 +2,151 @@
 layout: page
 ---
 <style>
+.people-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .people-principal {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+}
+.principal-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.principal-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--global-text-color);
 }
 .principal-card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   align-items: center;
-  padding: 2rem;
-  background: rgba(255,255,255,0.96);
-  border-radius: 24px;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
 }
 .principal-image {
-  flex: 1 1 360px;
-  min-width: 280px;
-  max-width: 520px;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 8px;
 }
 .principal-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 .principal-body {
-  flex: 1 1 320px;
-  min-width: 280px;
+  padding: 0;
 }
-.principal-title {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 2rem;
+.principal-body h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--global-text-color);
+}
+.principal-body .more-info p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.principal-body .more-info strong {
   font-weight: 700;
 }
+.principal-body .principal-details {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--global-text-color);
+}
+.team-section {
+  margin-top: 5rem;
+}
+.team-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.team-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--global-text-color);
+}
+.team-header p {
+  font-size: 1.1rem;
+  color: var(--global-text-color);
+  margin: 0;
+}
 .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem;
   margin-top: 2rem;
 }
 .team-card {
   border: none;
-  border-radius: 20px;
+  border-radius: 8px;
   overflow: hidden;
   background: #ffffff;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .team-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.12);
 }
-.team-card img {
+.team-card-img {
   width: 100%;
-  height: 220px;
+  height: 280px;
+  overflow: hidden;
+  background: var(--global-bg-color);
+}
+.team-card-img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  transition: transform 0.35s ease;
+}
+.team-card:hover .team-card-img img {
+  transform: scale(1.03);
 }
 .team-card-body {
-  padding: 1.25rem;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .team-card-title {
   margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
+  color: var(--global-text-color);
 }
 .team-card-meta {
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--global-text-color);
+}
+.team-card-meta p {
+  margin-bottom: 0.5rem;
+}
+.team-card-meta a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  transition: opacity 0.25s ease;
+}
+.team-card-meta a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 .scroll-reveal {
   opacity: 0;
@@ -77,38 +157,60 @@ layout: page
   opacity: 1;
   transform: translateY(0);
 }
+@media (max-width: 768px) {
+  .principal-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  .principal-header h2,
+  .team-header h2 {
+    font-size: 1.7rem;
+  }
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+}
 </style>
-<div class="post">
-  {% if page.principal %}
-    <section class="people-principal scroll-reveal">
-      <div class="principal-card">
-        {% if page.principal.image %}
-          <div class="principal-image">
-            {% assign principal_image_path = page.principal.image | prepend: 'assets/img/' %}
-            {% include figure.liquid loading="eager" path=principal_image_path class="img-fluid" style="width:100%; height:100%; object-fit:cover;" alt=page.principal.image %}
-          </div>
-        {% endif %}
-        <div class="principal-body">
-          {% if page.principal.more_info %}
-            <div class="more-info">{{ page.principal.more_info }}</div>
-          {% endif %}
-          {% if page.principal.content %}
-            {% capture principal_content %}{% include_relative {{ page.principal.content }} %}{% endcapture %}
-            <div class="principal-details">{{ principal_content | markdownify }}</div>
-          {% endif %}
+<div class="people-section">
+  <div class="post">
+    {% if page.principal %}
+      <section class="people-principal scroll-reveal">
+        <div class="principal-header">
+          <h2>Principal Investigator</h2>
         </div>
-      </div>
-    </section>
-  {% endif %}
+        <div class="principal-card">
+          {% if page.principal.image %}
+            <div class="principal-image">
+              {% assign principal_image_path = page.principal.image | prepend: 'assets/img/' %}
+              {% include figure.liquid loading="eager" path=principal_image_path class="img-fluid" style="width:100%; height:auto; display:block;" alt=page.principal.image %}
+            </div>
+          {% endif %}
+          <div class="principal-body">
+            {% if page.principal.more_info %}
+              <div class="more-info">{{ page.principal.more_info }}</div>
+            {% endif %}
+            {% if page.principal.content %}
+              {% capture principal_content %}{% include_relative {{ page.principal.content }} %}{% endcapture %}
+              <div class="principal-details">{{ principal_content | markdownify }}</div>
+            {% endif %}
+          </div>
+        </div>
+      </section>
+    {% endif %}
 
-  <section class="team-grid">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-      {% if page.profiles %}
-        {% for profile in page.profiles %}
-          <div class="col">
-            <div class="team-card scroll-reveal h-100">
+    <section class="team-section">
+      <div class="team-header">
+        <h2>Meet the Team</h2>
+        <p>Members of the DSSI Lab</p>
+      </div>
+      <div class="team-grid">
+        {% if page.profiles %}
+          {% for profile in page.profiles %}
+            <div class="team-card scroll-reveal">
               {% if profile.image %}
-                <div>
+                <div class="team-card-img">
                   {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
                   {% include figure.liquid loading="eager" path=profile_image_path class="card-img-top" style="height:100%; width:100%; object-fit:cover;" alt=profile.image %}
                 </div>
@@ -121,11 +223,11 @@ layout: page
                 <div class="team-card-meta">{{ profile.more_info }}</div>
               </div>
             </div>
-          </div>
-        {% endfor %}
-      {% endif %}
-    </div>
-  </section>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </section>
+  </div>
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
