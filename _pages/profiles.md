@@ -116,4 +116,11 @@ profiles:
     image_circular: false
     more_info: >
       <p>Zhengyao Liew (Undergraduate Researcher, School of Computing & School of Engineering)</p>
+  - align: right
+    image: Penuel.jpg
+    content: profile_penuel_yeboah.md
+    image_circular: false
+    more_info: >
+      <p>Penuel Yeboah (Undergraduate Researcher, Computer Science)</p>
+      <p>Email: pyeboah@uga.edu</p>
 ---
