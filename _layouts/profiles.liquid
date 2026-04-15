@@ -6,6 +6,7 @@ layout: page
   width: 100%;
   margin: 0;
   padding: 0 2rem;
+  max-width: none;
 }
 .people-principal {
   margin-bottom: 5rem;
@@ -86,15 +87,16 @@ layout: page
 }
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 2.5rem;
   margin-top: 2rem;
+  width: 100%;
 }
 .team-card {
   border: none;
   border-radius: 8px;
-  overflow: hid000000
-  background: #ffffff;
+  overflow: hidden;
+  background: #000000;
   box-shadow: 0 8px 24px rgba(0,0,0,0.06);
   transition: all 0.35s ease;
   display: flex;
@@ -136,6 +138,9 @@ layout: page
   font-size: 0.9rem;
   line-height: 1.6;
   color: #ffffff;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 1rem;
 }
 .team-card-meta p {
   margin-bottom: 0.5rem;
@@ -148,6 +153,25 @@ layout: page
 .team-card-meta a:hover {
   opacity: 0.8;
   text-decoration: underline;
+}
+.team-card-bio {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #e0e0e0;
+  flex-grow: 1;
+}
+.team-card-bio p {
+  margin: 0 0 0.75rem 0;
+}
+.team-card-bio p:last-child {
+  margin-bottom: 0;
+}
+.team-card-bio ul {
+  margin: 0.5rem 0 0 1.2rem;
+  padding: 0;
+}
+.team-card-bio li {
+  margin-bottom: 0.35rem;
 }
 .scroll-reveal {
   opacity: 0;
@@ -200,7 +224,11 @@ layout: page
         </div>
       </section>
     {% endif %}
-
+  {% if profile.content %}
+                  {% capture profile_bio %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                  <div class="team-card-bio">{{ profile_bio | markdownify }}</div>
+                {% endif %}
+              
     <section class="team-section">
       <div class="team-header">
         <h2>Meet the Team</h2>
