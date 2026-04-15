@@ -2,10 +2,20 @@
 layout: default
 ---
 <style>
+.about-full-width {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  box-sizing: border-box;
+  max-width: none;
+}
 .hero-section {
   position: relative;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
+  margin-left: 0;
   min-height: 80vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('{{ '/assets/img/gallery/lab-equipment-1.jpg' | relative_url }}');
   background-size: cover;
@@ -83,99 +93,101 @@ layout: default
 </style>
 
 <!-- Hero Section -->
-<div class="hero-section scroll-reveal">
-  <div class="hero-content">
-    <h1 style="font-size: 4.5rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.75);">DSSI Lab</h1>
-    <p style="font-size: 1.7rem; margin-bottom: 2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">Data Science and System Informatics Lab</p>
-    <p style="font-size: 1.25rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">University of Georgia • College of Engineering</p>
+<div class="about-full-width">
+  <div class="hero-section scroll-reveal">
+    <div class="hero-content">
+      <h1 style="font-size: 4.5rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.75);">DSSI Lab</h1>
+      <p style="font-size: 1.7rem; margin-bottom: 2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">Data Science and System Informatics Lab</p>
+      <p style="font-size: 1.25rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">University of Georgia • College of Engineering</p>
+    </div>
   </div>
-</div>
 
-<!-- Navigation Cards Section -->
-<div class="container about-nav-grid">
-  <div class="row justify-content-center">
-    {% if page.navigation_cards %}
-      {% for card in page.navigation_cards %}
-        <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
-          <div class="nav-card scroll-reveal">
-            {% if card.image %}
-              <div class="nav-card-img">
-                {% include figure.liquid path=card.image class="card-img-top" style="height: 100%; width: 100%; object-fit: cover;" %}
+  <!-- Navigation Cards Section -->
+  <div class="container about-nav-grid">
+    <div class="row justify-content-center">
+      {% if page.navigation_cards %}
+        {% for card in page.navigation_cards %}
+          <div class="col-12 col-md-6 mb-4 d-flex justify-content-center">
+            <div class="nav-card scroll-reveal">
+              {% if card.image %}
+                <div class="nav-card-img">
+                  {% include figure.liquid path=card.image class="card-img-top" style="height: 100%; width: 100%; object-fit: cover;" %}
+                </div>
+              {% endif %}
+              <div class="nav-card-body">
+                <div class="nav-card-title">{{ card.title }}</div>
+                <p class="nav-card-text">{{ card.description }}</p>
+                <a href="{{ card.link | relative_url }}" class="btn btn-outline-primary" style="border-color: var(--global-theme-color); color: var(--global-theme-color); font-size: 0.95rem; padding: 0.65rem 1.25rem;">Learn More</a>
               </div>
-            {% endif %}
-            <div class="nav-card-body">
-              <div class="nav-card-title">{{ card.title }}</div>
-              <p class="nav-card-text">{{ card.description }}</p>
-              <a href="{{ card.link | relative_url }}" class="btn btn-outline-primary" style="border-color: var(--global-theme-color); color: var(--global-theme-color); font-size: 0.95rem; padding: 0.65rem 1.25rem;">Learn More</a>
             </div>
           </div>
-        </div>
-      {% endfor %}
-    {% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
   </div>
-</div>
 
-<!-- Content Section -->
-<div class="container mt-5 about-content scroll-reveal">
-  <div class="post">
-    <article>
-      {% if page.profile %}
-        <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}" style="width: 40%; margin-{% if page.profile.align == 'left' %}right{% else %}left{% endif %}: 3rem;">
-          {% if page.profile.image %}
-            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-            {% if page.profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+  <!-- Content Section -->
+  <div class="container mt-5 about-content scroll-reveal">
+    <div class="post">
+      <article>
+        {% if page.profile %}
+          <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}" style="width: 40%; margin-{% if page.profile.align == 'left' %}right{% else %}left{% endif %}: 3rem;">
+            {% if page.profile.image %}
+              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+              {% if page.profile.image_circular %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+              {% else %}
+                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+              {% endif %}
+              {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.4}}px, (min-width: 576px) 40vw, 95vw"{% endcapture %}
+              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true %}
             {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.4}}px, (min-width: 576px) 40vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image cache_bust=true %}
-          {% endif %}
-          {% if page.profile.more_info %}
-            <div class="more-info">{{ page.profile.more_info }}</div>
-          {% endif %}
-        </div>
-      {% endif %}
+            {% if page.profile.more_info %}
+              <div class="more-info">{{ page.profile.more_info }}</div>
+            {% endif %}
+          </div>
+        {% endif %}
 
-      <div class="clearfix">{{ content }}</div>
+        <div class="clearfix">{{ content }}</div>
 
-      <!-- News -->
-      {% if page.announcements and page.announcements.enabled %}
-        <h2>
-          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-        </h2>
-        {% include news.liquid limit=true %}
-      {% endif %}
+        <!-- News -->
+        {% if page.announcements and page.announcements.enabled %}
+          <h2>
+            <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+          </h2>
+          {% include news.liquid limit=true %}
+        {% endif %}
 
-      <!-- Latest posts -->
-      {% if page.latest_posts and page.latest_posts.enabled %}
-        <h2>
-          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-        </h2>
-        {% include latest_posts.liquid %}
-      {% endif %}
+        <!-- Latest posts -->
+        {% if page.latest_posts and page.latest_posts.enabled %}
+          <h2>
+            <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+          </h2>
+          {% include latest_posts.liquid %}
+        {% endif %}
 
-      <!-- Selected papers -->
-      {% if page.selected_papers %}
-        <h2>
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-        </h2>
-        {% include selected_papers.liquid %}
-      {% endif %}
+        <!-- Selected papers -->
+        {% if page.selected_papers %}
+          <h2>
+            <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+          </h2>
+          {% include selected_papers.liquid %}
+        {% endif %}
 
-      <!-- Social -->
-      {% if page.social %}
-        <div class="social">
-          <div class="contact-icons">{% social_links %}</div>
+        <!-- Social -->
+        {% if page.social %}
+          <div class="social">
+            <div class="contact-icons">{% social_links %}</div>
 
-          <div class="contact-note">{{ site.contact_note }}</div>
-        </div>
-      {% endif %}
+            <div class="contact-note">{{ site.contact_note }}</div>
+          </div>
+        {% endif %}
 
-      {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-        {% include newsletter.liquid center=true %}
-      {% endif %}
-    </article>
+        {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+          {% include newsletter.liquid center=true %}
+        {% endif %}
+      </article>
+    </div>
   </div>
 </div>
 <script>
