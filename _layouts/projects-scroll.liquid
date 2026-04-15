@@ -14,13 +14,16 @@ layout: page
   box-sizing: border-box;
   padding: 0;
   overflow-x: hidden;
+  background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #1a1a2e 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .project-section {
   width: 100%;
   padding: 4rem 2rem;
   margin: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
@@ -60,13 +63,13 @@ layout: page
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: var(--global-text-color);
+  color: #ffffff;
 }
 
 .project-description {
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--global-text-color);
+  color: #e0e0e0;
   margin-bottom: 1.5rem;
 }
 
@@ -75,7 +78,7 @@ layout: page
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
-  color: var(--global-text-color);
+  color: #ffffff;
 }
 
 .project-content h3 {
@@ -83,12 +86,13 @@ layout: page
   font-weight: 600;
   margin-top: 1.2rem;
   margin-bottom: 0.5rem;
-  color: var(--global-text-color);
+  color: #ffffff;
 }
 
 .project-content p {
   margin-bottom: 1rem;
   line-height: 1.6;
+  color: #e0e0e0;
 }
 
 .project-content ul,
@@ -100,21 +104,23 @@ layout: page
 .project-content li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
+  color: #e0e0e0;
 }
 
 .project-image {
   width: 100%;
   min-height: 300px;
-  background: var(--global-bg-color);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--global-text-color);
+  color: #e0e0e0;
   font-size: 0.9rem;
   text-align: center;
   padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-image img {
