@@ -137,7 +137,7 @@ layout: page
 }
 .team-card-title {
   margin-bottom: 0.5rem;
-  font-size: 1.15rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: #ffffff;
 }
@@ -255,7 +255,11 @@ layout: page
                 <div class="team-card-meta">{{ profile.more_info }}</div>
                 {% if profile.content %}
                   {% capture profile_bio %}{% include_relative {{ profile.content }} %}{% endcapture %}
-                  <div class="team-card-bio">{{ profile_bio | markdownify }}</div>
+                  {% assign bio_lines = profile_bio | split: "
+" %}
+                  {% capture bio_without_heading %}{% for line in bio_lines %}{% unless line contains "###" or line contains "## " %}{{ line }}
+{% endunless %}{% endfor %}{% endcapture %}
+                  <div class="team-card-bio">{{ bio_without_heading | markdownify }}</div>
                 {% endif %}
               </div>
             </div>
