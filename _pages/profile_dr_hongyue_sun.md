@@ -1,36 +1,11 @@
 ## About
 
-Dr. Hongyue Sun is an Associate Professor in Mechanical Engineering and the Director of the Data Science and System Informatics (DSSI) Lab at the University of Georgia.
+Dr. Hongyue Sun is an Associate Professor in Mechanical Engineering and the Director of the DSSI Lab. Prior to joining the University of Georgia, Dr. Sun served as an assistant professor in Industrial Engineering at the University at Buffalo.
 
-## Education
+Dr. Sun holds a highly multidisciplinary background with a Ph.D. in Industrial Engineering from Virginia Tech (2017), an M.S. in Statistics from Virginia Tech (2015), and a B.S. in Mechanical Engineering from the Beijing Institute of Technology (2012).
 
-- **Ph.D. in Industrial Engineering**, Virginia Tech (2017)
-- **M.S. in Statistics**, Virginia Tech (2015)
-- **B.S. in Mechanical Engineering**, Beijing Institute of Technology (2012)
-
-## Previous Position
-
-Assistant Professor, Industrial Engineering, University at Buffalo
-
-## Research Interests
-
-Data analytics and artificial intelligence in advanced manufacturing, occupational safety, and healthcare systems. Research focuses on human-robot collaboration, digital twin development, and AI for process modeling and control.
-
-## Awards & Recognition
-
-- Best paper awards from INFORMS and IISE
-- Outstanding Young Manufacturing Engineer Award from SME
-
-## Professional Memberships
-
-- IISE (Institute of Industrial and Systems Engineers)
-- INFORMS (Institute for Operations Research and the Management Sciences)
-- IEEE (Institute of Electrical and Electronics Engineers)
-- ASME (American Society of Mechanical Engineers)
-
-## Funding Support
-
-NSF, NIOSH, U.S. Navy, MxD
+## Research Excellence
+Dr. Sun’s research has been broadly supported by the NSF, NIOSH, the U.S. Navy, and MxD. His work has been recognized with several best paper awards from INFORMS and IISE, as well as the Outstanding Young Manufacturing Engineer Award from SME. He is an active member of IISE, INFORMS, IEEE, and ASME.
 
 ## Contact
 
