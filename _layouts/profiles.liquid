@@ -3,8 +3,13 @@ layout: page
 ---
 <style>
 .people-section {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  box-sizing: border-box;
   padding: 0 2rem;
   max-width: none;
 }
@@ -224,11 +229,7 @@ layout: page
         </div>
       </section>
     {% endif %}
-  {% if profile.content %}
-                  {% capture profile_bio %}{% include_relative {{ profile.content }} %}{% endcapture %}
-                  <div class="team-card-bio">{{ profile_bio | markdownify }}</div>
-                {% endif %}
-              
+
     <section class="team-section">
       <div class="team-header">
         <h2>Meet the Team</h2>
@@ -250,6 +251,10 @@ layout: page
                 {% capture profile_name %}{% for word in name_words %}{{ word | capitalize }}{% if forloop.last == false %} {% endif %}{% endfor %}{% endcapture %}
                 <div class="team-card-title">{{ profile_name }}</div>
                 <div class="team-card-meta">{{ profile.more_info }}</div>
+                {% if profile.content %}
+                  {% capture profile_bio %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                  <div class="team-card-bio">{{ profile_bio | markdownify }}</div>
+                {% endif %}
               </div>
             </div>
           {% endfor %}
