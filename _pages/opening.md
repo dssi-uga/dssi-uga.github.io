@@ -8,8 +8,6 @@ nav_order: 8
 calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+We are actively looking for self-motivated undergraduate and graduate students to join our lab. If you are interested in AI-enabled smart manufacturing, process analytics, or human-robot collaboration, please reach out!
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
-
-{% include courses.liquid %}
+Here is a list of opening that we currently have available: 

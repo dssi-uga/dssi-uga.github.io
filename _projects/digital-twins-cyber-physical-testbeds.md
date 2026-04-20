@@ -4,6 +4,7 @@ title: Digital Twins and Cyber–Physical Testbeds
 description: High-fidelity digital twins for monitoring, simulation, validation, and optimization of manufacturing processes.
 importance: 2
 category: work
+img: /assets/img/digital-twin.jpeg
 ---
 
 ## Overview
@@ -12,15 +13,7 @@ This project delivers digital twin and cyber-physical testbed capabilities to mi
 
 ## Approach
 
-- Build digital twin models that represent machines, process dynamics, and production flows.
-- Combine physical testbeds with virtual environments to validate system behavior before deployment.
-- Use real-time data and simulation feedback to identify opportunities for process improvement and predictive maintenance.
-
-## Goals
-
-- Accelerate design validation with realistic virtual replicas of manufacturing cells.
-- Improve process performance by running scenario analysis and optimization in the twin environment.
-- Support rapid prototyping of new production strategies with low risk.
+- We are currently conducting research on digital twin models that represent machines, process dynamics, and production flows. We hope to combine physical testbeds with virtual environments to validate system behavior before deployment. Through this project, we hope to improve process performance and support rapid prototyping. 
 
 ## Impact
 

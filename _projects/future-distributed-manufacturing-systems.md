@@ -12,15 +12,7 @@ Future Distributed Manufacturing Systems bring together geographically distribut
 
 ## Approach
 
-- Develop cyber-physical coordination layers that connect planning, scheduling, and execution across sites.
-- Use distributed manufacturing orchestration to adapt production flows in response to demand, resource availability, and process variation.
-- Integrate secure communications, adaptive control, and shared digital infrastructure for synchronized operation.
-
-## Goals
-
-- Enable distributed supply chain collaboration with consistent process execution.
-- Reduce lead time through synchronized production staging and handoffs.
-- Improve resilience by allowing systems to re-route work across connected manufacturing nodes.
+- We aim to develop cyber-physical coordination layers that connect planning, scheduling, and execution across sites. Using distributed manufacturing orchestration to adapt production flows work well as a response to demand, resource availability, and process variation. This will enable distributed supply chain collaboration to be consistent with process executions. 
 
 ## Impact
 

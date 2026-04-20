@@ -171,7 +171,7 @@ layout: page
 <div class="projects-scroll">
   {% assign sorted_projects = site.projects | sort: "importance" %}
   {% for project in sorted_projects %}
-    <div class="project-section scroll-reveal">
+    <div class="project-section scroll-reveal {% if forloop.index0 % 2 == 1 %}reverse{% endif %}">
       <div class="project-content">
         <h1 class="project-title">{{ project.title }}</h1>
         {% if project.description %}

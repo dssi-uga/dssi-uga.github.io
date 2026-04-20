@@ -30,10 +30,6 @@ nav_order: 6
               class="img-fluid rounded shadow-sm"
               zoomable=true
             %}
-            <div class="gallery-caption">
-              <h5>Advanced Manufacturing Equipment</h5>
-              <p>State-of-the-art CNC machines and 3D printers in our manufacturing lab.</p>
-            </div>
           </div>
         </div>
         <div class="col">
@@ -44,10 +40,6 @@ nav_order: 6
               class="img-fluid rounded shadow-sm"
               zoomable=true
             %}
-            <div class="gallery-caption">
-              <h5>Digital Twin Testbed</h5>
-              <p>Cyber-physical testbed for validating digital twin technologies.</p>
-            </div>
           </div>
         </div>
         <div class="col">
@@ -58,10 +50,36 @@ nav_order: 6
               class="img-fluid rounded shadow-sm"
               zoomable=true
             %}
-            <div class="gallery-caption">
-              <h5>IoT Sensor Network</h5>
-              <p>Connected sensors for real-time monitoring and data collection.</p>
-            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="gallery-item">
+            {% include figure.liquid
+              path="assets/img/gallery/lab-equipment-4.jpg"
+              title="IoT Sensor Network"
+              class="img-fluid rounded shadow-sm"
+              zoomable=true
+            %}
+          </div>
+        </div>
+        <div class="col">
+          <div class="gallery-item">
+            {% include figure.liquid
+              path="assets/img/gallery/lab-equipment-5.jpg"
+              title="IoT Sensor Network"
+              class="img-fluid rounded shadow-sm"
+              zoomable=true
+            %}
+          </div>
+        </div>
+        <div class="col">
+          <div class="gallery-item">
+            {% include figure.liquid
+              path="assets/img/gallery/lab-equipment-6.jpg"
+              title="IoT Sensor Network"
+              class="img-fluid rounded shadow-sm"
+              zoomable=true
+            %}
           </div>
         </div>
       </div>

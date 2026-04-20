@@ -12,15 +12,7 @@ AI-Enabled Smart Manufacturing combines machine learning, embedded intelligence,
 
 ## Approach
 
-- Deploy IoT-enabled sensing and data collection throughout manufacturing workflows.
-- Build predictive models for process outcomes, equipment health, and quality trends.
-- Implement adaptive control strategies that act on model predictions to maintain performance.
-
-## Goals
-
-- Detect faults and anomalies before they impact production.
-- Enable data-driven decision support for operators and planners.
-- Improve process stability through continuous learning and adjustment.
+- We hope to deploy IoT-enabled sensing and data collection throughout manufacturing workflows. By building predictive models for process outcomes, equipment health, and quality trends we want to implement adaptive control strategies that act on model predictions to maintain performance.
 
 ## Impact
 

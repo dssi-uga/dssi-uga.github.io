@@ -12,15 +12,7 @@ Ethical and Secure Manufacturing focuses on building trustworthy production syst
 
 ## Approach
 
-- Incorporate privacy-preserving methods and secure data sharing across manufacturing partners.
-- Embed auditability and accountability into design workflows and production pipelines.
-- Harden systems against cyber threats while supporting safe AI-driven decision-making.
-
-## Goals
-
-- Make manufacturing systems more resilient to attacks and operational disruption.
-- Support ethical use of data and AI across manufacturing value chains.
-- Provide clear governance and accountability across digital and physical production assets.
+- In this project, we aim to ncorporate privacy-preserving methods and secure data sharing across manufacturing partners. Embedding auditability and accountability into design workflows and production pipelines is an important facet of manufacturing that make systems more resilient to attacks and operational disuptions. 
 
 ## Impact
 
