@@ -3,206 +3,240 @@ layout: page
 ---
 
 <style>
-.projects-scroll {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
-  max-width: none;
-  box-sizing: border-box;
-  padding: 0;
-  overflow-x: hidden;
-}
+  .research-shell {
+    --dssi-line: rgba(23, 23, 23, 0.12);
+    --dssi-muted: #5c6670;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    max-width: none;
+    overflow-x: hidden;
+  }
 
-.project-section {
-  width: 100%;
-  padding: 4rem 2rem;
-  margin: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  align-items: center;
-  min-height: auto;
-}
+  html[data-theme="dark"] .research-shell {
+    --dssi-line: rgba(255, 255, 255, 0.14);
+    --dssi-muted: #c5ccd3;
+  }
 
-.project-section:last-child {
-  border-bottom: none;
-}
+  .research-inner {
+    width: min(1120px, calc(100vw - 3rem));
+    margin: 0 auto;
+  }
 
-.project-section:nth-child(even) {
-  grid-template-columns: 1fr 1fr;
-}
+  .research-intro {
+    padding: 1rem 0 3.5rem;
+  }
 
-.project-section:nth-child(even) .project-content {
-  order: 2;
-}
+  .research-intro > p:first-child {
+    max-width: 880px;
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
 
-.project-section:nth-child(even) .project-image {
-  order: 1;
-}
+  .research-intro h2 {
+    margin-top: 2.3rem;
+    color: var(--global-text-color);
+  }
 
-.project-section:nth-child(odd) .project-content {
-  order: 1;
-}
+  .research-intro h3 {
+    margin-top: 1.6rem;
+    color: var(--global-theme-color);
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
 
-.project-section:nth-child(odd) .project-image {
-  order: 2;
-}
+  .research-intro table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    border: 1px solid var(--dssi-line);
+    border-radius: 8px;
+    background: var(--global-card-bg-color);
+  }
 
-.project-content {
-  padding: 2rem 0;
-}
+  .research-intro th,
+  .research-intro td {
+    padding: 0.85rem 0.95rem;
+    border-top: 1px solid var(--dssi-line);
+    vertical-align: top;
+  }
 
-.project-title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  color: #ffffff;
-}
+  .research-intro thead th {
+    border-top: 0;
+    color: var(--global-text-color);
+    background: color-mix(in srgb, var(--global-card-bg-color) 86%, var(--global-theme-color) 14%);
+  }
 
-.project-description {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #e0e0e0;
-  margin-bottom: 1.5rem;
-}
+  .research-thrusts {
+    border-top: 1px solid var(--dssi-line);
+  }
 
-.project-content h2 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  color: #ffffff;
-}
-
-.project-content h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-top: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
-}
-
-.project-content p {
-  margin-bottom: 1rem;
-  line-height: 1.6;
-  color: #e0e0e0;
-}
-
-.project-content ul,
-.project-content ol {
-  margin: 1rem 0 1rem 2rem;
-  padding: 0;
-}
-
-.project-content li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
-}
-
-.project-image {
-  width: 100%;
-  min-height: 300px;
-  background: var(--global-bg-color);
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--global-text-color);
-  font-size: 0.9rem;
-  text-align: center;
-  padding: 2rem;
-}
-
-.project-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.scroll-reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.scroll-reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
   .project-section {
-    grid-template-columns: 1fr;
-    padding: 2rem 1rem;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+    gap: 3rem;
+    align-items: center;
+    min-height: 440px;
+    padding: 4.5rem 0;
+    border-bottom: 1px solid var(--dssi-line);
   }
 
-  .project-section:nth-child(even) {
-    grid-template-columns: 1fr;
-  }
-
-  .project-section:nth-child(even) .project-content {
-    order: 1;
-  }
-
-  .project-section:nth-child(even) .project-image {
+  .project-section.reverse .project-content {
     order: 2;
   }
 
-  .project-title {
-    font-size: 1.7rem;
+  .project-section.reverse .project-image {
+    order: 1;
   }
 
-  .project-content h2 {
-    font-size: 1.2rem;
+  .project-title {
+    margin: 0 0 1rem;
+    color: var(--global-text-color);
+    font-size: clamp(1.7rem, 4vw, 2.45rem);
+    font-weight: 800;
+    line-height: 1.12;
+  }
+
+  .project-description {
+    max-width: 680px;
+    margin-bottom: 1.2rem;
+    color: var(--dssi-muted);
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+
+  .project-details h2 {
+    margin-top: 1.5rem;
+    color: var(--global-theme-color);
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+  }
+
+  .project-details p,
+  .project-details li {
+    color: var(--global-text-color);
+    line-height: 1.65;
+  }
+
+  .project-details ul {
+    margin-left: 1.2rem;
+    padding-left: 0.4rem;
   }
 
   .project-image {
-    min-height: 250px;
+    overflow: hidden;
+    min-height: 330px;
+    border: 1px solid var(--dssi-line);
+    border-radius: 8px;
+    background: var(--global-card-bg-color);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.1);
   }
-}
+
+  .project-image figure,
+  .project-image picture,
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 330px;
+    margin: 0;
+  }
+
+  .project-image img {
+    object-fit: cover;
+  }
+
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(22px);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+  }
+
+  .scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 860px) {
+    .research-inner {
+      width: min(100% - 2rem, 1120px);
+    }
+
+    .project-section,
+    .project-section.reverse {
+      grid-template-columns: 1fr;
+      gap: 1.6rem;
+      padding: 3rem 0;
+    }
+
+    .project-section.reverse .project-content,
+    .project-section.reverse .project-image {
+      order: initial;
+    }
+
+    .project-image,
+    .project-image figure,
+    .project-image picture,
+    .project-image img {
+      min-height: 250px;
+    }
+  }
 </style>
 
-<div class="projects-scroll">
-  {% assign sorted_projects = site.projects | sort: "importance" %}
-  {% for project in sorted_projects %}
-    <div class="project-section scroll-reveal {% if forloop.index0 % 2 == 1 %}reverse{% endif %}">
-      <div class="project-content">
-        <h1 class="project-title">{{ project.title }}</h1>
-        {% if project.description %}
-          <p class="project-description">{{ project.description }}</p>
-        {% endif %}
-        <div class="project-details">
-          {{ project.content }}
-        </div>
-      </div>
-      <div class="project-image">
-        {% if project.img %}
-          {% include figure.liquid loading="lazy" path=project.img class="img-fluid rounded" alt=project.title %}
-        {% else %}
-          <span>{{ project.title }} - Image coming soon</span>
-        {% endif %}
-      </div>
-    </div>
-  {% endfor %}
+<div class="research-shell">
+  <div class="research-inner">
+    <section class="research-intro scroll-reveal">
+      {{ content }}
+    </section>
+
+    <section class="research-thrusts" aria-label="Research thrusts">
+      {% assign sorted_projects = site.projects | sort: "importance" %}
+      {% for project in sorted_projects %}
+        {% assign remainder = forloop.index0 | modulo: 2 %}
+        <article class="project-section scroll-reveal {% if remainder == 1 %}reverse{% endif %}">
+          <div class="project-content">
+            <h2 class="project-title">{{ project.title }}</h2>
+            {% if project.description %}
+              <p class="project-description">{{ project.description }}</p>
+            {% endif %}
+            <div class="project-details">
+              {{ project.content }}
+            </div>
+          </div>
+          <div class="project-image">
+            {% if project.img %}
+              {% include figure.liquid loading="lazy" path=project.img alt=project.title %}
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </section>
+  </div>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const reveals = document.querySelectorAll('.scroll-reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  reveals.forEach(el => observer.observe(el));
-});
+  document.addEventListener("DOMContentLoaded", function () {
+    const reveals = document.querySelectorAll(".scroll-reveal");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    reveals.forEach((el) => observer.observe(el));
+  });
 </script>

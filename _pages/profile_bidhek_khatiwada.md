@@ -1,8 +1,5 @@
 ### Bidhek Khatiwada
 
-PhD Student, ECAM
-
-Robotics, Artificial Intelligence, Smart Manufacturing
+Bidhek studies robotics, artificial intelligence, and smart manufacturing. His current work focuses on physics-informed digital twins for multi-nozzle direct ink writing.
 
 - Projects: Smart Manufacturing
-- [LinkedIn](https://www.linkedin.com/in/bidhek-khatiwada-982010302/)

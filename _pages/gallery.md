@@ -4,7 +4,7 @@ title: Gallery
 permalink: /gallery/
 description: Photos and images from the DSSI Lab
 nav: true
-nav_order: 6
+nav_order: 5
 ---
 
 <!-- _pages/gallery.md -->
@@ -84,6 +84,8 @@ nav_order: 6
         </div>
       </div>
     </section>
+  </div>
+</div>
 
 <style>
 .gallery-section {

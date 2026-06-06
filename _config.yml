@@ -9,13 +9,13 @@ last_name: Sun
 contact_note: >
   The best way to reach me is via email at <a href="mailto:hongyuesun@uga.edu">hongyuesun@uga.edu</a>.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Data Science and System Informatics (DSSI) Lab at the University of Georgia. Focusing on data analytics and AI in advanced manufacturing, occupational safety, and healthcare systems.
+  Data Science and System Informatics (DSSI) Lab at the University of Georgia develops trustworthy, verifiable AI for advanced and smart manufacturing, privacy-preserving machine learning, secure manufacturing, and safe human-robot collaboration.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Data Science and System Informatics Lab, University of Georgia.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: data analytics, AI, advanced manufacturing, occupational safety, university of georgia, uga, hongyue sun, mechanical engineering
+keywords: trustworthy AI, advanced manufacturing, smart manufacturing, additive manufacturing, privacy-preserving machine learning, manufacturing cybersecurity, human-robot collaboration, university of georgia, uga, hongyue sun, mechanical engineering
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚙️ # changed to a gear to reflect mechanical engineering/manufacturing, but you can change this!
+icon: D # short text favicon for the DSSI Lab
 
 url: https://dssi-uga.github.io # the base hostname & protocol for your site
 baseurl: "" # LEAVE BLANK for root. Since your URL is your main github.io domain, this must be empty.
@@ -52,7 +52,7 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false
 bib_search: true
 
 # Dimensions
@@ -86,8 +86,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: DSSI Lab Notes # blog_name will be displayed in your blog page
+blog_description: research updates from the Data Science and System Informatics Lab
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

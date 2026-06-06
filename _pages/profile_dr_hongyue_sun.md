@@ -1,14 +1,5 @@
-## About
+Dr. Hongyue Sun is an Associate Professor of Mechanical Engineering at the University of Georgia and Director of the Data Science and System Informatics Lab. His group develops trustworthy, verifiable AI for advanced and smart manufacturing, spanning additive manufacturing, quality engineering, privacy-preserving machine learning, manufacturing cybersecurity, and safe human-robot collaboration.
 
-Dr. Hongyue Sun is an Associate Professor in Mechanical Engineering and the Director of the DSSI Lab. Prior to joining the University of Georgia, Dr. Sun served as an assistant professor in Industrial Engineering at the University at Buffalo.
+Dr. Sun's research has attracted more than $9.7M in funding from NSF, USDA, NIOSH, the U.S. Navy, Honda, MxD, and GE. Recognitions include the SME Outstanding Young Manufacturing Engineer Award, the University at Buffalo Exceptional Scholar - Young Investigator Award, and two IISE Transactions Feature Papers. He serves as Associate Editor of IISE Transactions and ASME JCISE, serves on the Journal of Quality Technology editorial board, and chaired the INFORMS Quality, Statistics, and Reliability Section from 2023 to 2025.
 
-Dr. Sun holds a highly multidisciplinary background with a Ph.D. in Industrial Engineering from Virginia Tech (2017), an M.S. in Statistics from Virginia Tech (2015), and a B.S. in Mechanical Engineering from the Beijing Institute of Technology (2012).
-
-## Research Excellence
-Dr. Sun’s research has been broadly supported by the NSF, NIOSH, the U.S. Navy, and MxD. His work has been recognized with several best paper awards from INFORMS and IISE, as well as the Outstanding Young Manufacturing Engineer Award from SME. He is an active member of IISE, INFORMS, IEEE, and ASME.
-
-## Contact
-
-- **Email**: [hongyuesun@uga.edu](mailto:hongyuesun@uga.edu)
-- **Office**: 1040B I-STEM Complex, Bldg 1
-- **Address**: 302 East Campus Road, Athens, GA 30602
+Prior to UGA, Dr. Sun was an Assistant Professor at the University at Buffalo. He received a PhD in Industrial Engineering and an MS in Statistics from Virginia Tech, and a BS in Mechanical Engineering from Beijing Institute of Technology.

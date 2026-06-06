@@ -1,8 +1,5 @@
 ### John Bodamer
 
-Undergraduate Researcher, Electrical Engineering
-
-Human-Robot Collaboration
+John contributes to collaborative robotic disassembly research with interests in electrical engineering, sensing, and automation.
 
 - Projects: Collaborative Robotic Disassembly
-- [LinkedIn](https://www.linkedin.com/in/john-bodamer?trk=contact-info)
