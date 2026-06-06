@@ -16,23 +16,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "nav-people",
-          title: "people",
-          description: "The team behind the DSSI Lab.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
-          },
         },{id: "nav-research",
           title: "Research",
           description: "Trustworthy AI for advanced manufacturing - research thrusts and funded projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-research",
-          title: "research",
-          description: "Trustworthy AI for advanced manufacturing — research thrusts and funded projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -61,13 +47,6 @@ ninja.data = [{
         },{id: "nav-join-us",
           title: "Join Us",
           description: "Openings and teaching in the DSSI Lab.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
-        },{id: "nav-join-us",
-          title: "join us",
-          description: "Open positions and courses in the DSSI Lab.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
