@@ -1,3 +1,8 @@
+---
+layout: page
+title: Dawson Gulasa
+---
+
 ### Dawson Gulasa
 
 Undergraduate Researcher, Computer Systems Engineering (Driftmier College of Engineering)

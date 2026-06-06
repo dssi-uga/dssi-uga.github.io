@@ -1,3 +1,8 @@
+---
+layout: page
+title: Owen Connell
+---
+
 ### Owen Connell
 
 Owen is a DSSI Lab alumnus whose work focused on collaborative robotic disassembly and computer vision for task automation.

@@ -1,3 +1,8 @@
+---
+layout: page
+title: Aarush Mathad
+---
+
 ### Aarush Mathad
 
 Aarush focuses on optimization of real-world systems through applied research.

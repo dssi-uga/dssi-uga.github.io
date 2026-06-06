@@ -1,3 +1,8 @@
+---
+layout: page
+title: Dr. Hongyue Sun
+---
+
 Dr. Hongyue Sun is an Associate Professor of Mechanical Engineering at the University of Georgia and Director of the Data Science and System Informatics Lab. His group develops trustworthy, verifiable AI for advanced and smart manufacturing, spanning additive manufacturing, quality engineering, privacy-preserving machine learning, manufacturing cybersecurity, and safe human-robot collaboration.
 
 Dr. Sun's research has attracted more than $9.7M in funding from NSF, USDA, NIOSH, the U.S. Navy, Honda, MxD, and GE. Recognitions include the SME Outstanding Young Manufacturing Engineer Award, the University at Buffalo Exceptional Scholar - Young Investigator Award, and two IISE Transactions Feature Papers. He serves as Associate Editor of IISE Transactions and ASME JCISE, serves on the Journal of Quality Technology editorial board, and chaired the INFORMS Quality, Statistics, and Reliability Section from 2023 to 2025.
