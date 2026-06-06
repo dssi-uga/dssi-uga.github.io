@@ -186,6 +186,7 @@ exclude:
   - Dockerfile
   - docker-compose.yml
   - docker-compose-slim.yml
+  - DSSI Website Improvements/
   - FAQ.md
   - Gemfile
   - Gemfile.lock
