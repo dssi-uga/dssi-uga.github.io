@@ -29,6 +29,14 @@ announcements:
 latest_posts: false
 selected_papers: true
 social: true
+
+conference_logos:
+  - image: INFORMS.jpg
+    label: INFORMS
+  - image: IISE.jpg
+    label: IISE
+  - image: ASME.jpg
+    label: ASME
 ---
 
 Welcome to the **DSSI Lab** at the University of Georgia. We develop data science and system informatics methods for smart manufacturing systems that are secure, ethical, reliable, and safe to deploy. Our work connects manufacturing data, AI models, digital twins, robotics, privacy-preserving learning, and human-centered safety.

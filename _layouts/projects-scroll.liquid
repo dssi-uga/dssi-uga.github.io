@@ -81,7 +81,7 @@ layout: page
     position: relative;
     overflow: hidden;
     margin-top: 1rem;
-    height: 424px;
+    height: 396px;
     padding: 0.35rem 0;
     -webkit-mask-image: linear-gradient(transparent, #000 8%, #000 92%, transparent);
     mask-image: linear-gradient(transparent, #000 8%, #000 92%, transparent);
@@ -89,9 +89,8 @@ layout: page
 
   .funding-track {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0.9rem;
-    animation: funding-slide 22s linear infinite;
+    animation: funding-slide 16s steps(11, end) infinite;
   }
 
   .funding-marquee:hover .funding-track {
@@ -289,11 +288,7 @@ layout: page
     }
 
     .funding-marquee {
-      height: 462px;
-    }
-
-    .funding-track {
-      grid-template-columns: 1fr;
+      height: 382px;
     }
 
     .funding-head {
