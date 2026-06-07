@@ -239,7 +239,10 @@ nav_order: 6
     <article class="join-card">
       <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
       <h3>PhD Students</h3>
-      <p><a href="mailto:hongyuesun@uga.edu">Email</a> Dr. Sun with a CV, transcripts, and a short statement of interest.</p>
+      <p>
+        <a href="mailto:hongyuesun@uga.edu">Email</a>
+        Dr. Sun with a CV, transcripts, and a short statement of interest.
+      </p>
     </article>
     <article class="join-card">
       <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
@@ -249,7 +252,10 @@ nav_order: 6
     <article class="join-card">
       <i class="fa-solid fa-flask" aria-hidden="true"></i>
       <h3>Postdocs and Visitors</h3>
-      <p><a href="mailto:hongyuesun@uga.edu">Email</a> a CV and research statement describing fit with current DSSI projects.</p>
+      <p>
+        <a href="mailto:hongyuesun@uga.edu">Email</a>
+        a CV and research statement describing fit with current DSSI projects.
+      </p>
     </article>
   </div>
 
@@ -265,28 +271,68 @@ nav_order: 6
       <div class="course-track">
         {% for copy in (1..2) %}
           <article class="course-card">
-            <div class="course-icon-row" aria-hidden="true"><i class="fa-solid fa-robot"></i><i class="fa-solid fa-brain"></i><i class="fa-solid fa-gears"></i></div>
+            <div class="course-icon-row" aria-hidden="true">
+              <i class="fa-solid fa-robot"></i>
+              <i class="fa-solid fa-brain"></i>
+              <i class="fa-solid fa-gears"></i>
+            </div>
             <h3>ENGR 8990 - AI-Agents Meet Mechanical Engineering</h3>
             <div class="course-meta">UGA, Fall 2025</div>
-            <div class="course-rating" aria-label="Class rating icons"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <div class="course-rating" aria-label="Class rating icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
           </article>
           <article class="course-card">
-            <div class="course-icon-row" aria-hidden="true"><i class="fa-solid fa-chart-line"></i><i class="fa-solid fa-magnifying-glass-chart"></i><i class="fa-solid fa-industry"></i></div>
+            <div class="course-icon-row" aria-hidden="true">
+              <i class="fa-solid fa-chart-line"></i>
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+              <i class="fa-solid fa-industry"></i>
+            </div>
             <h3>ENGR 4670 / 6670 - Quality Engineering</h3>
             <div class="course-meta">UGA, Fall 2025</div>
-            <div class="course-rating" aria-label="Class rating icons"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <div class="course-rating" aria-label="Class rating icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
           </article>
           <article class="course-card">
-            <div class="course-icon-row" aria-hidden="true"><i class="fa-solid fa-sliders"></i><i class="fa-solid fa-wave-square"></i><i class="fa-solid fa-circle-check"></i></div>
+            <div class="course-icon-row" aria-hidden="true">
+              <i class="fa-solid fa-sliders"></i>
+              <i class="fa-solid fa-wave-square"></i>
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
             <h3>ENGR 8990 - Advanced Quality Control</h3>
             <div class="course-meta">UGA, Fall 2024</div>
-            <div class="course-rating" aria-label="Class rating icons"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <div class="course-rating" aria-label="Class rating icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
           </article>
           <article class="course-card">
-            <div class="course-icon-row" aria-hidden="true"><i class="fa-solid fa-diagram-project"></i><i class="fa-solid fa-screwdriver-wrench"></i><i class="fa-solid fa-gauge-high"></i></div>
+            <div class="course-icon-row" aria-hidden="true">
+              <i class="fa-solid fa-diagram-project"></i>
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
             <h3>MCHE 4440 - Design and Control of Production Systems</h3>
             <div class="course-meta">UGA, Fall 2023 and Fall 2024</div>
-            <div class="course-rating" aria-label="Class rating icons"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <div class="course-rating" aria-label="Class rating icons">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
           </article>
         {% endfor %}
       </div>

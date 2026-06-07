@@ -534,7 +534,10 @@ layout: default
                 <article class="conference-card">
                   <div class="conference-logo">
                     {% assign conference_image_path = conference.image | prepend: "assets/img/conferences/" %}
-                    <img src="{{ conference_image_path | relative_url }}" alt="{{ conference.label }} logo">
+                    <img
+                      src="{{ conference_image_path | relative_url }}"
+                      alt="{{ conference.label }} logo"
+                    >
                   </div>
                   <div class="conference-label">{{ conference.label }}</div>
                 </article>
