@@ -1,6 +1,22 @@
 ---
 ---
-<div class="row">
+<div class="row publication-entry">
+  <div class="publication-icon" aria-hidden="true">
+    {% assign icon_title = entry.title | downcase %}
+    {% if icon_title contains "robot" or icon_title contains "inspection" or icon_title contains "disassembly" %}
+      <i class="fa-solid fa-robot"></i>
+    {% elsif icon_title contains "privacy" or icon_title contains "secure" or icon_title contains "cyber" or icon_title contains "federated" %}
+      <i class="fa-solid fa-shield-halved"></i>
+    {% elsif icon_title contains "3d" or icon_title contains "printing" or icon_title contains "additive" or icon_title contains "ink" %}
+      <i class="fa-solid fa-cubes"></i>
+    {% elsif icon_title contains "human" or icon_title contains "fatigue" or icon_title contains "ergonomic" or icon_title contains "worker" %}
+      <i class="fa-solid fa-user-gear"></i>
+    {% elsif icon_title contains "ai" or icon_title contains "learning" or icon_title contains "neural" or icon_title contains "agent" %}
+      <i class="fa-solid fa-brain"></i>
+    {% else %}
+      <i class="fa-solid fa-diagram-project"></i>
+    {% endif %}
+  </div>
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
@@ -49,12 +65,13 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     {% assign scholar_title_query = entry.title | strip_html | url_encode %}
+    {% assign scholar_link = scholar_title_query | prepend: "https://scholar.google.com/scholar?q=%22" | append: "%22" %}
     {% if entry.html %}
       {% assign title_link = entry.html %}
     {% elsif entry.doi %}
       {% assign title_link = entry.doi | prepend: "https://doi.org/" %}
     {% else %}
-      {% assign title_link = scholar_title_query | prepend: "https://scholar.google.com/scholar?q=%22" | append: "%22" %}
+      {% assign title_link = scholar_link %}
     {% endif %}
     <div class="title">
       <a href="{{ title_link }}">{{ entry.title }}</a>
@@ -204,6 +221,7 @@
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
       {% endif %}
+      <a href="{{ scholar_link }}" class="btn btn-sm z-depth-0" role="button">Scholar</a>
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
       {% endif %}

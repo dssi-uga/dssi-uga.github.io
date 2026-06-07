@@ -31,6 +31,4 @@ selected_papers: true
 social: true
 ---
 
-## Data Science and System Informatics for Secure, Ethical and Safe Smart Manufacturing
-
 The **DSSI Lab** develops data science and system informatics methods for smart manufacturing systems that are secure, ethical, reliable, and safe to deploy. Our work connects manufacturing data, AI models, digital twins, robotics, privacy-preserving learning, and human-centered safety.

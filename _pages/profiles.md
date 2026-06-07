@@ -24,12 +24,14 @@ member_groups:
         role: PhD Student
         unit: Electrical and Computer Engineering
         image: Wuyang.jpg
+        email: wuyang.chen@uga.edu
         focus: Multi-stage process modeling, Bayesian optimization, model compression, and privacy-preserving ML.
         project: Data-driven modeling for multi-stage processes
       - name: Chenyu Xu
         role: PhD Student
         unit: Electrical and Computer Engineering
         image: "Chenyu Xu.jpg"
+        email: chenyu.xu@uga.edu
         focus: Data modeling and privacy-preserving computation for deployable smart-manufacturing frameworks.
         project: Ethical Manufacturing; Carbon-Negative Biomass Manufacturing
         links:
@@ -106,6 +108,7 @@ member_groups:
         role: Undergraduate Researcher
         unit: School of Computing
         image: "Kadin Relefourd.jpg"
+        email: kadin.relefourd@uga.edu
         focus: Reinforcement learning, deep learning, and intelligent autonomous systems.
         project: Collaborative Robotic Disassembly
         links:
@@ -124,6 +127,7 @@ member_groups:
         role: Undergraduate Researcher
         unit: School of Computing and College of Engineering
         image: Zhengyao.jpg
+        email: zhengyao.liew@uga.edu
         focus: LLM applications for manufacturing.
         project: LLM applications for manufacturing
         links:
@@ -133,6 +137,7 @@ member_groups:
         role: Undergraduate Researcher
         unit: Electrical Engineering
         image: "John Bodamer.jpeg"
+        email: john.bodamer@uga.edu
         focus: Electrical engineering, sensing, and automation.
         project: Collaborative Robotic Disassembly
         links:
@@ -142,6 +147,7 @@ member_groups:
         role: Undergraduate Researcher
         unit: Mechanical Engineering
         image: John_Braswell.jpg
+        email: john.braswell@uga.edu
         focus: Applied manufacturing research and engineering education.
         project: Educational frameworks for engineering training
         links:

@@ -77,14 +77,29 @@ layout: page
     letter-spacing: 0;
   }
 
-  .funding-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .funding-marquee {
+    position: relative;
+    overflow: hidden;
+    margin-top: 1rem;
+    padding: 0.35rem 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+  }
+
+  .funding-track {
+    display: flex;
+    width: max-content;
     gap: 0.9rem;
+    animation: funding-slide 42s linear infinite;
+  }
+
+  .funding-marquee:hover .funding-track {
+    animation-play-state: paused;
   }
 
   .funding-card {
     position: relative;
+    flex: 0 0 320px;
     overflow: hidden;
     min-height: 180px;
     padding: 1.1rem;
@@ -93,26 +108,25 @@ layout: page
     background:
       linear-gradient(135deg, rgba(186, 12, 47, 0.12), transparent 44%),
       var(--global-card-bg-color);
-    transform: translateY(16px);
-    opacity: 0;
-    animation: funding-rise 0.7s ease forwards;
+    transition:
+      transform 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
-  .funding-card:nth-child(2n) {
-    animation-delay: 0.08s;
-  }
-
-  .funding-card:nth-child(3n) {
-    animation-delay: 0.16s;
-  }
-
-  .funding-card::after {
+  .funding-card::before {
     content: "";
     position: absolute;
-    inset: auto -30% -45% 35%;
-    height: 110px;
-    border-radius: 999px;
-    background: rgba(186, 12, 47, 0.08);
+    inset: 0;
+    background: linear-gradient(110deg, transparent, rgba(255, 255, 255, 0.22), transparent);
+    transform: translateX(-100%);
+    animation: funding-shine 5s ease-in-out infinite;
+  }
+
+  .funding-card:hover {
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--global-theme-color) 50%, var(--dssi-line));
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.12);
   }
 
   .funding-award {
@@ -151,10 +165,22 @@ layout: page
     background: color-mix(in srgb, var(--global-card-bg-color) 92%, var(--global-theme-color) 8%);
   }
 
-  @keyframes funding-rise {
+  @keyframes funding-slide {
+    from {
+      transform: translateX(0);
+    }
     to {
-      transform: translateY(0);
-      opacity: 1;
+      transform: translateX(calc(-50% - 0.45rem));
+    }
+  }
+
+  @keyframes funding-shine {
+    0%,
+    55% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
     }
   }
 
@@ -164,12 +190,19 @@ layout: page
 
   .project-section {
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
-    gap: 3rem;
-    align-items: center;
-    min-height: 440px;
-    padding: 4.5rem 0;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+    gap: 2rem;
+    align-items: stretch;
+    min-height: 460px;
+    padding: 3.5rem 0;
     border-bottom: 1px solid var(--dssi-line);
+  }
+
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 390px;
   }
 
   .project-section.reverse .project-content {
@@ -218,7 +251,7 @@ layout: page
 
   .project-image {
     overflow: hidden;
-    min-height: 330px;
+    height: 390px;
     border: 1px solid var(--dssi-line);
     border-radius: 8px;
     background: var(--global-card-bg-color);
@@ -230,7 +263,6 @@ layout: page
   .project-image img {
     width: 100%;
     height: 100%;
-    min-height: 330px;
     margin: 0;
   }
 
@@ -256,8 +288,8 @@ layout: page
       width: min(100% - 2rem, 1120px);
     }
 
-    .funding-grid {
-      grid-template-columns: 1fr;
+    .funding-card {
+      flex-basis: min(78vw, 320px);
     }
 
     .funding-head {
@@ -280,7 +312,8 @@ layout: page
     .project-image figure,
     .project-image picture,
     .project-image img {
-      min-height: 250px;
+      height: 260px;
+      min-height: 0;
     }
   }
 </style>
@@ -300,34 +333,34 @@ layout: page
           </div>
         </div>
 
-        <div class="section-label">Current</div>
-        <div class="funding-grid">
-          {% for project in page.funded_projects.current %}
-            <article class="funding-card">
-              <div class="funding-award">{{ project.award }}</div>
-              <div class="funding-name">{{ project.name }}</div>
-              <div class="funding-meta">
-                <span>{{ project.agency }}</span>
-                <span>{{ project.role }}</span>
-                <span>{{ project.period }}</span>
-              </div>
-            </article>
-          {% endfor %}
-        </div>
-
-        <div class="section-label" style="margin-top: 2rem;">Completed Selected</div>
-        <div class="funding-grid">
-          {% for project in page.funded_projects.completed %}
-            <article class="funding-card">
-              <div class="funding-award">{{ project.award }}</div>
-              <div class="funding-name">{{ project.name }}</div>
-              <div class="funding-meta">
-                <span>{{ project.agency }}</span>
-                <span>{{ project.role }}</span>
-                <span>{{ project.period }}</span>
-              </div>
-            </article>
-          {% endfor %}
+        <div class="section-label">Funding Portfolio</div>
+        <div class="funding-marquee">
+          <div class="funding-track">
+            {% for copy in (1..2) %}
+              {% for project in page.funded_projects.current %}
+                <article class="funding-card">
+                  <div class="funding-award">{{ project.award }}</div>
+                  <div class="funding-name">{{ project.name }}</div>
+                  <div class="funding-meta">
+                    <span>{{ project.agency }}</span>
+                    <span>{{ project.role }}</span>
+                    <span>{{ project.period }}</span>
+                  </div>
+                </article>
+              {% endfor %}
+              {% for project in page.funded_projects.completed %}
+                <article class="funding-card">
+                  <div class="funding-award">{{ project.award }}</div>
+                  <div class="funding-name">{{ project.name }}</div>
+                  <div class="funding-meta">
+                    <span>{{ project.agency }}</span>
+                    <span>{{ project.role }}</span>
+                    <span>{{ project.period }}</span>
+                  </div>
+                </article>
+              {% endfor %}
+            {% endfor %}
+          </div>
         </div>
       </section>
     {% endif %}
