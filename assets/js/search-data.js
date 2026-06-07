@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "Research",
-          description: "Trustworthy AI for advanced manufacturing - research thrusts and funded projects.",
+          description: "Research thrusts and funded projects in data science, system informatics, and smart manufacturing.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -105,11 +105,6 @@ ninja.data = [{
           description: "Data science for lower-waste, lower-carbon manufacturing workflows, including biomass processing and recyclable materials.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_sustainable/";
-            },},{id: "projects-quantum-safe-manufacturing-frontier",
-          title: 'Quantum-Safe Manufacturing Frontier',
-          description: "Emerging work on quantum-safe federated manufacturing and post-quantum-secure decision chains.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_quantum_frontier/";
             },},{
         id: 'social-email',
         title: 'email',
