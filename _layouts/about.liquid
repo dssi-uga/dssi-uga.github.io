@@ -27,7 +27,7 @@ layout: default
 
   .hero-section {
     position: relative;
-    min-height: 64vh;
+    min-height: 56vh;
     display: flex;
     align-items: center;
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.36)), url("{{ '/assets/img/gallery/lab-equipment-1.jpg' | relative_url }}");
@@ -67,7 +67,7 @@ layout: default
   }
 
   .home-section {
-    padding: 4.5rem 1.5rem;
+    padding: 3.2rem 1.5rem;
     border-bottom: 1px solid var(--dssi-line);
     background: var(--global-bg-color);
   }
@@ -92,23 +92,56 @@ layout: default
 
   .home-copy {
     display: grid;
-    grid-template-columns: minmax(0, 1.55fr) minmax(240px, 0.75fr);
-    gap: 2.5rem;
-    align-items: start;
+    grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+    gap: 1.8rem;
+    align-items: stretch;
   }
 
   .home-copy .post {
     margin: 0;
+    min-height: 100%;
   }
 
-  .home-copy article h2 {
+  .director-message {
+    position: relative;
+    min-height: 100%;
+    padding: 1.4rem;
+    border: 1px solid var(--dssi-line);
+    border-radius: 8px;
+    background:
+      linear-gradient(135deg, rgba(186, 12, 47, 0.1), transparent 38%),
+      var(--dssi-panel);
+    transition:
+      transform 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .director-message:hover,
+  .director-message:focus-within {
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--global-theme-color) 55%, var(--dssi-line));
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.1);
+  }
+
+  .director-message::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(110deg, transparent 0%, rgba(255, 255, 255, 0.18) 45%, transparent 65%);
+    transform: translateX(-100%);
+    animation: message-shine 6s ease-in-out infinite;
+  }
+
+  .director-message h2 {
     margin-top: 0;
-    font-size: clamp(1.75rem, 4vw, 2.45rem);
+    font-size: clamp(1.45rem, 3vw, 2rem);
     line-height: 1.12;
     color: var(--dssi-ink);
   }
 
-  .home-copy article p {
+  .director-message p {
     color: var(--global-text-color);
     font-size: 1.02rem;
     line-height: 1.75;
@@ -116,7 +149,7 @@ layout: default
 
   .stats-grid {
     position: relative;
-    height: 344px;
+    height: 292px;
     overflow: hidden;
     padding: 0.25rem 0;
     -webkit-mask-image: linear-gradient(transparent, #000 12%, #000 88%, transparent);
@@ -126,7 +159,7 @@ layout: default
   .stats-track {
     display: grid;
     gap: 0.85rem;
-    animation: stats-loop 22s linear infinite;
+    animation: stats-loop 12s linear infinite;
   }
 
   .stats-grid:hover .stats-track {
@@ -134,13 +167,22 @@ layout: default
   }
 
   .stat-tile {
-    min-height: 120px;
+    min-height: 104px;
     padding: 1.1rem 1.2rem;
     border: 1px solid var(--dssi-line);
     border-left: 4px solid var(--global-theme-color);
     border-radius: 8px;
     background: var(--dssi-panel);
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+    animation: stat-pulse 3.5s ease-in-out infinite;
+  }
+
+  .stat-tile:nth-child(2n) {
+    animation-delay: 0.4s;
+  }
+
+  .stat-tile:nth-child(3n) {
+    animation-delay: 0.8s;
   }
 
   .stat-value {
@@ -264,6 +306,26 @@ layout: default
     }
   }
 
+  @keyframes stat-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.015);
+    }
+  }
+
+  @keyframes message-shine {
+    0%,
+    58% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
   .scroll-reveal {
     opacity: 0;
     transform: translateY(22px);
@@ -285,7 +347,7 @@ layout: default
 
   @media (max-width: 640px) {
     .hero-section {
-      min-height: 68vh;
+      min-height: 52vh;
     }
 
     .hero-content {
@@ -294,7 +356,7 @@ layout: default
     }
 
     .home-section {
-      padding: 3rem 1rem;
+      padding: 2.6rem 1rem;
     }
 
     .home-copy {
@@ -302,7 +364,7 @@ layout: default
     }
 
     .stats-grid {
-      height: 290px;
+      height: 250px;
     }
 
     .section-head {
@@ -327,8 +389,9 @@ layout: default
   <section class="home-section">
     <div class="home-inner home-copy scroll-reveal">
       <div class="post">
-        <article>
+        <article class="director-message" tabindex="0">
           <div class="section-label">Data Science and System Informatics Lab</div>
+          <h2>Message from the Director</h2>
           <div class="clearfix">{{ content }}</div>
         </article>
       </div>
