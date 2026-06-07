@@ -166,24 +166,44 @@ alumni_groups:
     people:
       - name: Luis Javier Segura
         degree: PhD 2021
-        affiliation: Assistant Professor, Industrial Engineering, University of Louisville
-        project: Inkjet printing, material jetting, and tensor time-series analytics
+        image: Luis_Segura.png
+        affiliation: "University at Buffalo, Industrial and Systems Engineering"
+        occupation: "Assistant Professor, Industrial Engineering, University of Louisville"
+        project: "Inkjet printing, material jetting, and tensor time-series analytics"
       - name: Sahand Hajifar
         degree: PhD 2022
-        affiliation: Assistant Professor, Information Systems and Business Analytics, Park University
-        project: Occupational sensing, transfer learning, and liver viability evaluation
+        image: Sahand_Hajifar.jpg
+        affiliation: "University at Buffalo, Industrial and Systems Engineering"
+        occupation: "Assistant Professor, Information Systems and Business Analytics, Park University"
+        project: "Occupational sensing, transfer learning, and liver viability evaluation"
       - name: Zebin Li
         degree: PhD 2023
-        affiliation: Assistant Professor, Mechanical Engineering, Penn State Harrisburg
-        project: Active reinforcement learning and additive-manufacturing process control
+        image: Zebin_Li.jpg
+        affiliation: "University at Buffalo, Industrial and Systems Engineering"
+        occupation: "Assistant Professor, Mechanical Engineering, Penn State Harrisburg"
+        project: "Active reinforcement learning and additive-manufacturing process control"
       - name: Setareh Kazemi Kheiri
         degree: PhD 2025, co-advised
-        affiliation: Assistant Teaching Professor, Industrial Engineering, University of Pittsburgh
-        project: Operator fatigue, ergonomics, and privacy-preserved activity recognition
+        image: Setareh_Kazemi_Kheiri.jpg
+        affiliation: "University at Buffalo, Industrial and Systems Engineering"
+        occupation: "Assistant Teaching Professor, Industrial Engineering, University of Pittsburgh"
+        project: "Operator fatigue, ergonomics, and privacy-preserved activity recognition"
+      - name: Ramanarayanan Purnanandam
+        degree: "MS in Industrial Engineering, 2019 Graduate"
+        occupation: "Project Manager - Assembly and New Parts & Development, S&V Industries, Inc."
+        project: "Multi-stage 3D Printing Quality Control (co-advised with Chi Zhou)"
+      - name: Aditya Patel
+        degree: "MS in Industrial Engineering, 2020 Graduate"
+        occupation: "Data Scientist, Aetna, a Health Company"
+        project: "Graph Neural Network for Liver Transplantation Evaluation"
+      - name: Chandan Singh
+        degree: "MS in Industrial Engineering, 2020 Graduate"
+        occupation: "Data Scientist, Definitive Healthcare"
+        project: "Machine Learning for Liver Transplantation Evaluation"
       - name: Wilson David Jo Siu
-        degree: MS 2021
-        affiliation: System Analyst, Odoo, San Francisco
-        project: Point-cloud completion and manufacturing data analytics
+        degree: "MS in Industrial Engineering, 2021 Graduate"
+        occupation: "Business Systems Analyst, Odoo. Inc."
+        project: "System Informatics for 3D Printing of Teeth Mold"
   - title: Undergraduate and Pre-College Alumni
     people:
       - name: Matthew Rubino
