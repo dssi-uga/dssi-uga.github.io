@@ -74,42 +74,6 @@ layout: default
     color: rgba(255, 255, 255, 0.92);
   }
 
-  .hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.85rem;
-  }
-
-  .hero-action {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 2.7rem;
-    padding: 0.72rem 1.1rem;
-    border: 1px solid rgba(255, 255, 255, 0.68);
-    border-radius: 6px;
-    color: #ffffff;
-    font-weight: 700;
-    text-decoration: none;
-    transition:
-      background 0.2s ease,
-      border-color 0.2s ease,
-      transform 0.2s ease;
-  }
-
-  .hero-action:hover {
-    transform: translateY(-2px);
-    color: #ffffff;
-    text-decoration: none;
-    background: rgba(255, 255, 255, 0.14);
-    border-color: #ffffff;
-  }
-
-  .hero-action.primary {
-    border-color: var(--dssi-red);
-    background: var(--dssi-red);
-  }
-
   .home-section {
     padding: 4.5rem 1.5rem;
     border-bottom: 1px solid var(--dssi-line);
@@ -347,15 +311,7 @@ layout: default
     <div class="hero-content scroll-reveal">
       <div class="hero-kicker">University of Georgia | College of Engineering</div>
       <h1 class="hero-title">DSSI Lab</h1>
-      <p class="hero-tagline">
-        Trustworthy, verifiable AI for smart and additive manufacturing - from process modeling and control to privacy-preserving learning and safe
-        human-robot collaboration.
-      </p>
-      <div class="hero-actions">
-        <a class="hero-action primary" href="{{ '/projects/' | relative_url }}">Research</a>
-        <a class="hero-action" href="{{ '/people/' | relative_url }}">People</a>
-        <a class="hero-action" href="{{ '/teaching/' | relative_url }}">Join Us</a>
-      </div>
+      <p class="hero-tagline">Trustworthy AI for Smarter Manufacturing.</p>
     </div>
   </section>
 
