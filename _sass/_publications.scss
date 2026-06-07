@@ -53,26 +53,6 @@
         box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
       }
 
-      .publication-entry {
-        position: relative;
-        padding-left: 4.4rem;
-      }
-
-      .publication-icon {
-        position: absolute;
-        top: 0.1rem;
-        left: 0.75rem;
-        display: grid;
-        place-items: center;
-        width: 2.85rem;
-        height: 2.85rem;
-        border: 1px solid color-mix(in srgb, var(--global-theme-color) 45%, var(--global-divider-color));
-        border-radius: 8px;
-        color: var(--global-theme-color);
-        background: color-mix(in srgb, var(--global-card-bg-color) 86%, var(--global-theme-color) 14%);
-        font-size: 1.15rem;
-      }
-
       .preview {
         display: inline-block;
       }

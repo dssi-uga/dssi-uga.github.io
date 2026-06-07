@@ -1,22 +1,6 @@
 ---
 ---
-<div class="row publication-entry">
-  <div class="publication-icon" aria-hidden="true">
-    {% assign icon_title = entry.title | downcase %}
-    {% if icon_title contains "robot" or icon_title contains "inspection" or icon_title contains "disassembly" %}
-      <i class="fa-solid fa-robot"></i>
-    {% elsif icon_title contains "privacy" or icon_title contains "secure" or icon_title contains "cyber" or icon_title contains "federated" %}
-      <i class="fa-solid fa-shield-halved"></i>
-    {% elsif icon_title contains "3d" or icon_title contains "printing" or icon_title contains "additive" or icon_title contains "ink" %}
-      <i class="fa-solid fa-cubes"></i>
-    {% elsif icon_title contains "human" or icon_title contains "fatigue" or icon_title contains "ergonomic" or icon_title contains "worker" %}
-      <i class="fa-solid fa-user-gear"></i>
-    {% elsif icon_title contains "ai" or icon_title contains "learning" or icon_title contains "neural" or icon_title contains "agent" %}
-      <i class="fa-solid fa-brain"></i>
-    {% else %}
-      <i class="fa-solid fa-diagram-project"></i>
-    {% endif %}
-  </div>
+<div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}

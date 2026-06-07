@@ -76,6 +76,10 @@ layout: default
     background: color-mix(in srgb, var(--global-card-bg-color) 88%, var(--global-theme-color) 12%);
   }
 
+  .home-section.light-band {
+    background: var(--global-bg-color);
+  }
+
   .home-inner {
     width: min(1120px, 100%);
     margin: 0 auto;
@@ -149,17 +153,18 @@ layout: default
 
   .stats-grid {
     position: relative;
-    height: 292px;
+    height: 118px;
     overflow: hidden;
     padding: 0.25rem 0;
-    -webkit-mask-image: linear-gradient(transparent, #000 12%, #000 88%, transparent);
-    mask-image: linear-gradient(transparent, #000 12%, #000 88%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
   }
 
   .stats-track {
-    display: grid;
+    display: flex;
+    width: max-content;
     gap: 0.85rem;
-    animation: stats-loop 12s linear infinite;
+    animation: stats-loop 16s linear infinite;
   }
 
   .stats-grid:hover .stats-track {
@@ -167,6 +172,7 @@ layout: default
   }
 
   .stat-tile {
+    flex: 0 0 280px;
     min-height: 104px;
     padding: 1.1rem 1.2rem;
     border: 1px solid var(--dssi-line);
@@ -299,10 +305,10 @@ layout: default
 
   @keyframes stats-loop {
     from {
-      transform: translateY(0);
+      transform: translateX(0);
     }
     to {
-      transform: translateY(calc(-50% - 0.425rem));
+      transform: translateX(calc(-50% - 0.425rem));
     }
   }
 
@@ -364,7 +370,11 @@ layout: default
     }
 
     .stats-grid {
-      height: 250px;
+      height: 118px;
+    }
+
+    .stat-tile {
+      flex-basis: min(76vw, 280px);
     }
 
     .section-head {
@@ -414,7 +424,7 @@ layout: default
   </section>
 
   {% if page.recruiting %}
-    <section class="home-section alt">
+    <section class="home-section light-band">
       <div class="home-inner scroll-reveal">
         <div class="section-head">
           <div>

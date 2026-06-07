@@ -239,7 +239,7 @@ nav_order: 6
     <article class="join-card">
       <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
       <h3>PhD Students</h3>
-      <p>Email Dr. Sun with a CV, transcripts, and a short statement of interest.</p>
+      <p><a href="mailto:hongyuesun@uga.edu">Email</a> Dr. Sun with a CV, transcripts, and a short statement of interest.</p>
     </article>
     <article class="join-card">
       <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
@@ -249,13 +249,9 @@ nav_order: 6
     <article class="join-card">
       <i class="fa-solid fa-flask" aria-hidden="true"></i>
       <h3>Postdocs and Visitors</h3>
-      <p>Send a CV and research statement describing fit with current DSSI projects.</p>
+      <p><a href="mailto:hongyuesun@uga.edu">Email</a> a CV and research statement describing fit with current DSSI projects.</p>
     </article>
   </div>
-
-- **Prospective PhD students** should email Dr. Sun at [hongyuesun@uga.edu](mailto:hongyuesun@uga.edu) with a CV, transcripts, and a short statement of interest. Mention the research thrusts you want to work on.
-- **Current UGA undergraduates** can reach out year-round for research opportunities, including First-Year Research Experience projects through the College of Engineering.
-- **Visiting scholars and postdocs** should send a CV and research statement describing fit with the lab's current projects.
 
   <section class="teaching-section">
     <div class="teaching-head">
