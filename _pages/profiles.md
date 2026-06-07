@@ -18,136 +18,196 @@ principal:
 
 member_groups:
   - title: PhD Students
-    description: Doctoral researchers developing trustworthy AI, smart manufacturing, robotics, privacy-preserving computation, and digital twins.
+    description: Doctoral researchers in trustworthy AI, smart manufacturing, privacy, robotics, and digital twins.
     members:
       - name: Wuyang Chen
-        role: PhD Student, Electrical and Computer Engineering
+        role: PhD Student
+        unit: Electrical and Computer Engineering
         image: Wuyang.jpg
-        content: profile_wuyang_chen.md
+        focus: Multi-stage process modeling, Bayesian optimization, model compression, and privacy-preserving ML.
+        project: Data-driven modeling for multi-stage processes
       - name: Chenyu Xu
-        role: PhD Student, Electrical and Computer Engineering
+        role: PhD Student
+        unit: Electrical and Computer Engineering
         image: "Chenyu Xu.jpg"
-        content: profile_chenyu_xu.md
+        focus: Data modeling and privacy-preserving computation for deployable smart-manufacturing frameworks.
+        project: Ethical Manufacturing; Carbon-Negative Biomass Manufacturing
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/cxu0805
       - name: Minsung Kang
-        role: PhD Student, Mechanical Engineering
+        role: PhD Student
+        unit: Mechanical Engineering
         image: Minsung.jpg
         email: mkang@uga.edu
-        content: profile_minsung_kang.md
+        focus: Responsible AI, algorithmic fairness, privacy, and high-risk 3D-printed component detection.
+        project: Ethical Manufacturing
       - name: Nitesh Silwal
-        role: PhD Student, Mechanical Engineering
+        role: PhD Student
+        unit: Mechanical Engineering
         image: Nitesh.jpg
         email: NiteshSilwal@uga.edu
-        content: profile_nitesh_silwal.md
+        focus: Data-driven robotic autonomy and safety in smart manufacturing systems.
+        project: Collaborative Robotic Disassembly; Robotic Safety and Privacy
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/nitesh-silwal-3379031b1/
       - name: Bidhek Khatiwada
-        role: PhD Student, Mechanical Engineering
+        role: PhD Student
+        unit: Mechanical Engineering
         image: "Bidhek Khatiwada.jpeg"
         email: Bidhek.Khatiwada@uga.edu
-        content: profile_bidhek_khatiwada.md
+        focus: Robotics, AI, and physics-informed digital twins for multi-nozzle direct ink writing.
+        project: Smart Manufacturing
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/bidhek-khatiwada-982010302/
   - title: Postdoctoral Researcher
-    description: Co-supervised research expanding the lab's advanced manufacturing and materials informatics collaborations.
+    description: Collaborative postdoctoral research in advanced manufacturing and materials informatics.
     members:
       - name: Qixuan Xiang
-        role: Postdoctoral Researcher, co-supervised with Prof. Kenan Song
-        content: profile_qixuan_xiang.md
+        role: Postdoctoral Researcher
+        unit: Co-supervised with Prof. Kenan Song
+        focus: Advanced manufacturing and materials informatics.
+        project: Collaborative materials-manufacturing research
   - title: Undergraduate Researchers
-    description: UGA undergraduate researchers contributing to robotic inspection, digital twins, human-robot collaboration, ethical fabrication, and manufacturing AI.
+    description: UGA undergraduate researchers contributing to robotic inspection, digital twins, ethical fabrication, and manufacturing AI.
     members:
       - name: Adam Tayara
-        role: Undergraduate Researcher, Mechanical Engineering
+        role: Undergraduate Researcher
+        unit: Mechanical Engineering
         image: Adam.jpg
         email: adamtayara805@gmail.com
-        content: profile_adam_tayara.md
+        focus: Robotics and robotic hand systems.
+        project: Robotic Hand / Teleoperator
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/adam-tayara/
       - name: Vithaal Dhamodharan
-        role: Undergraduate Researcher, Computer Systems Engineering
+        role: Undergraduate Researcher
+        unit: Computer Systems Engineering
         image: Vithaal.jpeg
         email: vithaaldhamo@gmail.com
-        content: profile_vithaal_dhamodharan.md
+        focus: Embedded systems for collaborative robotics.
+        project: Collaborative Robotic Disassembly
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/vithaal-dhamodharan-4187972bb/
           - label: GitHub
             url: https://github.com/VithaalD
       - name: Aarush Mathad
-        role: Undergraduate Researcher, Franklin College of Arts and Sciences
+        role: Undergraduate Researcher
+        unit: Franklin College of Arts and Sciences
         image: Aarush.jpeg
         email: aarushmathad1@gmail.com
-        content: profile_aarush_mathad.md
+        focus: Optimization of real-world systems.
+        project: Collaborative Robotic Disassembly
       - name: Kadin Relefourd
-        role: Undergraduate Researcher, School of Computing
+        role: Undergraduate Researcher
+        unit: School of Computing
         image: "Kadin Relefourd.jpg"
-        content: profile_kadin_relefourd.md
+        focus: Reinforcement learning, deep learning, and intelligent autonomous systems.
+        project: Collaborative Robotic Disassembly
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/kadinrelefourd/
       - name: Penuel Yeboah
-        role: Undergraduate Researcher, Computer Engineering
+        role: Undergraduate Researcher
+        unit: Computer Engineering
         email: pyeboah@uga.edu
-        content: profile_penuel_yeboah.md
+        focus: Simulation development, AI/ML, and software engineering.
+        project: VR-controlled digital twin and robotic inspection pipeline
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/penuel-yeboah-476905291
       - name: Zhengyao Liew
-        role: Undergraduate Researcher, School of Computing and College of Engineering
+        role: Undergraduate Researcher
+        unit: School of Computing and College of Engineering
         image: Zhengyao.jpg
-        content: profile_zhengyao_liew.md
+        focus: LLM applications for manufacturing.
+        project: LLM applications for manufacturing
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/zhengyaoliew/
       - name: John Bodamer
-        role: Undergraduate Researcher, Electrical Engineering
+        role: Undergraduate Researcher
+        unit: Electrical Engineering
         image: "John Bodamer.jpeg"
-        content: profile_john_bodamer.md
+        focus: Electrical engineering, sensing, and automation.
+        project: Collaborative Robotic Disassembly
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/john-bodamer
       - name: John Braswell
-        role: Undergraduate Researcher, Mechanical Engineering
+        role: Undergraduate Researcher
+        unit: Mechanical Engineering
         image: John_Braswell.jpg
-        content: profile_john_braswell.md
+        focus: Applied manufacturing research and engineering education.
+        project: Educational frameworks for engineering training
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/john-h-braswell/
       - name: Nehalya Sivakumar
-        role: Undergraduate Researcher, Biochemical Engineering
+        role: Undergraduate Researcher
+        unit: Biochemical Engineering
         image: Nehalya.jpg
         email: ns91682@uga.edu
-        content: profile_nehalya_sivakumar.md
+        focus: Responsible AI and data-driven manufacturing systems.
+        project: Ethical Manufacturing
 
 alumni_groups:
-  - title: PhD Graduates
+  - title: Graduate Alumni
     people:
-      - "<strong>Luis Javier Segura</strong> (PhD 2021) - Assistant Professor, Industrial Engineering, University of Louisville."
-      - "<strong>Sahand Hajifar</strong> (PhD 2022) - Assistant Professor, Information Systems and Business Analytics, Park University; previously Data Scientist, Nielsen."
-      - "<strong>Zebin Li</strong> (PhD 2023) - Assistant Professor, Mechanical Engineering, Penn State Harrisburg; previously Postdoc, UW-Madison."
-      - "<strong>Setareh Kazemi Kheiri</strong> (PhD 2025, co-advised) - Assistant Teaching Professor, Industrial Engineering, University of Pittsburgh."
-  - title: MS Graduates
+      - name: Luis Javier Segura
+        degree: PhD 2021
+        affiliation: Assistant Professor, Industrial Engineering, University of Louisville
+        project: Inkjet printing, material jetting, and tensor time-series analytics
+      - name: Sahand Hajifar
+        degree: PhD 2022
+        affiliation: Assistant Professor, Information Systems and Business Analytics, Park University
+        project: Occupational sensing, transfer learning, and liver viability evaluation
+      - name: Zebin Li
+        degree: PhD 2023
+        affiliation: Assistant Professor, Mechanical Engineering, Penn State Harrisburg
+        project: Active reinforcement learning and additive-manufacturing process control
+      - name: Setareh Kazemi Kheiri
+        degree: PhD 2025, co-advised
+        affiliation: Assistant Teaching Professor, Industrial Engineering, University of Pittsburgh
+        project: Operator fatigue, ergonomics, and privacy-preserved activity recognition
+      - name: Wilson David Jo Siu
+        degree: MS 2021
+        affiliation: System Analyst, Odoo, San Francisco
+        project: Point-cloud completion and manufacturing data analytics
+  - title: Undergraduate and Pre-College Alumni
     people:
-      - "<strong>Wilson David Jo Siu</strong> (MS 2021) - System Analyst, Odoo, San Francisco."
-  - title: Former Undergraduate and Pre-College Researchers
-    people:
-      - "<strong>Matthew Rubino</strong> (UB) - STREAM software/AI; 1st place, Agrusa Innovation Competition; ACM SenSys co-author; MS at Cornell."
-      - "<strong>Michelle Weng</strong> (UB) - STREAM software; 1st place, Agrusa Innovation Competition; ACM SenSys co-author."
-      - "<strong>Marcus Francisco</strong> (UB) - STREAM hardware; 1st place, Agrusa Innovation Competition; ACM SenSys co-author."
-      - "<strong>Brian Przezdziecki</strong> (UB) - STREAM AI group."
-      - "<strong>David Clemente</strong> (UGA) - robotic operations for integrated assembly and 3D scanning."
-      - "<strong>Parker Anderson</strong> (UGA) - advanced manufacturing architecture."
-      - "<strong>Owen Connell</strong> (UGA) - collaborative robotic disassembly and computer vision for task automation."
-      - "<strong>Dawson Gulasa</strong> (UGA) - autonomous robotic inspection and embedded systems."
-      - "<strong>Cade Johns</strong> (UGA) - ethical manufacturing design generation and data collection."
-      - "<strong>Caden Hoang</strong> (UGA) - ethical manufacturing design generation and data collection."
-      - "<strong>Patricio Martinez</strong> (UGA) - ethical manufacturing design generation and data collection."
-      - "<strong>Stella Barraza</strong> (UGA) - human-robot collaborative manufacturing."
-      - "<strong>Carter Boblitz</strong> (North Oconee High School) - robotics in healthcare; co-author on the 2026 ASME MSEC Autoinspector paper."
+      - name: Matthew Rubino
+        affiliation: MS at Cornell
+        project: STREAM software/AI; ACM SenSys co-author; Agrusa Innovation Competition winner
+      - name: Michelle Weng
+        project: STREAM software; ACM SenSys co-author; Agrusa Innovation Competition winner
+      - name: Marcus Francisco
+        project: STREAM hardware; ACM SenSys co-author; Agrusa Innovation Competition winner
+      - name: Brian Przezdziecki
+        project: STREAM AI group
+      - name: David Clemente
+        project: Robotic operations for integrated assembly and 3D scanning
+      - name: Parker Anderson
+        project: Advanced manufacturing architecture
+      - name: Owen Connell
+        image: Owen.jpg
+        project: Collaborative robotic disassembly and computer vision for task automation
+      - name: Dawson Gulasa
+        image: Dawson.jpg
+        project: Autonomous robotic inspection and embedded systems
+      - name: Cade Johns
+        project: Ethical manufacturing design generation and data collection
+      - name: Caden Hoang
+        project: Ethical manufacturing design generation and data collection
+      - name: Patricio Martinez
+        project: Ethical manufacturing design generation and data collection
+      - name: Stella Barraza
+        project: Human-robot collaborative manufacturing
+      - name: Carter Boblitz
+        affiliation: North Oconee High School
+        project: Robotics in healthcare; co-author on the 2026 ASME MSEC Autoinspector paper
 ---

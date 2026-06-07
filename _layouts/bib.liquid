@@ -48,7 +48,17 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    {% assign scholar_title_query = entry.title | strip_html | url_encode %}
+    {% if entry.html %}
+      {% assign title_link = entry.html %}
+    {% elsif entry.doi %}
+      {% assign title_link = entry.doi | prepend: "https://doi.org/" %}
+    {% else %}
+      {% assign title_link = scholar_title_query | prepend: "https://scholar.google.com/scholar?q=%22" | append: "%22" %}
+    {% endif %}
+    <div class="title">
+      <a href="{{ title_link }}">{{ entry.title }}</a>
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}

@@ -49,27 +49,113 @@ layout: page
     letter-spacing: 0;
   }
 
-  .research-intro table {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    border-collapse: collapse;
+  .funding-band {
+    padding: 1rem 0 3.5rem;
+  }
+
+  .funding-head {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .funding-head h2 {
+    margin: 0;
+    color: var(--global-text-color);
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    font-weight: 800;
+  }
+
+  .section-label {
+    margin-bottom: 0.75rem;
+    color: var(--global-theme-color);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  .funding-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.9rem;
+  }
+
+  .funding-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 180px;
+    padding: 1.1rem;
     border: 1px solid var(--dssi-line);
     border-radius: 8px;
-    background: var(--global-card-bg-color);
+    background:
+      linear-gradient(135deg, rgba(186, 12, 47, 0.12), transparent 44%),
+      var(--global-card-bg-color);
+    transform: translateY(16px);
+    opacity: 0;
+    animation: funding-rise 0.7s ease forwards;
   }
 
-  .research-intro th,
-  .research-intro td {
-    padding: 0.85rem 0.95rem;
-    border-top: 1px solid var(--dssi-line);
-    vertical-align: top;
+  .funding-card:nth-child(2n) {
+    animation-delay: 0.08s;
   }
 
-  .research-intro thead th {
-    border-top: 0;
+  .funding-card:nth-child(3n) {
+    animation-delay: 0.16s;
+  }
+
+  .funding-card::after {
+    content: "";
+    position: absolute;
+    inset: auto -30% -45% 35%;
+    height: 110px;
+    border-radius: 999px;
+    background: rgba(186, 12, 47, 0.08);
+  }
+
+  .funding-award {
+    position: relative;
+    z-index: 1;
+    color: var(--global-theme-color);
+    font-size: 1.45rem;
+    font-weight: 900;
+    line-height: 1.05;
+  }
+
+  .funding-name {
+    position: relative;
+    z-index: 1;
+    margin: 0.75rem 0;
     color: var(--global-text-color);
-    background: color-mix(in srgb, var(--global-card-bg-color) 86%, var(--global-theme-color) 14%);
+    font-weight: 800;
+    line-height: 1.35;
+  }
+
+  .funding-meta {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    color: var(--dssi-muted);
+    font-size: 0.88rem;
+    line-height: 1.35;
+  }
+
+  .funding-meta span {
+    padding: 0.18rem 0.45rem;
+    border: 1px solid var(--dssi-line);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--global-card-bg-color) 92%, var(--global-theme-color) 8%);
+  }
+
+  @keyframes funding-rise {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 
   .research-thrusts {
@@ -170,6 +256,14 @@ layout: page
       width: min(100% - 2rem, 1120px);
     }
 
+    .funding-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .funding-head {
+      display: block;
+    }
+
     .project-section,
     .project-section.reverse {
       grid-template-columns: 1fr;
@@ -196,6 +290,47 @@ layout: page
     <section class="research-intro scroll-reveal">
       {{ content }}
     </section>
+
+    {% if page.funded_projects %}
+      <section class="funding-band scroll-reveal" aria-label="Funded projects">
+        <div class="funding-head">
+          <div>
+            <h2>Funded Projects</h2>
+            <p class="project-description">Major active and selected completed awards supporting DSSI research.</p>
+          </div>
+        </div>
+
+        <div class="section-label">Current</div>
+        <div class="funding-grid">
+          {% for project in page.funded_projects.current %}
+            <article class="funding-card">
+              <div class="funding-award">{{ project.award }}</div>
+              <div class="funding-name">{{ project.name }}</div>
+              <div class="funding-meta">
+                <span>{{ project.agency }}</span>
+                <span>{{ project.role }}</span>
+                <span>{{ project.period }}</span>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+
+        <div class="section-label" style="margin-top: 2rem;">Completed Selected</div>
+        <div class="funding-grid">
+          {% for project in page.funded_projects.completed %}
+            <article class="funding-card">
+              <div class="funding-award">{{ project.award }}</div>
+              <div class="funding-name">{{ project.name }}</div>
+              <div class="funding-meta">
+                <span>{{ project.agency }}</span>
+                <span>{{ project.role }}</span>
+                <span>{{ project.period }}</span>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
 
     <section class="research-thrusts" aria-label="Research thrusts">
       {% assign sorted_projects = site.projects | sort: "importance" %}

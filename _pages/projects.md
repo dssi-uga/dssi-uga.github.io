@@ -2,32 +2,68 @@
 layout: projects-scroll
 title: Research
 permalink: /projects/
-description: Trustworthy AI for advanced manufacturing - research thrusts and funded projects.
+description: Research thrusts and funded projects in data science, system informatics, and smart manufacturing.
 nav: true
 nav_order: 2
+
+funded_projects:
+  current:
+    - name: "STREAM: cyber-coordinated framework for multi-stage distributed future manufacturing"
+      agency: "NSF FMRG"
+      role: "PI"
+      award: "$2.33M"
+      period: "2021-2026"
+    - name: "Hybrid cyber-physical testbed for manufacturing security"
+      agency: "NSF CICI:RSSD"
+      role: "Co-PI"
+      award: "$600K"
+      period: "2026-2029"
+    - name: "Ethical Data Science & Digital Twin for active, evidence-based learning"
+      agency: "NSF IUSE"
+      role: "PI"
+      award: "$211K"
+      period: "2025-2028"
+    - name: "Ethical Industry 4.0: legality, integrity, and accountability in digital manufacturing"
+      agency: "NSF"
+      role: "PI"
+      award: "$566K"
+      period: "2023-2027"
+    - name: "Infrastructure cybersecurity training for the advanced-manufacturing workforce"
+      agency: "NSF CyberTraining"
+      role: "Co-PI"
+      award: "$500K"
+      period: "2023-2027"
+    - name: "Climate-smart manufacturing"
+      agency: "Honda / Honda USA Foundation"
+      role: "PI"
+      award: "$100K"
+      period: "2025-2026"
+    - name: "Advanced manufacturing for pecan shelling processing"
+      agency: "USDA"
+      role: "Co-PI"
+      award: "$3.72M"
+      period: "2022-2026"
+  completed:
+    - name: "Proactive worker safety for Industry 4.0 using AI"
+      agency: "MxD / Be Global Safety"
+      role: "Co-PI"
+      award: "$906K"
+      period: "2024-2025"
+    - name: "MB.CI: Model-Based Point Cloud Inspection"
+      agency: "U.S. Navy via GTC"
+      role: "UGA PI"
+      award: "$140K"
+      period: "2023-2024"
+    - name: "Reliability modeling of shoulder fatigue and recovery for warehouse operators"
+      agency: "NIOSH"
+      role: "Co-PI"
+      award: "$361K"
+      period: "2020-2023"
+    - name: "Testing the Soteria worker safety system"
+      agency: "GE Global Research"
+      role: "Co-PI"
+      award: "$32K"
+      period: "2020"
 ---
 
-The DSSI Lab's through-line is **trustworthy and verifiable AI for manufacturing**: models and decision pipelines that are accurate, uncertainty-aware, private, and safe enough to deploy on the factory floor. Our work spans connected thrusts in smart and additive manufacturing, human-robot collaboration, secure manufacturing, sustainability, and quantum-safe systems.
-
-## Funded Projects
-
-### Current
-
-| Project | Agency / Role | Award | Period |
-| :--- | :--- | :--- | :--- |
-| STREAM: cyber-coordinated framework for multi-stage distributed future manufacturing | NSF FMRG / PI | $2.33M | 2021-2026 |
-| Hybrid cyber-physical testbed for manufacturing security (living lab) | NSF CICI:RSSD / Co-PI | $600K | 2026-2029 |
-| Ethical Data Science & Digital Twin for active, evidence-based learning | NSF IUSE / PI | $211K | 2025-2028 |
-| Ethical Industry 4.0: legality, integrity, and accountability in digital manufacturing | NSF / PI | $566K | 2023-2027 |
-| Infrastructure cybersecurity training for the advanced-manufacturing workforce | NSF CyberTraining / Co-PI | $500K | 2023-2027 |
-| Climate-smart manufacturing | Honda / Honda USA Foundation / PI | $100K | 2025-2026 |
-| Advanced manufacturing for pecan shelling processing | USDA / Co-PI | $3.72M | 2022-2026 |
-
-### Completed Selected Projects
-
-| Project | Agency / Role | Award | Period |
-| :--- | :--- | :--- | :--- |
-| Proactive worker safety for Industry 4.0 using AI | MxD / Be Global Safety / Co-PI | $906K | 2024-2025 |
-| MB.CI: Model-Based Point Cloud Inspection (SBIR Phase I) | U.S. Navy via GTC / UGA PI | $140K | 2023-2024 |
-| Reliability modeling of shoulder fatigue and recovery for warehouse operators | NIOSH / Co-PI | $361K | 2020-2023 |
-| Testing the Soteria worker safety system | GE Global Research / Co-PI | $32K | 2020 |
+The DSSI Lab develops data science and system informatics methods for secure, ethical, and safe smart manufacturing. Our research connects AI models, sensing, digital twins, privacy-preserving learning, robotics, and human-centered safety for manufacturing systems that can be trusted in practice.

@@ -28,9 +28,9 @@ layout: page
   }
 
   .section-kicker {
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.5rem;
     color: var(--global-theme-color);
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0;
@@ -38,20 +38,20 @@ layout: page
 
   .principal-card {
     display: grid;
-    grid-template-columns: minmax(250px, 0.42fr) minmax(0, 0.58fr);
-    gap: 2.4rem;
-    align-items: stretch;
-    margin-bottom: 4rem;
-    overflow: hidden;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2.6rem;
+    padding: 1rem;
     border: 1px solid var(--dssi-line);
     border-radius: 8px;
     background: var(--global-card-bg-color);
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
   }
 
   .principal-image {
-    min-height: 410px;
+    height: 260px;
     overflow: hidden;
+    border-radius: 8px;
     background: var(--dssi-soft);
   }
 
@@ -60,7 +60,6 @@ layout: page
   .principal-image img {
     width: 100%;
     height: 100%;
-    min-height: 410px;
     margin: 0;
   }
 
@@ -68,193 +67,208 @@ layout: page
     object-fit: cover;
   }
 
-  .principal-body {
-    padding: 2.1rem 2.1rem 2.1rem 0;
-  }
-
   .principal-name {
-    margin: 0 0 0.4rem;
+    margin: 0 0 0.25rem;
     color: var(--global-text-color);
-    font-size: clamp(1.65rem, 3vw, 2.25rem);
+    font-size: clamp(1.45rem, 3vw, 2rem);
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.12;
   }
 
   .principal-role,
-  .member-role {
+  .member-role,
+  .member-unit,
+  .alumni-meta {
     color: var(--dssi-muted);
-    line-height: 1.5;
+    line-height: 1.45;
   }
 
   .principal-meta {
-    display: grid;
-    gap: 0.25rem;
-    margin: 1rem 0 1.4rem;
-    font-size: 0.94rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 1rem;
+    margin: 0.75rem 0 1rem;
+    font-size: 0.92rem;
   }
 
-  .principal-details p,
-  .member-bio p,
-  .member-bio li {
-    line-height: 1.62;
+  .principal-details p {
+    margin-bottom: 0.65rem;
+    line-height: 1.58;
   }
 
   .member-group {
-    padding: 3.5rem 0;
+    padding: 2.5rem 0;
     border-top: 1px solid var(--dssi-line);
   }
 
   .group-head {
-    display: flex;
-    align-items: end;
-    justify-content: space-between;
-    gap: 1.4rem;
-    margin-bottom: 1.4rem;
+    margin-bottom: 1rem;
   }
 
   .group-head h2 {
     margin: 0;
     color: var(--global-text-color);
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(1.35rem, 3vw, 1.85rem);
     font-weight: 800;
-    line-height: 1.14;
   }
 
   .group-description {
-    max-width: 680px;
-    margin: 0.45rem 0 0;
+    max-width: 760px;
+    margin: 0.35rem 0 0;
     color: var(--dssi-muted);
-    line-height: 1.6;
+    line-height: 1.55;
   }
 
   .member-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
   }
 
   .member-card {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 0.9rem;
+    min-height: 150px;
+    padding: 0.85rem;
     border: 1px solid var(--dssi-line);
     border-radius: 8px;
     background: var(--global-card-bg-color);
     transition:
-      transform 0.22s ease,
-      box-shadow 0.22s ease,
-      border-color 0.22s ease;
+      transform 0.18s ease,
+      box-shadow 0.18s ease,
+      border-color 0.18s ease;
   }
 
   .member-card:hover {
-    transform: translateY(-5px);
-    border-color: color-mix(in srgb, var(--global-theme-color) 55%, var(--dssi-line));
-    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--global-theme-color) 50%, var(--dssi-line));
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
   }
 
-  .member-photo {
-    height: 255px;
+  .member-photo,
+  .member-placeholder,
+  .alumni-photo,
+  .alumni-placeholder {
     overflow: hidden;
+    border-radius: 8px;
     background: var(--dssi-soft);
+  }
+
+  .member-photo,
+  .member-placeholder {
+    width: 96px;
+    height: 116px;
   }
 
   .member-photo figure,
   .member-photo picture,
-  .member-photo img {
+  .member-photo img,
+  .alumni-photo figure,
+  .alumni-photo picture,
+  .alumni-photo img {
     width: 100%;
     height: 100%;
     margin: 0;
   }
 
-  .member-photo img {
+  .member-photo img,
+  .alumni-photo img {
     object-fit: cover;
   }
 
-  .member-placeholder {
+  .member-placeholder,
+  .alumni-placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 255px;
     color: var(--global-theme-color);
-    font-size: 2.1rem;
     font-weight: 800;
-    background:
-      linear-gradient(135deg, transparent 0, transparent 48%, rgba(186, 12, 47, 0.14) 48%, rgba(186, 12, 47, 0.14) 52%, transparent 52%),
-      var(--dssi-soft);
   }
 
-  .member-body {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    padding: 1.15rem;
+  .member-placeholder {
+    font-size: 1.4rem;
   }
 
   .member-name {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.12rem;
     color: var(--global-text-color);
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     font-weight: 800;
     line-height: 1.25;
   }
 
-  .member-bio {
-    margin-top: 0.8rem;
-    color: var(--global-text-color);
-    font-size: 0.92rem;
+  .member-role,
+  .member-unit {
+    font-size: 0.88rem;
   }
 
-  .member-bio p:last-child {
-    margin-bottom: 0;
+  .member-focus,
+  .member-project {
+    margin: 0.5rem 0 0;
+    color: var(--global-text-color);
+    font-size: 0.9rem;
+    line-height: 1.45;
+  }
+
+  .member-project strong {
+    color: var(--global-theme-color);
   }
 
   .member-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.65rem;
-    margin-top: auto;
-    padding-top: 1rem;
-    font-size: 0.88rem;
+    gap: 0.55rem;
+    margin-top: 0.6rem;
+    font-size: 0.84rem;
     font-weight: 700;
   }
 
   .alumni-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
   }
 
-  .alumni-block {
-    padding: 1.25rem;
+  .alumni-card {
+    display: grid;
+    grid-template-columns: 74px minmax(0, 1fr);
+    gap: 0.8rem;
+    padding: 0.85rem;
     border: 1px solid var(--dssi-line);
     border-radius: 8px;
     background: var(--global-card-bg-color);
   }
 
-  .alumni-block h3 {
-    margin: 0 0 0.9rem;
+  .alumni-photo,
+  .alumni-placeholder {
+    width: 74px;
+    height: 82px;
+  }
+
+  .alumni-placeholder {
+    font-size: 1.1rem;
+  }
+
+  .alumni-name {
     color: var(--global-text-color);
-    font-size: 1.05rem;
     font-weight: 800;
+    line-height: 1.25;
   }
 
-  .alumni-block ul {
-    margin: 0;
-    padding-left: 1.1rem;
-  }
-
-  .alumni-block li {
-    margin-bottom: 0.72rem;
-    line-height: 1.5;
+  .alumni-project {
+    margin-top: 0.35rem;
+    color: var(--global-text-color);
+    font-size: 0.9rem;
+    line-height: 1.45;
   }
 
   .scroll-reveal {
     opacity: 0;
-    transform: translateY(22px);
+    transform: translateY(18px);
     transition:
-      opacity 0.7s ease,
-      transform 0.7s ease;
+      opacity 0.6s ease,
+      transform 0.6s ease;
   }
 
   .scroll-reveal.visible {
@@ -262,15 +276,10 @@ layout: page
     transform: translateY(0);
   }
 
-  @media (max-width: 980px) {
-    .principal-card,
+  @media (max-width: 900px) {
     .member-grid,
     .alumni-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .principal-body {
-      padding: 1.6rem 1.6rem 1.6rem 0;
+      grid-template-columns: 1fr;
     }
   }
 
@@ -280,20 +289,22 @@ layout: page
     }
 
     .principal-card,
-    .member-grid,
-    .alumni-grid {
+    .member-card,
+    .alumni-card {
       grid-template-columns: 1fr;
     }
 
-    .principal-body {
-      padding: 1.4rem;
+    .principal-image,
+    .member-photo,
+    .member-placeholder,
+    .alumni-photo,
+    .alumni-placeholder {
+      width: 100%;
     }
 
-    .principal-image,
-    .principal-image figure,
-    .principal-image picture,
-    .principal-image img {
-      min-height: 310px;
+    .member-photo,
+    .member-placeholder {
+      height: 220px;
     }
   }
 </style>
@@ -308,26 +319,27 @@ layout: page
             {% include figure.liquid loading="eager" path=principal_image_path alt=page.principal.name %}
           </div>
         {% endif %}
-        <div class="principal-body">
+        <div>
           <div class="section-kicker">Principal Investigator</div>
           <h2 class="principal-name">{{ page.principal.name }}</h2>
           <div class="principal-role">{{ page.principal.role }}</div>
           <div class="principal-meta">
             {% if page.principal.email %}
-              <div>Email: <a href="mailto:{{ page.principal.email }}">{{ page.principal.email }}</a></div>
+              <a href="mailto:{{ page.principal.email }}">{{ page.principal.email }}</a>
             {% endif %}
             {% if page.principal.office %}
-              <div>Office: {{ page.principal.office }}</div>
-            {% endif %}
-            {% if page.principal.address %}
-              <div>{{ page.principal.address }}</div>
+              <span>{{ page.principal.office }}</span>
             {% endif %}
             {% if page.principal.scholar %}
-              <div><a href="{{ page.principal.scholar }}">Google Scholar</a></div>
+              <a href="{{ page.principal.scholar }}">Google Scholar</a>
             {% endif %}
           </div>
           {% if page.principal.content %}
             {% capture principal_content %}{% include_relative {{ page.principal.content }} %}{% endcapture %}
+            {% assign principal_parts = principal_content | split: "---" %}
+            {% if principal_parts.size > 2 %}
+              {% assign principal_content = principal_parts[2] %}
+            {% endif %}
             <div class="principal-details">{{ principal_content | markdownify }}</div>
           {% endif %}
         </div>
@@ -337,13 +349,11 @@ layout: page
     {% for group in page.member_groups %}
       <section class="member-group scroll-reveal">
         <div class="group-head">
-          <div>
-            <div class="section-kicker">Current Members</div>
-            <h2>{{ group.title }}</h2>
-            {% if group.description %}
-              <p class="group-description">{{ group.description }}</p>
-            {% endif %}
-          </div>
+          <div class="section-kicker">Current Members</div>
+          <h2>{{ group.title }}</h2>
+          {% if group.description %}
+            <p class="group-description">{{ group.description }}</p>
+          {% endif %}
         </div>
 
         <div class="member-grid">
@@ -359,14 +369,17 @@ layout: page
                 {% capture initials %}{% for part in name_parts limit: 2 %}{{ part | slice: 0, 1 }}{% endfor %}{% endcapture %}
                 <div class="member-placeholder" aria-hidden="true">{{ initials }}</div>
               {% endif %}
-              <div class="member-body">
+              <div>
                 <div class="member-name">{{ member.name }}</div>
                 <div class="member-role">{{ member.role }}</div>
-                {% if member.content %}
-                  {% capture member_bio %}{% include_relative {{ member.content }} %}{% endcapture %}
-                  {% assign member_heading = "### " | append: member.name %}
-                  {% assign bio_without_heading = member_bio | replace_first: member_heading, "" %}
-                  <div class="member-bio">{{ bio_without_heading | markdownify }}</div>
+                {% if member.unit %}
+                  <div class="member-unit">{{ member.unit }}</div>
+                {% endif %}
+                {% if member.focus %}
+                  <p class="member-focus">{{ member.focus }}</p>
+                {% endif %}
+                {% if member.project %}
+                  <p class="member-project"><strong>Project:</strong> {{ member.project }}</p>
                 {% endif %}
                 {% if member.email or member.links %}
                   <div class="member-links">
@@ -385,29 +398,41 @@ layout: page
       </section>
     {% endfor %}
 
-    {% if page.alumni_groups %}
+    {% for group in page.alumni_groups %}
       <section class="member-group scroll-reveal">
         <div class="group-head">
-          <div>
-            <div class="section-kicker">Former Members</div>
-            <h2>Alumni</h2>
-          </div>
+          <div class="section-kicker">Alumni</div>
+          <h2>{{ group.title }}</h2>
         </div>
-
         <div class="alumni-grid">
-          {% for group in page.alumni_groups %}
-            <div class="alumni-block">
-              <h3>{{ group.title }}</h3>
-              <ul>
-                {% for person in group.people %}
-                  <li>{{ person }}</li>
-                {% endfor %}
-              </ul>
-            </div>
+          {% for person in group.people %}
+            <article class="alumni-card">
+              {% if person.image %}
+                <div class="alumni-photo">
+                  {% assign alumni_image_path = person.image | prepend: "assets/img/" %}
+                  {% include figure.liquid loading="lazy" path=alumni_image_path alt=person.name %}
+                </div>
+              {% else %}
+                {% assign name_parts = person.name | split: " " %}
+                {% capture initials %}{% for part in name_parts limit: 2 %}{{ part | slice: 0, 1 }}{% endfor %}{% endcapture %}
+                <div class="alumni-placeholder" aria-hidden="true">{{ initials }}</div>
+              {% endif %}
+              <div>
+                <div class="alumni-name">{{ person.name }}</div>
+                <div class="alumni-meta">
+                  {% if person.degree %}{{ person.degree }}{% endif %}
+                  {% if person.degree and person.affiliation %} | {% endif %}
+                  {% if person.affiliation %}{{ person.affiliation }}{% endif %}
+                </div>
+                {% if person.project %}
+                  <div class="alumni-project"><strong>DSSI project:</strong> {{ person.project }}</div>
+                {% endif %}
+              </div>
+            </article>
           {% endfor %}
         </div>
       </section>
-    {% endif %}
+    {% endfor %}
   </div>
 </div>
 

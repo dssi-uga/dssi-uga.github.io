@@ -183,77 +183,68 @@ layout: default
     margin-bottom: 0;
   }
 
-  .about-nav-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  .nav-card {
-    display: grid;
-    min-height: 100%;
+  .recruit-slider {
+    position: relative;
+    margin-top: 2rem;
     overflow: hidden;
     border: 1px solid var(--dssi-line);
     border-radius: 8px;
-    background: var(--dssi-panel);
-    color: var(--global-text-color);
-    text-decoration: none;
-    transition:
-      transform 0.22s ease,
-      box-shadow 0.22s ease,
-      border-color 0.22s ease;
+    background:
+      linear-gradient(135deg, rgba(186, 12, 47, 0.1), transparent 40%),
+      var(--dssi-panel);
   }
 
-  .nav-card:hover {
-    transform: translateY(-5px);
-    border-color: color-mix(in srgb, var(--global-theme-color) 55%, var(--dssi-line));
-    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.14);
-    color: var(--global-text-color);
-    text-decoration: none;
+  .recruit-track {
+    display: flex;
+    width: 300%;
+    animation: recruit-slide 15s infinite;
   }
 
-  .nav-card-img {
-    height: 165px;
-    overflow: hidden;
-    background: var(--global-bg-color);
-  }
-
-  .nav-card-img figure,
-  .nav-card-img picture,
-  .nav-card-img img {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-
-  .nav-card-img img {
-    object-fit: cover;
-    transition: transform 0.25s ease;
-  }
-
-  .nav-card:hover .nav-card-img img {
-    transform: scale(1.04);
-  }
-
-  .nav-card-body {
+  .recruit-card {
+    flex: 0 0 33.333%;
     display: flex;
     flex-direction: column;
-    gap: 0.65rem;
-    padding: 1rem;
+    justify-content: center;
+    min-height: 180px;
+    padding: 1.4rem 1.6rem;
   }
 
-  .nav-card-title {
+  .recruit-card h3 {
+    margin: 0 0 0.55rem;
     color: var(--dssi-ink);
-    font-size: 1.05rem;
+    font-size: 1.22rem;
     font-weight: 800;
-    line-height: 1.25;
   }
 
-  .nav-card-text {
+  .recruit-card p {
     margin: 0;
     color: var(--dssi-muted);
-    font-size: 0.92rem;
-    line-height: 1.5;
+    line-height: 1.6;
+  }
+
+  .recruit-link {
+    display: inline-flex;
+    align-self: flex-start;
+    margin-top: 1rem;
+    font-weight: 800;
+  }
+
+  @keyframes recruit-slide {
+    0%,
+    28% {
+      transform: translateX(0);
+    }
+    33%,
+    61% {
+      transform: translateX(-33.333%);
+    }
+    66%,
+    94% {
+      transform: translateX(-66.666%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 
   .scroll-reveal {
@@ -270,8 +261,7 @@ layout: default
   }
 
   @media (max-width: 992px) {
-    .home-copy,
-    .about-nav-grid {
+    .home-copy {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
@@ -290,8 +280,7 @@ layout: default
       padding: 3rem 1rem;
     }
 
-    .home-copy,
-    .about-nav-grid {
+    .home-copy {
       grid-template-columns: 1fr;
     }
 
@@ -311,7 +300,7 @@ layout: default
     <div class="hero-content scroll-reveal">
       <div class="hero-kicker">University of Georgia | College of Engineering</div>
       <h1 class="hero-title">DSSI Lab</h1>
-      <p class="hero-tagline">Trustworthy AI for Smarter Manufacturing.</p>
+      <p class="hero-tagline">Data Science and System Informatics for Secure, Ethical and Safe Smart Manufacturing.</p>
     </div>
   </section>
 
@@ -336,6 +325,31 @@ layout: default
       {% endif %}
     </div>
   </section>
+
+  {% if page.recruiting %}
+    <section class="home-section alt">
+      <div class="home-inner scroll-reveal">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Join the Lab</div>
+            <h2>We Are Recruiting</h2>
+          </div>
+          <a href="{{ '/teaching/' | relative_url }}">Details</a>
+        </div>
+        <div class="recruit-slider" aria-label="Recruiting opportunities">
+          <div class="recruit-track">
+            {% for item in page.recruiting %}
+              <div class="recruit-card">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+                <a class="recruit-link" href="{{ '/teaching/' | relative_url }}">How to apply</a>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endif %}
 
   {% if page.news %}
     <section class="home-section alt">
@@ -367,31 +381,6 @@ layout: default
     </section>
   {% endif %}
 
-  <section class="home-section alt">
-    <div class="home-inner scroll-reveal">
-      <div class="section-head">
-        <div>
-          <div class="section-label">Explore</div>
-          <h2>Navigate the Lab</h2>
-        </div>
-      </div>
-      <div class="about-nav-grid">
-        {% for card in page.navigation_cards %}
-          <a class="nav-card" href="{{ card.link | relative_url }}">
-            {% if card.image %}
-              <div class="nav-card-img">
-                {% include figure.liquid path=card.image loading="lazy" alt=card.title %}
-              </div>
-            {% endif %}
-            <div class="nav-card-body">
-              <div class="nav-card-title">{{ card.title }}</div>
-              <p class="nav-card-text">{{ card.description }}</p>
-            </div>
-          </a>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
 </div>
 
 <script>
