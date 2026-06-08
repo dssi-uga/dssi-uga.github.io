@@ -37,6 +37,20 @@ conference_logos:
     label: IISE
   - image: ASME.jpg
     label: ASME
+
+alumni:
+  - name: Luis Segura
+    image: Luis_Segura.png
+    bio: "Postdoctoral Researcher"
+  - name: Sahand Hajifar
+    image: Sahand_Hajifar.jpg
+    bio: "PhD Graduate"
+  - name: Setareh Kazemi Kheiri
+    image: Setareh_Kazemi_Kheiri.jpg
+    bio: "PhD Graduate"
+  - name: Zebin Li
+    image: Zebin_Li.jpg
+    bio: "PhD Graduate"
 ---
 
 Welcome to the **DSSI Lab** at the University of Georgia. We develop data science and system informatics methods for smart manufacturing systems that are secure, ethical, reliable, and safe to deploy. Our work connects manufacturing data, AI models, digital twins, robotics, privacy-preserving learning, and human-centered safety.
