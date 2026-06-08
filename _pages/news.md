@@ -94,5 +94,6 @@ nav_order: 4
     <p>Awards, grants, papers, and milestones from the DSSI Lab research community.</p>
   </section>
 
-  {% include news.liquid %}
+{% include news.liquid %}
+
 </div>

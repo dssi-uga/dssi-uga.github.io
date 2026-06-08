@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-
 <style>
   .people-shell {
     --dssi-line: rgba(23, 23, 23, 0.12);
@@ -17,7 +16,7 @@ layout: page
     overflow-x: hidden;
   }
 
-  html[data-theme="dark"] .people-shell {
+  html[data-theme='dark'] .people-shell {
     --dssi-line: rgba(255, 255, 255, 0.14);
     --dssi-muted: #c5ccd3;
   }
@@ -234,7 +233,7 @@ layout: page
   }
 
   .member-links a + a::before {
-    content: ",";
+    content: ',';
     margin-right: 0.35rem;
     color: var(--dssi-muted);
     font-weight: 400;
@@ -348,7 +347,7 @@ layout: page
       <section class="principal-card scroll-reveal">
         {% if page.principal.image %}
           <div class="principal-image">
-            {% assign principal_image_path = page.principal.image | prepend: "assets/img/" %}
+            {% assign principal_image_path = page.principal.image | prepend: 'assets/img/' %}
             {% include figure.liquid loading="eager" path=principal_image_path alt=page.principal.name %}
           </div>
         {% endif %}
@@ -369,7 +368,7 @@ layout: page
           </div>
           {% if page.principal.content %}
             {% capture principal_content %}{% include_relative {{ page.principal.content }} %}{% endcapture %}
-            {% assign principal_parts = principal_content | split: "---" %}
+            {% assign principal_parts = principal_content | split: '---' %}
             {% if principal_parts.size > 2 %}
               {% assign principal_content = principal_parts[2] %}
             {% endif %}
@@ -394,11 +393,11 @@ layout: page
             <article class="member-card">
               {% if member.image %}
                 <div class="member-photo">
-                  {% assign member_image_path = member.image | prepend: "assets/img/" %}
+                  {% assign member_image_path = member.image | prepend: 'assets/img/' %}
                   {% include figure.liquid loading="lazy" path=member_image_path alt=member.name %}
                 </div>
               {% else %}
-                {% assign name_parts = member.name | split: " " %}
+                {% assign name_parts = member.name | split: ' ' %}
                 {% capture initials %}{% for part in name_parts limit: 2 %}{{ part | slice: 0, 1 }}{% endfor %}{% endcapture %}
                 <div class="member-placeholder" aria-hidden="true">{{ initials }}</div>
               {% endif %}
@@ -422,9 +421,9 @@ layout: page
                     {% endif %}
                     {% for link in member.links %}
                       {% assign link_label = link.label | downcase %}
-                      {% if link_label == "linkedin" or link_label == "website" or link_label contains "portfolio" %}
+                      {% if link_label == 'linkedin' or link_label == 'website' or link_label contains 'portfolio' %}
                         <a href="{{ link.url }}">
-                          {% if link_label contains "portfolio" %}Website{% else %}{{ link.label }}{% endif %}
+                          {% if link_label contains 'portfolio' %}Website{% else %}{{ link.label }}{% endif %}
                         </a>
                       {% endif %}
                     {% endfor %}
@@ -448,11 +447,11 @@ layout: page
             <article class="alumni-card">
               {% if person.image %}
                 <div class="alumni-photo">
-                  {% assign alumni_image_path = person.image | prepend: "assets/img/" %}
+                  {% assign alumni_image_path = person.image | prepend: 'assets/img/' %}
                   {% include figure.liquid loading="lazy" path=alumni_image_path alt=person.name %}
                 </div>
               {% else %}
-                {% assign name_parts = person.name | split: " " %}
+                {% assign name_parts = person.name | split: ' ' %}
                 {% capture initials %}{% for part in name_parts limit: 2 %}{{ part | slice: 0, 1 }}{% endfor %}{% endcapture %}
                 <div class="alumni-placeholder" aria-hidden="true">{{ initials }}</div>
               {% endif %}
@@ -486,13 +485,13 @@ layout: page
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const reveals = document.querySelectorAll(".scroll-reveal");
+  document.addEventListener('DOMContentLoaded', function () {
+    const reveals = document.querySelectorAll('.scroll-reveal');
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            entry.target.classList.add('visible');
             observer.unobserve(entry.target);
           }
         });

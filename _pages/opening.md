@@ -339,5 +339,6 @@ nav_order: 6
     </div>
 
     <p>Earlier courses at the University at Buffalo include Statistical Machine Learning for Engineers, Advanced Quality Control, Manufacturing Data Analytics, Statistics for Engineers, and Facility Design and Materials Handling.</p>
+
   </section>
 </div>

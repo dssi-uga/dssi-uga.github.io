@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <style>
   .about-shell {
     --dssi-red: #ba0c2f;
@@ -533,7 +532,7 @@ layout: default
               {% for conference in page.conference_logos %}
                 <article class="conference-card">
                   <div class="conference-logo">
-                    {% assign conference_image_path = conference.image | prepend: "assets/img/conferences/" %}
+                    {% assign conference_image_path = conference.image | prepend: 'assets/img/conferences/' %}
                     <img
                       src="{{ conference_image_path | relative_url }}"
                       alt="{{ conference.label }} logo"
@@ -578,17 +577,16 @@ layout: default
       </div>
     </section>
   {% endif %}
-
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const reveals = document.querySelectorAll(".scroll-reveal");
+  document.addEventListener('DOMContentLoaded', function () {
+    const reveals = document.querySelectorAll('.scroll-reveal');
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            entry.target.classList.add('visible');
             observer.unobserve(entry.target);
           }
         });

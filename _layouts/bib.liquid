@@ -49,11 +49,11 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     {% assign scholar_title_query = entry.title | strip_html | url_encode %}
-    {% assign scholar_link = scholar_title_query | prepend: "https://scholar.google.com/scholar?q=%22" | append: "%22" %}
+    {% assign scholar_link = scholar_title_query | prepend: 'https://scholar.google.com/scholar?q=%22' | append: '%22' %}
     {% if entry.html %}
       {% assign title_link = entry.html %}
     {% elsif entry.doi %}
-      {% assign title_link = entry.doi | prepend: "https://doi.org/" %}
+      {% assign title_link = entry.doi | prepend: 'https://doi.org/' %}
     {% else %}
       {% assign title_link = scholar_link %}
     {% endif %}

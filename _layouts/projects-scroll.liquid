@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-
 <style>
   .research-shell {
     --dssi-line: rgba(23, 23, 23, 0.12);
@@ -16,7 +15,7 @@ layout: page
     overflow-x: hidden;
   }
 
-  html[data-theme="dark"] .research-shell {
+  html[data-theme='dark'] .research-shell {
     --dssi-line: rgba(255, 255, 255, 0.14);
     --dssi-muted: #c5ccd3;
   }
@@ -104,9 +103,7 @@ layout: page
     padding: 1.1rem;
     border: 1px solid var(--dssi-line);
     border-radius: 8px;
-    background:
-      linear-gradient(135deg, rgba(186, 12, 47, 0.12), transparent 44%),
-      var(--global-card-bg-color);
+    background: linear-gradient(135deg, rgba(186, 12, 47, 0.12), transparent 44%), var(--global-card-bg-color);
     transition:
       transform 0.2s ease,
       border-color 0.2s ease,
@@ -114,7 +111,7 @@ layout: page
   }
 
   .funding-card::before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(110deg, transparent, rgba(255, 255, 255, 0.22), transparent);
@@ -365,7 +362,7 @@ layout: page
     {% endif %}
 
     <section class="research-thrusts" aria-label="Research thrusts">
-      {% assign sorted_projects = site.projects | sort: "importance" %}
+      {% assign sorted_projects = site.projects | sort: 'importance' %}
       {% for project in sorted_projects %}
         {% assign remainder = forloop.index0 | modulo: 2 %}
         <article class="project-section scroll-reveal {% if remainder == 1 %}reverse{% endif %}">
@@ -390,13 +387,13 @@ layout: page
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const reveals = document.querySelectorAll(".scroll-reveal");
+  document.addEventListener('DOMContentLoaded', function () {
+    const reveals = document.querySelectorAll('.scroll-reveal');
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            entry.target.classList.add('visible');
             observer.unobserve(entry.target);
           }
         });
