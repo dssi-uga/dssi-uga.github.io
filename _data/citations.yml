@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-06-19'
+  last_updated: '2026-06-26'
 papers:
   IOX-e6wAAAAJ:-f6ydRqryjwC:
-    citations: 99
+    citations: 98
     title: 'Towards artificial general intelligence (agi) in the internet of things (iot): Opportunities and challenges'
     year: '2023'
   IOX-e6wAAAAJ:0EnyYjriUFMC:
@@ -178,7 +178,7 @@ papers:
     title: The impact of varying patient populations on the in-control performance of the risk-adjusted CUSUM chart
     year: '2015'
   IOX-e6wAAAAJ:bEWYMUwI8FkC:
-    citations: 0
+    citations: 1
     title: 'Human Digital Twin: Data, Models, Applications, and Challenges'
     year: '2025'
   IOX-e6wAAAAJ:blknAaTinKkC:
@@ -214,7 +214,7 @@ papers:
     title: Human Digital Twin, Precision Healthcare, Health Monitoring, Anomaly Detection, Statistical and Machine Learning Models
     year: '2025'
   IOX-e6wAAAAJ:hqOjcs7Dif8C:
-    citations: 138
+    citations: 140
     title: Unsupervised learning for the droplet evolution prediction and process dynamics understanding in inkjet printing
     year: '2020'
   IOX-e6wAAAAJ:iH-uZ7U-co4C:
@@ -270,7 +270,7 @@ papers:
     title: Variation analysis and visualization of manufacturing processes via augmented reality
     year: '2016'
   IOX-e6wAAAAJ:u-x6o8ySG0sC:
-    citations: 37
+    citations: 38
     title: Online droplet anomaly detection from streaming videos in inkjet printing
     year: '2021'
   IOX-e6wAAAAJ:ufrVoPGSRksC:
