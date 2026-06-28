@@ -11,6 +11,13 @@
   opacity: 0.95;
 }
 
+.navbar > .container {
+  width: 100%;
+  max-width: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .navbar .dropdown-menu,
 .btn-group.dropdown .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -67,8 +74,8 @@
 
   .navbar-brand-logo {
     width: auto;
-    height: 5rem;
-    max-width: 18rem;
+    height: 8rem;
+    max-width: 24rem;
     object-fit: contain;
     flex: 0 0 auto;
   }
