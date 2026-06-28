@@ -227,16 +227,14 @@ nav_order: 6
   }
 </style>
 
+<!-- prettier-ignore -->
 <div class="join-shell">
   <section class="join-hero">
     <div class="join-copy">
       <h2>We Are Recruiting</h2>
       <p>
         MERIT Lab is recruiting motivated researchers interested in
-        <strong>
-          trustworthy AI for manufacturing, smart and additive manufacturing, privacy-preserving machine learning, and
-          safe human-robot collaboration.
-        </strong>
+        <strong>trustworthy AI for manufacturing, smart and additive manufacturing, privacy-preserving machine learning, and safe human-robot collaboration.</strong>
       </p>
     </div>
     <div class="join-visual" aria-hidden="true"></div>
@@ -246,35 +244,25 @@ nav_order: 6
     <article class="join-card">
       <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
       <h3>PhD Students</h3>
-      <p>
-        Seeking motivated students with interests in robotics, AI, machine learning, optimization, or intelligent
-        manufacturing.
-      </p>
+      <p>Seeking motivated students with interests in robotics, AI, machine learning, optimization, or intelligent manufacturing.</p>
     </article>
 
     <article class="join-card">
       <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
       <h3>UGA Undergraduates</h3>
-      <p>
-        Research opportunities are available year-round in robotics, digital twins, AI, privacy-preserving computation,
-        and manufacturing.
-      </p>
+      <p>Research opportunities are available year-round in robotics, digital twins, AI, privacy-preserving computation, and manufacturing.</p>
     </article>
 
     <article class="join-card">
       <i class="fa-solid fa-flask" aria-hidden="true"></i>
       <h3>Postdocs & Visitors</h3>
-      <p>
-        We welcome collaborations with researchers whose expertise aligns with our ongoing projects and future research
-        directions.
-      </p>
+      <p>We welcome collaborations with researchers whose expertise aligns with our ongoing projects and future research directions.</p>
     </article>
   </div>
 
   <div class="join-cta">
     <p>
-      <strong>Interested in joining?</strong> Send your CV, transcripts (if applicable), and a brief statement of
-      research interests to
+      <strong>Interested in joining?</strong> Send your CV, transcripts (if applicable), and a brief statement of research interests to
       <a href="mailto:hongyue.sun@uga.edu">Dr. Hongyue Sun</a>.
     </p>
   </div>
@@ -359,8 +347,8 @@ nav_order: 6
     </div>
 
     <p>
-      Earlier courses at the University at Buffalo include Statistical Machine Learning for Engineers, Advanced Quality
-      Control, Manufacturing Data Analytics, Statistics for Engineers, and Facility Design and Materials Handling.
+      Earlier courses at the University at Buffalo include Statistical Machine Learning for Engineers, Advanced Quality Control, Manufacturing Data Analytics,
+      Statistics for Engineers, and Facility Design and Materials Handling.
     </p>
   </section>
 </div>
