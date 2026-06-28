@@ -6,8 +6,8 @@
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
           {% if site.logo %}
             <img class="navbar-brand-logo" src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo">
-          {% endif %}
-          {% if site.title == 'blank' %}
+            <span class="sr-only">{{ site.title }}</span>
+          {% elsif site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
                 {{- site.first_name -}}
