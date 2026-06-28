@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Selected journal articles and conference proceedings from the DSSI Lab.
+description: Selected journal articles and conference proceedings from the MERIT Lab.
 nav: true
 nav_order: 3
 ---

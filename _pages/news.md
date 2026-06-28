@@ -2,7 +2,7 @@
 layout: page
 title: News
 permalink: /news/
-description: Recent DSSI Lab awards, grants, papers, and milestones.
+description: Recent MERIT Lab awards, grants, papers, and milestones.
 nav: true
 nav_order: 4
 ---
@@ -91,7 +91,7 @@ nav_order: 4
 <div class="news-page-shell">
   <section class="news-hero">
     <h2>Lab Momentum</h2>
-    <p>Awards, grants, papers, and milestones from the DSSI Lab research community.</p>
+    <p>Awards, grants, papers, and milestones from the MERIT Lab research community.</p>
   </section>
 
 {% include news.liquid %}

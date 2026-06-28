@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Dr. Sun joined the University at Buffalo as an Assistant Professor, launching the research program that became the DSSI Lab.
+Dr. Sun joined the University at Buffalo as an Assistant Professor, launching the research program that became the MERIT Lab.

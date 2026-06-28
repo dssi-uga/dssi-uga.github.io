@@ -2,13 +2,13 @@
 layout: profiles
 permalink: /people/
 title: People
-description: The DSSI Lab team at the University of Georgia.
+description: The MERIT Lab team at the University of Georgia.
 nav: true
 nav_order: 1
 
 principal:
   name: Dr. Hongyue Sun
-  role: Director, DSSI Lab; Associate Professor, Mechanical Engineering
+  role: Director, MERIT Lab; Associate Professor, Mechanical Engineering
   image: Sun.jpg
   email: hongyuesun@uga.edu
   office: 1040B I-STEM Complex, Bldg 1

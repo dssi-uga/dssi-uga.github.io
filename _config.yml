@@ -2,20 +2,21 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: DSSI Lab # You can also change this to "Hongyue Sun" if you prefer
+title: "MERIT: Manufacturing Empowered by Robotics, Intelligence, and Trustworthy Systems"
 first_name: Hongyue
 middle_name:
 last_name: Sun
 contact_note: >
   The best way to reach me is via email at <a href="mailto:hongyuesun@uga.edu">hongyuesun@uga.edu</a>.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Data Science and System Informatics (DSSI) Lab at the University of Georgia develops trustworthy, verifiable AI for advanced and smart manufacturing, privacy-preserving machine learning, secure manufacturing, and safe human-robot collaboration.
+  MERIT: Manufacturing Empowered by Robotics, Intelligence, and Trustworthy Systems at the University of Georgia develops trustworthy, verifiable AI for advanced and smart manufacturing, privacy-preserving machine learning, secure manufacturing, and safe human-robot collaboration.
 footer_text: >
-  Data Science and System Informatics Lab, University of Georgia.
+  MERIT Lab, University of Georgia.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: trustworthy AI, advanced manufacturing, smart manufacturing, additive manufacturing, privacy-preserving machine learning, manufacturing cybersecurity, human-robot collaboration, university of georgia, uga, hongyue sun, mechanical engineering
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: D # short text favicon for the DSSI Lab
+icon: M # short text favicon for MERIT
+logo: assets/img/logo/LOGO.png
 
 url: https://dssi-uga.github.io # the base hostname & protocol for your site
 baseurl: "" # LEAVE BLANK for root. Since your URL is your main github.io domain, this must be empty.
@@ -86,8 +87,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: DSSI Lab Notes # blog_name will be displayed in your blog page
-blog_description: research updates from the Data Science and System Informatics Lab
+blog_name: MERIT Lab Notes # blog_name will be displayed in your blog page
+blog_description: research updates from MERIT
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

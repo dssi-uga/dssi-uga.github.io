@@ -2,7 +2,7 @@
 layout: page
 title: Gallery
 permalink: /gallery/
-description: Photos and images from the DSSI Lab
+description: Photos and images from the MERIT Lab
 nav: true
 nav_order: 5
 ---

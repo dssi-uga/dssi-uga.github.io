@@ -9,7 +9,7 @@ img: /assets/img/gallery/lab-equipment-1.jpg
 
 ## Research Focus
 
-DSSI studies how robots, sensors, and AI can support manufacturing work while protecting human operators. The group works on robotic inspection, collaborative disassembly, embodied AI, operator-safety analytics, and continuous safety modulation for shared workspaces.
+MERIT studies how robots, sensors, and AI can support manufacturing work while protecting human operators. The group works on robotic inspection, collaborative disassembly, embodied AI, operator-safety analytics, and continuous safety modulation for shared workspaces.
 
 ## Applications
 

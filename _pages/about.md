@@ -1,6 +1,6 @@
 ---
 layout: about
-title: DSSI Lab
+title: MERIT
 permalink: /
 nav: false
 
@@ -16,7 +16,7 @@ highlights:
 
 recruiting:
   - title: "Prospective PhD Students"
-    text: "Send a CV, transcripts, and a short statement describing the DSSI research thrusts you want to join."
+    text: "Send a CV, transcripts, and a short statement describing the MERIT research thrusts you want to join."
   - title: "UGA Undergraduate Researchers"
     text: "Year-round opportunities are available in robotics, manufacturing AI, digital twins, privacy, and safety."
   - title: "Postdocs and Visiting Scholars"
@@ -37,6 +37,8 @@ conference_logos:
     label: IISE
   - image: ASME.jpg
     label: ASME
+  - image: NSF.png
+    label: NSF
 
 alumni:
   - name: Luis Segura
@@ -53,4 +55,4 @@ alumni:
     bio: "PhD Graduate"
 ---
 
-Welcome to the **DSSI Lab** at the University of Georgia. We develop data science and system informatics methods for smart manufacturing systems that are secure, ethical, reliable, and safe to deploy. Our work connects manufacturing data, AI models, digital twins, robotics, privacy-preserving learning, and human-centered safety.
+Welcome to **MERIT: Manufacturing Empowered by Robotics, Intelligence, and Trustworthy Systems** at the University of Georgia. We develop data science, robotics, and trustworthy AI methods for smart manufacturing systems that are secure, ethical, reliable, and safe to deploy. Our work connects manufacturing data, AI models, digital twins, robotics, privacy-preserving learning, and human-centered safety.

@@ -66,4 +66,4 @@ funded_projects:
       period: "2020"
 ---
 
-The DSSI Lab develops data science and system informatics methods for secure, ethical, and safe smart manufacturing. Our research connects AI models, sensing, digital twins, privacy-preserving learning, robotics, and human-centered safety for manufacturing systems that can be trusted in practice.
+The MERIT Lab develops data science and system informatics methods for secure, ethical, and safe smart manufacturing. Our research connects AI models, sensing, digital twins, privacy-preserving learning, robotics, and human-centered safety for manufacturing systems that can be trusted in practice.

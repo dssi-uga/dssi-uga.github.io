@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-DSSI launched the STREAM platform under a $2.33M NSF Future Manufacturing Research Grant for multi-stage distributed future manufacturing.
+MERIT launched the STREAM platform under a $2.33M NSF Future Manufacturing Research Grant for multi-stage distributed future manufacturing.

@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Join Us
-description: Openings and teaching in the DSSI Lab.
+description: Openings and teaching in MERIT.
 nav: true
 nav_order: 6
 ---
@@ -231,7 +231,7 @@ nav_order: 6
   <section class="join-hero">
     <div class="join-copy">
       <h2>We Are Recruiting</h2>
-      <p>The DSSI Lab is recruiting motivated researchers interested in <strong>trustworthy AI for manufacturing, smart and additive manufacturing, privacy-preserving machine learning, and safe human-robot collaboration.</strong></p>
+      <p>MERIT Lab is recruiting motivated researchers interested in <strong>trustworthy AI for manufacturing, smart and additive manufacturing, privacy-preserving machine learning, and safe human-robot collaboration.</strong></p>
     </div>
     <div class="join-visual" aria-hidden="true"></div>
   </section>
@@ -241,23 +241,31 @@ nav_order: 6
       <i class="fa-solid fa-user-graduate" aria-hidden="true"></i>
       <h3>PhD Students</h3>
       <p>
-        <a href="mailto:hongyuesun@uga.edu">Email</a>
-        Dr. Sun with a CV, transcripts, and a short statement of interest.
+        Seeking motivated students with interests in robotics, AI, machine learning, optimization, or intelligent manufacturing.
       </p>
     </article>
+
     <article class="join-card">
       <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
       <h3>UGA Undergraduates</h3>
-      <p>Reach out year-round for robotics, digital-twin, privacy, and manufacturing AI projects.</p>
-    </article>
-    <article class="join-card">
-      <i class="fa-solid fa-flask" aria-hidden="true"></i>
-      <h3>Postdocs and Visitors</h3>
       <p>
-        <a href="mailto:hongyuesun@uga.edu">Email</a>
-        a CV and research statement describing fit with current DSSI projects.
+        Research opportunities are available year-round in robotics, digital twins, AI, privacy-preserving computation, and manufacturing.
       </p>
     </article>
+
+    <article class="join-card">
+      <i class="fa-solid fa-flask" aria-hidden="true"></i>
+      <h3>Postdocs & Visitors</h3>
+      <p>
+        We welcome collaborations with researchers whose expertise aligns with our ongoing projects and future research directions.
+      </p>
+    </article>
+  </div>
+
+  <div class="join-cta">
+    <p>
+      <strong>Interested in joining?</strong> Send your CV, transcripts (if applicable), and a brief statement of research interests to <a href="mailto:hongyue.sun@uga.edu">Dr. Hongyue Sun</a>.
+    </p>
   </div>
 
   <section class="teaching-section">
@@ -268,7 +276,7 @@ nav_order: 6
       </div>
     </div>
 
-    <div class="course-marquee" aria-label="DSSI teaching courses">
+    <div class="course-marquee" aria-label="MERIT teaching courses">
       <div class="course-track">
         {% for copy in (1..2) %}
           <article class="course-card">

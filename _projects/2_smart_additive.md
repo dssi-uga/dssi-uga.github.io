@@ -9,7 +9,7 @@ img: /assets/img/gallery/lab-equipment-2.jpg
 
 ## Research Focus
 
-DSSI builds data-driven and physics-informed models for complex manufacturing processes, especially direct ink writing, inkjet printing, and carbon-negative biomass manufacturing. The work combines sensing, process analytics, reinforcement learning, Bayesian optimization, and digital twins.
+MERIT builds data-driven and physics-informed models for complex manufacturing processes, especially direct ink writing, inkjet printing, and carbon-negative biomass manufacturing. The work combines sensing, process analytics, reinforcement learning, Bayesian optimization, and digital twins.
 
 ## Applications
 
