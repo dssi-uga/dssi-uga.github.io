@@ -345,79 +345,6 @@ layout: default
     font-weight: 800;
   }
 
-  .alumni-slider {
-    position: relative;
-    overflow: hidden;
-    padding: 0.75rem 0;
-    -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
-    mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
-  }
-
-  .alumni-track {
-    display: flex;
-    width: max-content;
-    gap: 1.5rem;
-    animation: alumni-slide 20s linear infinite;
-  }
-
-  .alumni-slider:hover .alumni-track {
-    animation-play-state: paused;
-  }
-
-  .alumni-card {
-    flex: 0 0 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.85rem;
-    padding: 1.2rem;
-    border: 1px solid var(--dssi-line);
-    border-radius: 8px;
-    background: var(--dssi-panel);
-    transition:
-      transform 0.2s ease,
-      border-color 0.2s ease,
-      box-shadow 0.2s ease;
-    text-align: center;
-  }
-
-  .alumni-card:hover {
-    transform: translateY(-4px);
-    border-color: color-mix(in srgb, var(--global-theme-color) 55%, var(--dssi-line));
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
-  }
-
-  .alumni-photo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 2px solid var(--global-theme-color);
-    object-fit: cover;
-  }
-
-  .alumni-name {
-    color: var(--dssi-ink);
-    font-size: 1.05rem;
-    font-weight: 800;
-    margin: 0;
-  }
-
-  .alumni-bio {
-    color: var(--dssi-muted);
-    font-size: 0.9rem;
-    margin: 0;
-    line-height: 1.4;
-  }
-
-  @keyframes alumni-slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-50% - 0.75rem));
-    }
-  }
 
   @keyframes stats-loop {
     from {
@@ -548,6 +475,23 @@ layout: default
     </div>
   </section>
 
+
+
+  {% if page.news %}
+    <section class="home-section alt">
+      <div class="home-inner scroll-reveal">
+        <div class="section-head">
+          <div>
+            <div class="section-label">Momentum</div>
+            <h2>Recent News</h2>
+          </div>
+          <a href="{{ '/news/' | relative_url }}">All news</a>
+        </div>
+        {% include news.liquid limit=true %}
+      </div>
+    </section>
+  {% endif %}
+
   {% if page.recruiting %}
     <section class="home-section light-band">
       <div class="home-inner scroll-reveal">
@@ -579,10 +523,10 @@ layout: default
         <div class="section-head">
           <div>
             <div class="section-label">Where We Share Our Work</div>
-            <h2>Conference Communities</h2>
+            <h2>Academic Communities</h2>
           </div>
         </div>
-        <div class="conference-slider" aria-label="Conference communities">
+        <div class="conference-slider" aria-label="Academic communities">
           <div class="conference-track">
             {% for copy in (1..2) %}
               {% for conference in page.conference_logos %}
@@ -600,66 +544,6 @@ layout: default
             {% endfor %}
           </div>
         </div>
-      </div>
-    </section>
-  {% endif %}
-
-  {% if page.alumni %}
-    <section class="home-section alt">
-      <div class="home-inner scroll-reveal">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Our Community</div>
-            <h2>Distinguished Alumni</h2>
-          </div>
-        </div>
-        <div class="alumni-slider" aria-label="Distinguished alumni">
-          <div class="alumni-track">
-            {% for copy in (1..2) %}
-              {% for alumni in page.alumni %}
-                <article class="alumni-card">
-                  <img
-                    src="{{ alumni.image | prepend: 'assets/img/' | relative_url }}"
-                    alt="{{ alumni.name }}"
-                    class="alumni-photo"
-                  >
-                  <h3 class="alumni-name">{{ alumni.name }}</h3>
-                  <p class="alumni-bio">{{ alumni.bio }}</p>
-                </article>
-              {% endfor %}
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-    </section>
-  {% endif %}
-
-  {% if page.news %}
-    <section class="home-section alt">
-      <div class="home-inner scroll-reveal">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Momentum</div>
-            <h2>Recent News</h2>
-          </div>
-          <a href="{{ '/news/' | relative_url }}">All news</a>
-        </div>
-        {% include news.liquid limit=true %}
-      </div>
-    </section>
-  {% endif %}
-
-  {% if page.selected_papers %}
-    <section class="home-section">
-      <div class="home-inner scroll-reveal">
-        <div class="section-head">
-          <div>
-            <div class="section-label">Selected Work</div>
-            <h2>Research Publications</h2>
-          </div>
-          <a href="{{ '/publications/' | relative_url }}">Full list</a>
-        </div>
-        {% include selected_papers.liquid %}
       </div>
     </section>
   {% endif %}
