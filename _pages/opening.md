@@ -136,7 +136,8 @@ nav_order: 6
     display: flex;
     width: max-content;
     gap: 0.9rem;
-    animation: course-slide 26s linear infinite;
+    animation: course-slide 22s linear infinite;
+    will-change: transform;
   }
 
   .course-marquee:hover .course-track {
