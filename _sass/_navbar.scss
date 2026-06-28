@@ -12,10 +12,10 @@
 }
 
 .navbar > .container {
-  width: 100%;
+  width: min(1120px, calc(100vw - 3rem));
   max-width: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .navbar .dropdown-menu,
