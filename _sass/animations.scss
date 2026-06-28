@@ -1,0 +1,35 @@
+/* _sass/animations.scss */
+
+.news-slider-container {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.news-slider {
+  width: 100%;
+  will-change: transform;
+}
+
+.news-slider.animate {
+  animation: news-slide-up 18s linear infinite;
+}
+
+.news-slider-container:hover .news-slider.animate {
+  animation-play-state: paused;
+}
+
+@keyframes news-slide-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .news-slider.animate {
+    animation: none;
+  }
+}
