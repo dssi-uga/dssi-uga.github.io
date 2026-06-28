@@ -289,6 +289,11 @@ layout: default
     object-fit: contain;
   }
 
+  .conference-logo-image.logo-nsf {
+    transform: scale(1.45);
+    transform-origin: center;
+  }
+
   .conference-label {
     color: var(--global-text-color);
     font-size: 0.95rem;
@@ -542,6 +547,7 @@ layout: default
                   <div class="conference-logo">
                     {% assign conference_image_path = conference.image | prepend: 'assets/img/conferences/' %}
                     <img
+                      class="conference-logo-image logo-{{ conference.label | slugify }}"
                       src="{{ conference_image_path | relative_url }}"
                       alt="{{ conference.label }} logo"
                     >
