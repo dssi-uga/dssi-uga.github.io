@@ -3,15 +3,15 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-dssi-lab",
-    title: "DSSI Lab",
+    id: "nav-merit",
+    title: "MERIT",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-people",
           title: "People",
-          description: "The DSSI Lab team at the University of Georgia.",
+          description: "The MERIT Lab team at the University of Georgia.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
@@ -25,28 +25,28 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Selected journal articles and conference proceedings from the DSSI Lab.",
+          description: "Selected journal articles and conference proceedings from the MERIT Lab.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-news",
           title: "News",
-          description: "Recent DSSI Lab awards, grants, papers, and milestones.",
+          description: "Recent MERIT Lab awards, grants, papers, and milestones.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/news/";
           },
         },{id: "nav-gallery",
           title: "Gallery",
-          description: "Photos and images from the DSSI Lab",
+          description: "Photos and images from the MERIT Lab",
           section: "Navigation",
           handler: () => {
             window.location.href = "/gallery/";
           },
         },{id: "nav-join-us",
           title: "Join Us",
-          description: "Openings and teaching in the DSSI Lab.",
+          description: "Openings and teaching in MERIT.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
@@ -56,20 +56,20 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-dr-sun-joined-the-university-at-buffalo-as-an-assistant-professor-launching-the-research-program-that-became-the-dssi-lab",
+            },},{id: "news-dr-sun-joined-the-university-at-buffalo-as-an-assistant-professor-launching-the-research-program-that-became-the-merit-lab",
           title: 'Dr. Sun joined the University at Buffalo as an Assistant Professor, launching the...',
           description: "",
           section: "News",},{id: "news-the-team-published-a-foundational-cyber-coordinated-simulation-framework-for-multi-stage-additive-manufacturing-at-ieee-case-where-the-paper-was-selected-as-a-prominent-paper",
           title: 'The team published a foundational cyber-coordinated simulation framework for multi-stage additive manufacturing at...',
           description: "",
-          section: "News",},{id: "news-dssi-launched-the-stream-platform-under-a-2-33m-nsf-future-manufacturing-research-grant-for-multi-stage-distributed-future-manufacturing",
-          title: 'DSSI launched the STREAM platform under a $2.33M NSF Future Manufacturing Research Grant...',
+          section: "News",},{id: "news-merit-launched-the-stream-platform-under-a-2-33m-nsf-future-manufacturing-research-grant-for-multi-stage-distributed-future-manufacturing",
+          title: 'MERIT launched the STREAM platform under a $2.33M NSF Future Manufacturing Research Grant...',
           description: "",
           section: "News",},{id: "news-the-team-won-1st-place-and-6-000-at-the-university-at-buffalo-agrusa-innovation-competition-for-an-interactive-digital-twin-in-cyber-manufacturing-with-work-published-at-acm-sensys",
           title: 'The team won 1st place and $6,000 at the University at Buffalo Agrusa...',
           description: "",
-          section: "News",},{id: "news-dr-sun-moved-to-the-university-of-georgia-launched-the-dssi-lab-received-the-sme-outstanding-young-manufacturing-engineer-award-and-ub-exceptional-scholar-young-investigator-award-and-was-awarded-the-566k-nsf-ethical-industry-4-0-project",
-          title: 'Dr. Sun moved to the University of Georgia, launched the DSSI Lab, received...',
+          section: "News",},{id: "news-dr-sun-moved-to-the-university-of-georgia-launched-the-merit-lab-received-the-sme-outstanding-young-manufacturing-engineer-award-and-ub-exceptional-scholar-young-investigator-award-and-was-awarded-the-566k-nsf-ethical-industry-4-0-project",
+          title: 'Dr. Sun moved to the University of Georgia, launched the MERIT Lab, received...',
           description: "",
           section: "News",},{id: "news-the-lab-celebrated-two-iise-transactions-feature-papers-dr-sun-began-service-as-associate-editor-of-iise-transactions-and-organized-the-1st-convergent-safety-symposium-with-experts-across-uga-uc-san-diego-and-ut-austin",
           title: 'The lab celebrated two IISE Transactions Feature Papers. Dr. Sun began service as...',
