@@ -161,9 +161,11 @@ layout: default
   }
 
   .stats-track {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 0.85rem;
     animation: stats-loop 18s linear infinite;
+    will-change: transform;
   }
 
   .stats-grid:hover .stats-track {
