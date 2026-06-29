@@ -7,6 +7,8 @@ nav: true
 nav_order: 6
 ---
 
+<!-- prettier-ignore-start -->
+
 <style>
   .join-shell {
     --dssi-line: rgba(23, 23, 23, 0.12);
@@ -227,7 +229,6 @@ nav_order: 6
   }
 </style>
 
-<!-- prettier-ignore -->
 <div class="join-shell">
   <section class="join-hero">
     <div class="join-copy">
@@ -352,3 +353,5 @@ nav_order: 6
     </p>
   </section>
 </div>
+
+<!-- prettier-ignore-end -->
