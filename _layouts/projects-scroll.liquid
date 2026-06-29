@@ -106,10 +106,16 @@ layout: page
   .funding-track {
     display: flex;
     width: max-content;
-    gap: 0.8rem;
-    transform: translate3d(calc(-50% - 0.4rem), 0, 0);
-    animation: funding-slide 14s linear infinite;
+    transform: translate3d(-50%, 0, 0);
+    animation: funding-slide 18s linear infinite;
     will-change: transform;
+  }
+
+  .funding-group {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 0.8rem;
+    padding-right: 0.8rem;
   }
 
   .funding-card {
@@ -180,7 +186,7 @@ layout: page
 
   @keyframes funding-slide {
     from {
-      transform: translate3d(calc(-50% - 0.4rem), 0, 0);
+      transform: translate3d(-50%, 0, 0);
     }
     to {
       transform: translate3d(0, 0, 0);
@@ -347,28 +353,30 @@ layout: page
         <div class="funding-marquee">
           <div class="funding-track">
             {% for copy in (1..2) %}
-              {% for project in page.funded_projects.current %}
-                <article class="funding-card">
-                  <div class="funding-award">{{ project.award }}</div>
-                  <div class="funding-name">{{ project.name }}</div>
-                  <div class="funding-meta">
-                    <span>{{ project.agency }}</span>
-                    <span>{{ project.role }}</span>
-                    <span>{{ project.period }}</span>
-                  </div>
-                </article>
-              {% endfor %}
-              {% for project in page.funded_projects.completed %}
-                <article class="funding-card">
-                  <div class="funding-award">{{ project.award }}</div>
-                  <div class="funding-name">{{ project.name }}</div>
-                  <div class="funding-meta">
-                    <span>{{ project.agency }}</span>
-                    <span>{{ project.role }}</span>
-                    <span>{{ project.period }}</span>
-                  </div>
-                </article>
-              {% endfor %}
+              <div class="funding-group" {% if copy == 2 %}aria-hidden="true"{% endif %}>
+                {% for project in page.funded_projects.current %}
+                  <article class="funding-card">
+                    <div class="funding-award">{{ project.award }}</div>
+                    <div class="funding-name">{{ project.name }}</div>
+                    <div class="funding-meta">
+                      <span>{{ project.agency }}</span>
+                      <span>{{ project.role }}</span>
+                      <span>{{ project.period }}</span>
+                    </div>
+                  </article>
+                {% endfor %}
+                {% for project in page.funded_projects.completed %}
+                  <article class="funding-card">
+                    <div class="funding-award">{{ project.award }}</div>
+                    <div class="funding-name">{{ project.name }}</div>
+                    <div class="funding-meta">
+                      <span>{{ project.agency }}</span>
+                      <span>{{ project.role }}</span>
+                      <span>{{ project.period }}</span>
+                    </div>
+                  </article>
+                {% endfor %}
+              </div>
             {% endfor %}
           </div>
         </div>
