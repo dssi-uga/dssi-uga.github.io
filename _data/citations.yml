@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-26'
+  last_updated: '2026-06-29'
 papers:
   IOX-e6wAAAAJ:-f6ydRqryjwC:
     citations: 98
@@ -170,7 +170,7 @@ papers:
     title: Developing Measurement Models Using Bayesian Neural Networks
     year: '2025'
   IOX-e6wAAAAJ:_kc_bZDykSQC:
-    citations: 27
+    citations: 26
     title: Ensemble modeling of in situ features for printed electronics manufacturing with in situ process control potential
     year: '2017'
   IOX-e6wAAAAJ:aqlVkmm33-oC:
@@ -178,7 +178,7 @@ papers:
     title: The impact of varying patient populations on the in-control performance of the risk-adjusted CUSUM chart
     year: '2015'
   IOX-e6wAAAAJ:bEWYMUwI8FkC:
-    citations: 1
+    citations: 2
     title: 'Human Digital Twin: Data, Models, Applications, and Challenges'
     year: '2025'
   IOX-e6wAAAAJ:blknAaTinKkC:
@@ -226,7 +226,7 @@ papers:
     title: Investigation of Heterogeneity Sources for Occupational Task Recognition via Transfer Learning
     year: '2021'
   IOX-e6wAAAAJ:j3f4tGmQtD8C:
-    citations: 10
+    citations: 11
     title: "Adapting OpenAI\u2019s CLIP model for few-shot image inspection in manufacturing quality control: An expository case study with multiple application examples"
     year: '2026'
   IOX-e6wAAAAJ:kNdYIx-mwKoC:
