@@ -107,7 +107,8 @@ layout: page
     display: flex;
     width: max-content;
     gap: 0.8rem;
-    animation: funding-slide 24s linear infinite reverse;
+    transform: translate3d(calc(-50% - 0.4rem), 0, 0);
+    animation: funding-slide 14s linear infinite;
     will-change: transform;
   }
 
@@ -179,10 +180,10 @@ layout: page
 
   @keyframes funding-slide {
     from {
-      transform: translate3d(0, 0, 0);
+      transform: translate3d(calc(-50% - 0.4rem), 0, 0);
     }
     to {
-      transform: translate3d(calc(-50% - 0.4rem), 0, 0);
+      transform: translate3d(0, 0, 0);
     }
   }
 
