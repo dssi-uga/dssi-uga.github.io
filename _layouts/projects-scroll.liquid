@@ -106,13 +106,10 @@ layout: page
     display: flex;
     width: max-content;
     gap: 0.8rem;
-    animation: funding-slide 36s linear infinite;
+    animation: funding-slide 24s linear infinite reverse;
     will-change: transform;
   }
 
-  .funding-marquee:hover .funding-track {
-    animation-play-state: paused;
-  }
 
   .funding-card {
     position: relative;
@@ -182,10 +179,10 @@ layout: page
 
   @keyframes funding-slide {
     from {
-      transform: translateX(calc(-50% - 0.4rem));
+      transform: translate3d(0, 0, 0);
     }
     to {
-      transform: translateX(0);
+      transform: translate3d(calc(-50% - 0.4rem), 0, 0);
     }
   }
 
