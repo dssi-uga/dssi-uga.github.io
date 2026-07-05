@@ -4,6 +4,7 @@ title: Ethical Smart Manufacturing
 description: Privacy-preserving and safety-aware AI methods for detecting unsafe or illegal fabrication activity without exposing sensitive manufacturing data.
 importance: 3
 category: research
+link: /publications/#kang2025ethicalfab
 img: /assets/img/research/Ethical Manufacturing/Minsung EthicalFab.png
 ---
 

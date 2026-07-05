@@ -64,27 +64,8 @@ nav_order: 4
     background: var(--global-card-bg-color);
   }
 
-  .news-page-shell tr {
-    animation: news-rise 0.65s ease both;
-  }
-
-  .news-page-shell tr:nth-child(2n) {
-    animation-delay: 0.06s;
-  }
-
-  .news-page-shell tr:nth-child(3n) {
-    animation-delay: 0.12s;
-  }
-
-  @keyframes news-rise {
-    from {
-      opacity: 0;
-      transform: translateY(12px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .news-page-shell .news-slider-container {
+    height: min(62vh, 620px);
   }
 </style>
 
@@ -94,6 +75,6 @@ nav_order: 4
     <p>Awards, grants, papers, and milestones from the MERIT Lab research community.</p>
   </section>
 
-{% include news.liquid %}
+  {% include news.liquid animate=true %}
 
 </div>

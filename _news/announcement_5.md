@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Dr. Sun moved to the University of Georgia, launched the MERIT Lab, received the SME Outstanding Young Manufacturing Engineer Award and UB Exceptional Scholar - Young Investigator Award, and was awarded the $566K NSF Ethical Industry 4.0 project.
+Dr. Sun moved to the University of Georgia and launched the MERIT Lab.

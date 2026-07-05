@@ -33,3 +33,38 @@
     animation: none;
   }
 }
+.news-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.news-row {
+  display: grid;
+  grid-template-columns: minmax(9rem, 0.28fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.news-date {
+  color: var(--global-theme-color);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.news-copy {
+  color: var(--global-text-color);
+  line-height: 1.55;
+}
+
+.news-copy p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .news-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

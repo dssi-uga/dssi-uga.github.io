@@ -4,6 +4,7 @@ title: Multi-Stage Additive Manufacturing
 description: Integrated modeling and optimization for direct ink writing across ink preparation, printing, drying, and final product characterization.
 importance: 1
 category: research
+link: /publications/#chen2026system
 img: /assets/img/research/Distributed Manufacturing/Wuyang Distributed Manufacturing.jpg
 ---
 

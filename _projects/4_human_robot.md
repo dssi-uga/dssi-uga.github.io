@@ -4,6 +4,7 @@ title: Carbon-Negative Biomass Manufacturing
 description: Real-time sensing, predictive modeling, and adaptive process understanding for low-energy biomass material drying and carbon-negative manufacturing.
 importance: 2
 category: research
+link: /publications/#xu2026drying
 img: /assets/img/research/Carbon-Negative Biomass Manufacturing/Chenyu Carbon-Negative Biomass Manufacturing.png
 ---
 
