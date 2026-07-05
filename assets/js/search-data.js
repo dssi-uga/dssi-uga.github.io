@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "Research",
-          description: "Research thrusts and funded projects in data science, system informatics, and smart manufacturing.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
