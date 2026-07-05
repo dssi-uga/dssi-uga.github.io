@@ -7,14 +7,6 @@ category: research
 img: /assets/img/research/Ethical Manufacturing/Minsung EthicalFab.png
 ---
 
-## Student-Led Work
+## Overview
 
-This work addresses a central challenge in ethical manufacturing: how to detect and prevent the fabrication of illegal or unsafe objects while preserving the privacy of manufacturing data. The project studies neural network classifiers with embedded differential privacy mechanisms for recognizing 3D printed objects from fabrication video frames.
-
-## Research Contribution
-
-The framework evaluates privacy-preserving classification in both offline and sequential settings, covering binary and multiclass detection tasks. The results show that malicious or prohibited objects can be identified during fabrication while maintaining data privacy, creating a pathway toward responsible monitoring systems for additive manufacturing.
-
-## Manufacturing Impact
-
-This project supports ethical Industry 4.0 deployment by connecting computer vision, privacy-preserving machine learning, and digital fabrication safeguards. It helps manufacturers build oversight mechanisms that protect public safety without exposing sensitive product or process information.
+This topic focuses on ethical safeguards for smart and additive manufacturing, especially the challenge of detecting illegal or unsafe fabrication while preserving the privacy of manufacturing data. Our work studies neural network classifiers with embedded differential privacy mechanisms that analyze video frames from 3D printing processes. The framework is evaluated in both offline and sequential settings for binary and multiclass detection, showing that malicious or prohibited objects can be identified during fabrication without exposing sensitive product or process information. This supports responsible Industry 4.0 monitoring where public safety, privacy, and manufacturing autonomy must be balanced.

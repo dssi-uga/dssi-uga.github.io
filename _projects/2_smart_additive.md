@@ -7,14 +7,6 @@ category: research
 img: /assets/img/research/Distributed Manufacturing/Wuyang Distributed Manufacturing.jpg
 ---
 
-## Student-Led Work
+## Overview
 
-This work develops a system-level modeling and optimization framework for direct ink writing, where decisions made during ink preparation, printing, drying, and characterization jointly affect printability, structural integrity, energy efficiency, and final product quality.
-
-## Research Contribution
-
-The project introduces the Multi-stage modeling and Multi-criteria Optimization Network (MMO-Net), a deep learning framework with GRU-based cross-stage feature transition and multi-task prediction heads. Using an 81-run silica ink experiment, MMO-Net jointly predicts rheological properties, printing time, pre- and post-drying geometric fidelity, and cracking probability, then couples the model with Bayesian optimization to search for process settings that balance multiple manufacturing objectives.
-
-## Manufacturing Impact
-
-By moving beyond isolated stage-wise optimization, this research provides a scalable path for distributed and multi-stage manufacturing systems where material formulation, process control, and product performance must be optimized together.
+This topic studies additive manufacturing as a connected multi-stage system rather than a set of isolated process steps. In direct ink writing, decisions made during ink preparation, printing, drying, and product characterization jointly influence printability, structural integrity, energy efficiency, and final quality. Our work introduces the Multi-stage modeling and Multi-criteria Optimization Network (MMO-Net), which uses GRU-based cross-stage feature transition and multi-task prediction heads to model rheology, printing time, geometric fidelity before and after drying, and cracking probability. Coupled with Bayesian optimization, the framework searches for process settings that balance multiple manufacturing objectives and provides a scalable path toward system-level optimization.
