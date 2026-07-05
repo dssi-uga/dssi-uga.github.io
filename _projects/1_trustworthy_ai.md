@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Ethical Smart Manufacturing
-description: Differentially private vision models for identifying unsafe or illegal additive-manufacturing activity without exposing sensitive fabrication data.
-importance: 1
+description: Privacy-preserving and safety-aware AI methods for detecting unsafe or illegal fabrication activity without exposing sensitive manufacturing data.
+importance: 3
 category: research
 img: /assets/img/research/Ethical Manufacturing/Minsung EthicalFab.png
 ---
 
 ## Overview
 
-This topic focuses on ethical safeguards for smart and additive manufacturing, especially the challenge of detecting illegal or unsafe fabrication while preserving the privacy of manufacturing data. Our work studies neural network classifiers with embedded differential privacy mechanisms that analyze video frames from 3D printing processes. The framework is evaluated in both offline and sequential settings for binary and multiclass detection, showing that malicious or prohibited objects can be identified during fabrication without exposing sensitive product or process information. This supports responsible Industry 4.0 monitoring where public safety, privacy, and manufacturing autonomy must be balanced.
+This topic focuses on ethical safeguards for smart and additive manufacturing, especially situations where manufacturers need to detect unsafe, illegal, or policy-violating fabrication without exposing private product or process data. Digital fabrication creates new opportunities for distributed production, but it also raises concerns about illegal object printing, sensitive design leakage, and responsible oversight. Our work studies neural network classifiers with embedded differential privacy mechanisms that analyze video frames from 3D printing processes while limiting private information exposure. The framework is evaluated in offline and sequential decision settings for binary and multiclass detection, showing how privacy-preserving machine learning can support real-time monitoring of fabrication activity. This research helps connect ethical manufacturing, computer vision, and accountable Industry 4.0 systems.
