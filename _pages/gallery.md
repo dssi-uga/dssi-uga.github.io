@@ -11,7 +11,7 @@ nav_order: 5
   <p class="gallery-lead">Photos from MERIT Lab activities, research spaces, team events, and community moments.</p>
   <div class="gallery-grid">
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/gallery/1000000799.heic' | relative_url }}" alt="1000000799" loading="lazy">
+      <img src="{{ '/assets/img/gallery/1000000799.jpg' | relative_url }}" alt="1000000799" loading="lazy">
     </figure>
     <figure class="gallery-item">
       <img src="{{ '/assets/img/gallery/1000003861.jpg' | relative_url }}" alt="1000003861" loading="lazy">
@@ -23,10 +23,10 @@ nav_order: 5
       <img src="{{ '/assets/img/gallery/1000006531.jpg' | relative_url }}" alt="1000006531" loading="lazy">
     </figure>
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/gallery/1000007089.heic' | relative_url }}" alt="1000007089" loading="lazy">
+      <img src="{{ '/assets/img/gallery/1000007089.jpg' | relative_url }}" alt="1000007089" loading="lazy">
     </figure>
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/gallery/1000007090.heic' | relative_url }}" alt="1000007090" loading="lazy">
+      <img src="{{ '/assets/img/gallery/1000007090.jpg' | relative_url }}" alt="1000007090" loading="lazy">
     </figure>
     <figure class="gallery-item">
       <img src="{{ '/assets/img/gallery/1000007091.jpg' | relative_url }}" alt="1000007091" loading="lazy">

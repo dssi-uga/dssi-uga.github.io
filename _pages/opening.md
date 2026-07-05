@@ -54,7 +54,7 @@ nav_order: 6
     overflow: hidden;
     border: 1px solid var(--dssi-line);
     border-radius: 8px;
-    background: url("{{ '/assets/img/gallery/1000007090.heic' | relative_url }}") center / cover;
+    background: url("{{ '/assets/img/gallery/1000007090.jpg' | relative_url }}") center / cover;
     animation: join-float 7s ease-in-out infinite;
   }
 
