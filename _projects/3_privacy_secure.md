@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Safety-Aware Robotic Inspection
+title: Safe and Secure Robotic Inspection
 description: SMOOD adds multi-modal runtime out-of-distribution detection to reinforcement-learning robotic inspection for safer deployment.
 importance: 3
 category: research

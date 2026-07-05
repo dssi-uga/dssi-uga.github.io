@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Real-Time Modeling for Carbon-Negative Biomass Manufacturing
+title: Carbon-Negative Biomass Manufacturing
 description: Data-driven ambient drying models combine gravimetric sensing, nonlinear mixed effects modeling, and Bayesian updating for biomass material manufacturing.
 importance: 4
 category: research

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ethical and Privacy-Preserving Digital Fabrication
+title: Ethical Smart Manufacturing
 description: Differentially private vision models for identifying unsafe or illegal additive-manufacturing activity without exposing sensitive fabrication data.
 importance: 1
 category: research

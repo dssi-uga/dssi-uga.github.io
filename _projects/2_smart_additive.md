@@ -1,6 +1,6 @@
 ---
 layout: page
-title: System-Level Optimization for Direct Ink Writing
+title: Multi-Stage Additive Manufacturing
 description: MMO-Net connects ink preparation, printing, drying, and product characterization for multi-stage modeling and optimization of direct ink writing.
 importance: 2
 category: research
