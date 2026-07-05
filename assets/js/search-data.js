@@ -80,31 +80,26 @@ ninja.data = [{
           section: "News",},{id: "news-phd-student-wuyang-chen-was-named-a-finalist-for-the-iise-m-amp-amp-d-best-student-paper-award-the-autoinspector-robotic-inspection-framework-was-accepted-to-asme-msec-2026-and-the-team-received-a-600k-nsf-cici-grant-for-a-manufacturing-security-living-lab",
           title: 'PhD student Wuyang Chen was named a Finalist for the IISE M&amp;amp;amp;D Best...',
           description: "",
-          section: "News",},{id: "projects-trustworthy-and-verifiable-ai",
-          title: 'Trustworthy and Verifiable AI',
-          description: "Uncertainty-aware models, out-of-distribution detection, and verified decision chains for high-stakes manufacturing decisions.",
+          section: "News",},{id: "projects-ethical-smart-manufacturing",
+          title: 'Ethical Smart Manufacturing',
+          description: "Privacy-preserving and safety-aware AI methods for detecting unsafe or illegal fabrication activity without exposing sensitive manufacturing data.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_trustworthy_ai/";
-            },},{id: "projects-smart-and-additive-manufacturing",
-          title: 'Smart and Additive Manufacturing',
-          description: "Process modeling, monitoring, and control for direct ink writing, inkjet printing, biomass manufacturing, and multi-stage production systems.",
+            },},{id: "projects-multi-stage-additive-manufacturing",
+          title: 'Multi-Stage Additive Manufacturing',
+          description: "Integrated modeling and optimization for direct ink writing across ink preparation, printing, drying, and final product characterization.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_smart_additive/";
-            },},{id: "projects-privacy-preserving-and-secure-manufacturing",
-          title: 'Privacy-Preserving and Secure Manufacturing',
-          description: "Federated learning, secure computation, ethical fabrication, and manufacturing cybersecurity testbeds.",
+            },},{id: "projects-safe-and-secure-robotic-inspection",
+          title: 'Safe and Secure Robotic Inspection',
+          description: "Runtime monitoring and multi-modal out-of-distribution detection for safer reinforcement-learning-based robotic inspection in manufacturing.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_privacy_secure/";
-            },},{id: "projects-safe-human-robot-collaborative-manufacturing",
-          title: 'Safe Human-Robot Collaborative Manufacturing',
-          description: "Robotic autonomy, inspection, disassembly, wearable sensing, and continuous safety modulation for collaborative workcells.",
+            },},{id: "projects-carbon-negative-biomass-manufacturing",
+          title: 'Carbon-Negative Biomass Manufacturing',
+          description: "Real-time sensing, predictive modeling, and adaptive process understanding for low-energy biomass material drying and carbon-negative manufacturing.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_human_robot/";
-            },},{id: "projects-sustainable-and-climate-smart-manufacturing",
-          title: 'Sustainable and Climate-Smart Manufacturing',
-          description: "Data science for lower-waste, lower-carbon manufacturing workflows, including biomass processing and recyclable materials.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_sustainable/";
             },},{
         id: 'social-email',
         title: 'email',
