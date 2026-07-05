@@ -1,22 +1,20 @@
 ---
 layout: page
-title: Smart and Additive Manufacturing
-description: Process modeling, monitoring, and control for direct ink writing, inkjet printing, biomass manufacturing, and multi-stage production systems.
+title: System-Level Optimization for Direct Ink Writing
+description: MMO-Net connects ink preparation, printing, drying, and product characterization for multi-stage modeling and optimization of direct ink writing.
 importance: 2
 category: research
-img: /assets/img/gallery/lab-equipment-2.jpg
+img: /assets/img/research/Distributed Manufacturing/Wuyang Distributed Manufacturing.jpg
 ---
 
-## Research Focus
+## Student-Led Work
 
-MERIT builds data-driven and physics-informed models for complex manufacturing processes, especially direct ink writing, inkjet printing, and carbon-negative biomass manufacturing. The work combines sensing, process analytics, reinforcement learning, Bayesian optimization, and digital twins.
+This work develops a system-level modeling and optimization framework for direct ink writing, where decisions made during ink preparation, printing, drying, and characterization jointly affect printability, structural integrity, energy efficiency, and final product quality.
 
-## Applications
+## Research Contribution
 
-- Multi-stage modeling and multi-criteria optimization for direct ink writing.
-- Reinforcement-learning control for composite-material printing.
-- Smart ambient drying for carbon-negative biomass manufacturing.
+The project introduces the Multi-stage modeling and Multi-criteria Optimization Network (MMO-Net), a deep learning framework with GRU-based cross-stage feature transition and multi-task prediction heads. Using an 81-run silica ink experiment, MMO-Net jointly predicts rheological properties, printing time, pre- and post-drying geometric fidelity, and cracking probability, then couples the model with Bayesian optimization to search for process settings that balance multiple manufacturing objectives.
 
-## Impact
+## Manufacturing Impact
 
-These tools help manufacturers improve quality, reduce trial-and-error experiments, and connect process settings to measurable performance outcomes.
+By moving beyond isolated stage-wise optimization, this research provides a scalable path for distributed and multi-stage manufacturing systems where material formulation, process control, and product performance must be optimized together.

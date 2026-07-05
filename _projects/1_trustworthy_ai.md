@@ -1,22 +1,20 @@
 ---
 layout: page
-title: Trustworthy and Verifiable AI
-description: Uncertainty-aware models, out-of-distribution detection, and verified decision chains for high-stakes manufacturing decisions.
+title: Ethical and Privacy-Preserving Digital Fabrication
+description: Differentially private vision models for identifying unsafe or illegal additive-manufacturing activity without exposing sensitive fabrication data.
 importance: 1
 category: research
-img: /assets/img/gallery/lab-equipment-3.jpg
+img: /assets/img/research/Ethical Manufacturing/Minsung EthicalFab.png
 ---
 
-## Research Focus
+## Student-Led Work
 
-The lab develops AI methods that can explain what they know, flag what they do not know, and support decisions with quantified confidence. This includes uncertainty quantification, coverage guarantees, out-of-distribution detection, and verification for decision pipelines that operate in manufacturing environments.
+This work addresses a central challenge in ethical manufacturing: how to detect and prevent the fabrication of illegal or unsafe objects while preserving the privacy of manufacturing data. The project studies neural network classifiers with embedded differential privacy mechanisms for recognizing 3D printed objects from fabrication video frames.
 
-## Applications
+## Research Contribution
 
-- Manufacturing quality inspection with few-shot and multimodal models.
-- Risk-aware decision chains for smart manufacturing systems.
-- Ethical and accountable design generation for digital fabrication.
+The framework evaluates privacy-preserving classification in both offline and sequential settings, covering binary and multiclass detection tasks. The results show that malicious or prohibited objects can be identified during fabrication while maintaining data privacy, creating a pathway toward responsible monitoring systems for additive manufacturing.
 
-## Impact
+## Manufacturing Impact
 
-Trustworthy AI makes advanced manufacturing systems safer to deploy, easier to audit, and more reliable when data shifts, sensors degrade, or new product designs enter production.
+This project supports ethical Industry 4.0 deployment by connecting computer vision, privacy-preserving machine learning, and digital fabrication safeguards. It helps manufacturers build oversight mechanisms that protect public safety without exposing sensitive product or process information.

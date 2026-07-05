@@ -1,0 +1,12 @@
+Robotic systems are increasingly deployed in industrial inspection to automate precision-critical
+            tasks such as dimensional verification, surface inspection, and quality assurance. Robotic inspection
+            systems are adopting reinforcement learning (RL) to generate flexible and efficient inspection
+            motions in unstructured manufacturing environments. However, RL policies trained under nominal
+            conditions often fail silently when deployed in the presence of perceptual disturbances, environmental
+            changes, or unforeseen interactions, posing significant safety risks during real-world operation.
+            Existing safe RL approaches primarily enforce safety through constrained optimization during training,
+            but lack mechanisms for detecting epistemic uncertainty arising at runtime. This paper presents a novel Safety-Aware Multi-Modal Out-of-Distribution (SMOOD)framework that augments RL-based control with runtime multi-modal out-of-distribution (OOD) detection for robotic
+            inspection. SMOOD decouples task learning from safety enforcement by introducing a latent-space
+            monitoring layer that jointly analyzes proprioceptive dynamics and semantic visual representations
+            extracted from a vision-language model (VLM). Deviations from nominal behavior are detected using
+            distributional distance metrics and fused to mediate policy execution in real time. The proposed framework is evaluated on a UR5e inspection platform performing inspection-oriented motions. Experimental results demonstrate that SMOOD enables earlier OOD detection and safer task execution compared to single-modality baselines.

@@ -1,22 +1,20 @@
 ---
 layout: page
-title: Safe Human-Robot Collaborative Manufacturing
-description: Robotic autonomy, inspection, disassembly, wearable sensing, and continuous safety modulation for collaborative workcells.
+title: Real-Time Modeling for Carbon-Negative Biomass Manufacturing
+description: Data-driven ambient drying models combine gravimetric sensing, nonlinear mixed effects modeling, and Bayesian updating for biomass material manufacturing.
 importance: 4
 category: research
-img: /assets/img/gallery/lab-equipment-1.jpg
+img: /assets/img/research/Carbon-Negative Biomass Manufacturing/Chenyu Carbon-Negative Biomass Manufacturing.png
 ---
 
-## Research Focus
+## Student-Led Work
 
-MERIT studies how robots, sensors, and AI can support manufacturing work while protecting human operators. The group works on robotic inspection, collaborative disassembly, embodied AI, operator-safety analytics, and continuous safety modulation for shared workspaces.
+This work studies ambient drying for biomass material manufacturing, a low-cost and scalable process that preserves structural integrity while reducing energy consumption. The challenge is that ambient drying can have variable drying kinetics and long process times, making monitoring and prediction difficult.
 
-## Applications
+## Research Contribution
 
-- Autonomous robotic scanning and inspection frameworks.
-- Computer vision for collaborative robotic disassembly.
-- Wearable-sensor analytics for fatigue, recovery, and ergonomic risk.
+The project uses a custom gravimetric sensing setup to collect real-time weight-change data and models drying behavior with a hierarchical nonlinear mixed-effects framework. By incorporating cellulose content, fan speed, sample-level variability, and Bayesian updating from real-time measurements, the model substantially improves prediction accuracy during ongoing drying.
 
-## Impact
+## Manufacturing Impact
 
-The work supports manufacturing environments where automation improves quality and productivity without compromising worker safety.
+The approach provides interpretable insight into how material composition and airflow influence initial weight, drying rate, and moisture retention. It supports adaptive monitoring, prediction, and future control for carbon-negative biomass formulations and climate-smart manufacturing processes.
