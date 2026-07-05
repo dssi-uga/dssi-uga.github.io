@@ -2,7 +2,7 @@
 layout: projects-scroll
 title: Research
 permalink: /projects/
-description: Research thrusts and funded projects in data science, system informatics, and smart manufacturing.
+description:
 nav: true
 nav_order: 2
 
@@ -66,4 +66,6 @@ funded_projects:
       period: "2020"
 ---
 
-The MERIT Lab develops data science and system informatics methods for secure, ethical, and safe smart manufacturing. Our research connects AI models, sensing, digital twins, privacy-preserving learning, robotics, and human-centered safety for manufacturing systems that can be trusted in practice.
+Manufacturing systems are becoming more connected, automated, and data-rich, but these advances also introduce new challenges in reliability, cybersecurity, human safety, ethical data use, and operational trust. The MERIT Lab studies how robotics, artificial intelligence, sensing, digital twins, and system informatics can help manufacturers make decisions that are safer, more resilient, and more transparent.
+
+Our research develops trustworthy methods for smart manufacturing, including privacy-preserving learning, secure cyber-physical infrastructure, human-centered safety analytics, and intelligent automation. We work across federal, mission, and industry-supported projects to translate data-driven models into practical tools for advanced manufacturing systems that can be deployed, audited, and trusted in real-world environments.

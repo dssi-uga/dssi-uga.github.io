@@ -4,21 +4,7 @@ layout: page
 <!-- prettier-ignore -->
 <style>
   .post-header {
-    position: relative;
-    left: 50%;
-    right: 50%;
-    width: 100vw;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .post-header .post-title,
-  .post-header .post-description {
-    width: min(1120px, calc(100vw - 3rem));
-    margin-left: auto;
-    margin-right: auto;
+    display: none;
   }
   .research-shell {
     --dssi-line: rgba(23, 23, 23, 0.12);
@@ -44,30 +30,101 @@ layout: page
   }
 
   .research-intro {
-    padding: 1rem 0 3.5rem;
+    padding: 4.5rem 0 0;
   }
 
-  .research-intro > p:first-child {
-    max-width: 880px;
-    font-size: 1.08rem;
+  .research-kicker {
+    display: block;
+    width: 3.9rem;
+    height: 2px;
+    margin-bottom: 1.2rem;
+    background: var(--global-text-color);
+  }
+
+  .research-intro-title {
+    margin: 0;
+    color: var(--global-text-color);
+    font-size: clamp(2.4rem, 7vw, 4.8rem);
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .research-motivation {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    width: 100vw;
+    margin: 7.5rem -50vw 0;
+    padding: 6.5rem 0 4.5rem;
+    overflow: hidden;
+    background: linear-gradient(160deg, rgba(234, 241, 239, 0.95) 0%, rgba(246, 248, 247, 0.95) 52%, rgba(229, 237, 234, 0.9) 100%);
+  }
+
+  .research-motivation::before {
+    content: "";
+    position: absolute;
+    top: -6rem;
+    right: -8vw;
+    left: -8vw;
+    height: 10rem;
+    background: var(--global-bg-color);
+    transform: rotate(2.4deg);
+    transform-origin: left top;
+  }
+
+  .research-motivation::after {
+    content: "";
+    position: absolute;
+    right: -10vw;
+    bottom: -7rem;
+    width: 68vw;
+    height: 16rem;
+    background: rgba(255, 255, 255, 0.72);
+    transform: rotate(-19deg);
+    transform-origin: right bottom;
+  }
+
+  .research-motivation-inner {
+    position: relative;
+    z-index: 1;
+    width: min(1120px, calc(100vw - 3rem));
+    margin: 0 auto;
+  }
+
+  .research-motivation-title {
+    margin: 0;
+    color: var(--global-text-color);
+    font-size: clamp(2rem, 5vw, 3.1rem);
+    font-weight: 900;
+    line-height: 1.05;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .research-motivation-rule {
+    display: block;
+    width: 4rem;
+    height: 2px;
+    margin: 1.35rem auto 1.8rem;
+    background: var(--global-text-color);
+  }
+
+  .research-motivation-copy {
+    color: var(--global-text-color);
+    font-size: clamp(1.02rem, 1.6vw, 1.22rem);
     line-height: 1.75;
   }
 
-  .research-intro h2 {
-    margin-top: 2.3rem;
-    color: var(--global-text-color);
+  .research-motivation-copy p {
+    margin-bottom: 1.35rem;
   }
 
-  .research-intro h3 {
-    margin-top: 1.6rem;
-    color: var(--global-theme-color);
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    letter-spacing: 0;
+  .research-motivation-copy p:last-child {
+    margin-bottom: 0;
   }
 
   .funding-band {
-    padding: 1rem 0 3.5rem;
+    padding: 3.5rem 0;
   }
 
   .funding-head {
@@ -336,8 +393,18 @@ layout: page
 <!-- prettier-ignore -->
 <div class="research-shell">
   <div class="research-inner">
-    <section class="research-intro scroll-reveal">
-      {{ content }}
+    <section class="research-intro scroll-reveal" aria-label="Research overview">
+      <span class="research-kicker" aria-hidden="true"></span>
+      <h1 class="research-intro-title">What We Do</h1>
+      <div class="research-motivation">
+        <div class="research-motivation-inner">
+          <h2 class="research-motivation-title">Research Motivation</h2>
+          <span class="research-motivation-rule" aria-hidden="true"></span>
+          <div class="research-motivation-copy">
+            {{ content }}
+          </div>
+        </div>
+      </div>
     </section>
 
     {% if page.funded_projects %}
