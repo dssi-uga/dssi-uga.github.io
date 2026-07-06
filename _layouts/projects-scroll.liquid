@@ -311,7 +311,7 @@ layout: page
 
   .project-image {
     float: right;
-    width: min(46%, 520px);
+    width: min(56%, 720px);
     overflow: visible;
     height: auto;
     min-height: 0;
@@ -434,23 +434,6 @@ layout: page
       {% for project in sorted_projects %}
         {% assign remainder = forloop.index0 | modulo: 2 %}
         <article class="project-section scroll-reveal {% if remainder == 1 %}reverse{% endif %}">
-          <div class="project-image">
-            {% if project.img %}
-              {% assign project_image_src = project.img | relative_url %}
-              {% if project.link %}
-                {% if project.link contains 'http' %}
-                  {% assign project_href = project.link %}
-                {% else %}
-                  {% assign project_href = project.link | relative_url %}
-                {% endif %}
-                <a class="project-image-link" href="{{ project_href }}" {% if project.link contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %} aria-label="Open {{ project.title }}">
-                  <img src="{{ project_image_src }}" alt="{{ project.title }}">
-                </a>
-              {% else %}
-                <img src="{{ project_image_src }}" alt="{{ project.title }}">
-              {% endif %}
-            {% endif %}
-          </div>
           <div class="project-content">
             <h2 class="project-title">
               {% if project.link %}
@@ -467,6 +450,23 @@ layout: page
             {% if project.description %}
               <p class="project-description">{{ project.description }}</p>
             {% endif %}
+            <div class="project-image">
+              {% if project.img %}
+              {% assign project_image_src = project.img | relative_url %}
+              {% if project.link %}
+                {% if project.link contains 'http' %}
+                  {% assign project_href = project.link %}
+                {% else %}
+                  {% assign project_href = project.link | relative_url %}
+                {% endif %}
+                <a class="project-image-link" href="{{ project_href }}" {% if project.link contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %} aria-label="Open {{ project.title }}">
+                  <img src="{{ project_image_src }}" alt="{{ project.title }}">
+                </a>
+              {% else %}
+                <img src="{{ project_image_src }}" alt="{{ project.title }}">
+              {% endif %}
+              {% endif %}
+            </div>
             <div class="project-details">
               {{ project.content }}
             </div>
