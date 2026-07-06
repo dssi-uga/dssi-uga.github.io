@@ -16,7 +16,12 @@
       <div class="news-slider-container">
         <div class="news-slider animate">
           {% for copy in (1..2) %}
-            <div class="news-list" {% if copy == 2 %}aria-hidden="true"{% endif %}>
+            <div
+              class="news-list"
+              {% if copy == 2 %}
+                aria-hidden="true"
+              {% endif %}
+            >
               {% for item in news limit: news_limit %}
                 <article class="news-row">
                   <time class="news-date" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: '%b %d, %Y' }}</time>

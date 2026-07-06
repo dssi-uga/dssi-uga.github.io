@@ -76,5 +76,4 @@ nav_order: 4
   </section>
 
   {% include news.liquid animate=true %}
-
 </div>
