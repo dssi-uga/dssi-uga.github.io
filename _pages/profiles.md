@@ -135,7 +135,7 @@ alumni_groups:
         degree: PhD 2022
         image: Sahand_Hajifar.jpg
         affiliation: "University at Buffalo, Industrial and Systems Engineering"
-        occupation: "Assistant Professor, Information Systems and Business Analytics, Park University"
+        occupation: "Assistant Professor, Robert W. Plaster School of Business, Park University"
         project: "Occupational sensing, transfer learning, and liver viability evaluation"
       - name: Zebin Li
         degree: PhD 2023
