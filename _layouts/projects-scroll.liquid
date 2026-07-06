@@ -249,20 +249,13 @@ layout: page
   }
 
   .project-section {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
-    gap: 2rem;
-    align-items: stretch;
-    min-height: 460px;
+    display: flow-root;
     padding: 3.5rem 0;
     border-bottom: 1px solid var(--dssi-line);
   }
 
   .project-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 390px;
+    min-height: 0;
   }
 
   .project-title a {
@@ -275,12 +268,9 @@ layout: page
     text-decoration: none;
   }
 
-  .project-section.reverse .project-content {
-    order: 2;
-  }
-
   .project-section.reverse .project-image {
-    order: 1;
+    float: left;
+    margin: 0.35rem 2rem 1rem 0;
   }
 
   .project-title {
@@ -320,9 +310,12 @@ layout: page
   }
 
   .project-image {
+    float: right;
+    width: min(46%, 520px);
     overflow: visible;
     height: auto;
     min-height: 0;
+    margin: 0.35rem 0 1rem 2rem;
     border: 1px solid var(--dssi-line);
     border-radius: 8px;
     background: transparent;
@@ -365,17 +358,14 @@ layout: page
 
     .project-section,
     .project-section.reverse {
-      grid-template-columns: 1fr;
-      gap: 1.6rem;
       padding: 3rem 0;
     }
 
-    .project-section.reverse .project-content,
+    .project-image,
     .project-section.reverse .project-image {
-      order: initial;
-    }
-
-    .project-image {
+      float: none;
+      width: 100%;
+      margin: 0 0 1.4rem;
       min-height: 0;
     }
   }
@@ -444,6 +434,23 @@ layout: page
       {% for project in sorted_projects %}
         {% assign remainder = forloop.index0 | modulo: 2 %}
         <article class="project-section scroll-reveal {% if remainder == 1 %}reverse{% endif %}">
+          <div class="project-image">
+            {% if project.img %}
+              {% assign project_image_src = project.img | relative_url %}
+              {% if project.link %}
+                {% if project.link contains 'http' %}
+                  {% assign project_href = project.link %}
+                {% else %}
+                  {% assign project_href = project.link | relative_url %}
+                {% endif %}
+                <a class="project-image-link" href="{{ project_href }}" {% if project.link contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %} aria-label="Open {{ project.title }}">
+                  <img src="{{ project_image_src }}" alt="{{ project.title }}">
+                </a>
+              {% else %}
+                <img src="{{ project_image_src }}" alt="{{ project.title }}">
+              {% endif %}
+            {% endif %}
+          </div>
           <div class="project-content">
             <h2 class="project-title">
               {% if project.link %}
@@ -463,23 +470,6 @@ layout: page
             <div class="project-details">
               {{ project.content }}
             </div>
-          </div>
-          <div class="project-image">
-            {% if project.img %}
-              {% assign project_image_src = project.img | relative_url %}
-              {% if project.link %}
-                {% if project.link contains 'http' %}
-                  {% assign project_href = project.link %}
-                {% else %}
-                  {% assign project_href = project.link | relative_url %}
-                {% endif %}
-                <a class="project-image-link" href="{{ project_href }}" {% if project.link contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %} aria-label="Open {{ project.title }}">
-                  <img src="{{ project_image_src }}" alt="{{ project.title }}">
-                </a>
-              {% else %}
-                <img src="{{ project_image_src }}" alt="{{ project.title }}">
-              {% endif %}
-            {% endif %}
           </div>
         </article>
       {% endfor %}
