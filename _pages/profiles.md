@@ -151,18 +151,22 @@ alumni_groups:
         project: "Operator fatigue, ergonomics, and privacy-preserved activity recognition"
       - name: Ramanarayanan Purnanandam
         degree: "MS in Industrial Engineering, 2019 Graduate"
+        image: "Ramnarayanan Purnanandam.png"
         occupation: "Project Manager - Assembly and New Parts & Development, S&V Industries, Inc."
         project: "Multi-stage 3D Printing Quality Control (co-advised with Chi Zhou)"
       - name: Aditya Patel
         degree: "MS in Industrial Engineering, 2020 Graduate"
+        image: "Aditya Patel.jpg"
         occupation: "Data Scientist, Aetna, a Health Company"
         project: "Graph Neural Network for Liver Transplantation Evaluation"
       - name: Chandan Singh
         degree: "MS in Industrial Engineering, 2020 Graduate"
+        image: "Chandan Singh.jpg"
         occupation: "Data Scientist, Definitive Healthcare"
         project: "Machine Learning for Liver Transplantation Evaluation"
       - name: Wilson David Jo Siu
         degree: "MS in Industrial Engineering, 2021 Graduate"
+        image: "Wilson jo.jpg"
         occupation: "Business Systems Analyst, Odoo. Inc."
         project: "System Informatics for 3D Printing of Teeth Mold"
   - title: Undergraduate and Pre-College Alumni
