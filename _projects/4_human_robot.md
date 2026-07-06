@@ -5,7 +5,7 @@ description: Real-time sensing, predictive modeling, and adaptive process unders
 importance: 2
 category: research
 link: /publications/#xu2026drying
-img: /assets/img/research/Carbon-Negative Biomass Manufacturing/Chenyu Carbon-Negative Biomass Manufacturing.png
+img: /assets/img/research/Carbon-Negative Biomass Manufacturing/Chenyu Carbon-Negative Biomass Manufacturing.jpg
 ---
 
 ## Overview

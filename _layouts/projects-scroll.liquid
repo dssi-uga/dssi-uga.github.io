@@ -464,7 +464,7 @@ layout: page
             <div class="project-body">
               <div class="project-image">
                 {% if project.img %}
-                  {% assign project_image_src = project.img | relative_url | bust_file_cache %}
+                  {% assign project_image_src = project.img | relative_url %}
                   {% if project.link %}
                     {% if project.link contains 'http' %}
                       {% assign project_href = project.link %}
