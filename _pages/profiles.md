@@ -75,48 +75,10 @@ member_groups:
   - title: Undergraduate Researchers
     description: UGA undergraduate researchers contributing to robotic inspection, digital twins, ethical fabrication, and manufacturing AI.
     members:
-      - name: Adam Tayara
-        role: Undergraduate Researcher
-        unit: Mechanical Engineering
-        image: Adam.jpg
-        email: adamtayara805@gmail.com
-        focus: Robotics and robotic hand systems.
-        project: Robotic Hand / Teleoperator
-        links:
-          - label: LinkedIn
-            url: https://www.linkedin.com/in/adam-tayara/
-      - name: Vithaal Dhamodharan
-        role: Undergraduate Researcher
-        unit: Computer Systems Engineering
-        image: Vithaal.jpeg
-        email: vithaaldhamo@gmail.com
-        focus: Embedded systems for collaborative robotics.
-        project: Collaborative Robotic Disassembly
-        links:
-          - label: LinkedIn
-            url: https://www.linkedin.com/in/vithaal-dhamodharan-4187972bb/
-          - label: GitHub
-            url: https://github.com/VithaalD
-      - name: Aarush Mathad
-        role: Undergraduate Researcher
-        unit: Franklin College of Arts and Sciences
-        image: Aarush.jpeg
-        email: aarushmathad1@gmail.com
-        focus: Optimization of real-world systems.
-        project: Collaborative Robotic Disassembly
-      - name: Kadin Relefourd
-        role: Undergraduate Researcher
-        unit: School of Computing
-        image: "Kadin Relefourd.jpg"
-        email: kadin.relefourd@uga.edu
-        focus: Reinforcement learning, deep learning, and intelligent autonomous systems.
-        project: Collaborative Robotic Disassembly
-        links:
-          - label: LinkedIn
-            url: https://www.linkedin.com/in/kadinrelefourd/
       - name: Penuel Yeboah
         role: Undergraduate Researcher
         unit: Computer Engineering
+        image: Penuel.jpeg
         email: pyeboah@uga.edu
         focus: Simulation development, AI/ML, and software engineering.
         project: VR-controlled digital twin and robotic inspection pipeline
@@ -133,16 +95,6 @@ member_groups:
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/zhengyaoliew/
-      - name: John Bodamer
-        role: Undergraduate Researcher
-        unit: Electrical Engineering
-        image: "John Bodamer.jpeg"
-        email: john.bodamer@uga.edu
-        focus: Electrical engineering, sensing, and automation.
-        project: Collaborative Robotic Disassembly
-        links:
-          - label: LinkedIn
-            url: https://www.linkedin.com/in/john-bodamer
       - name: John Braswell
         role: Undergraduate Researcher
         unit: Mechanical Engineering
@@ -160,6 +112,15 @@ member_groups:
         email: ns91682@uga.edu
         focus: Responsible AI and data-driven manufacturing systems.
         project: Ethical Manufacturing
+      - name: Zachary Smith
+        role: Undergraduate Researcher
+        unit: Computer Science
+        image: "Zach Smith.jpg"
+        focus: Collaborative robotic disassembly.
+        project: Collaborative Robotic Disassembly
+        links:
+          - label: LinkedIn
+            url: https://www.linkedin.com/in/zach-smith-39b982239/
 
 alumni_groups:
   - title: Graduate Alumni
@@ -206,6 +167,47 @@ alumni_groups:
         project: "System Informatics for 3D Printing of Teeth Mold"
   - title: Undergraduate and Pre-College Alumni
     people:
+      - name: Adam Tayara
+        image: Adam.jpg
+        affiliation: Mechanical Engineering
+        project: Robotic Hand / Teleoperator
+        links:
+          - label: LinkedIn
+            url: https://www.linkedin.com/in/adam-tayara/
+      - name: Vithaal Dhamodharan
+        image: Vithaal.jpeg
+        affiliation: Computer Systems Engineering
+        project: Collaborative Robotic Disassembly
+        links:
+          - label: LinkedIn
+            url: https://www.linkedin.com/in/vithaal-dhamodharan-4187972bb/
+          - label: GitHub
+            url: https://github.com/VithaalD
+      - name: Aarush Mathad
+        image: Aarush.jpeg
+        affiliation: Franklin College of Arts and Sciences
+        project: Collaborative Robotic Disassembly
+      - name: Kadin Relefourd
+        image: "Kadin Relefourd.jpg"
+        affiliation: School of Computing
+        project: Collaborative Robotic Disassembly
+        links:
+          - label: LinkedIn
+            url: https://www.linkedin.com/in/kadinrelefourd/
+      - name: John Bodamer
+        image: "John Bodamer.jpeg"
+        affiliation: Electrical Engineering
+        project: Collaborative Robotic Disassembly
+        links:
+          - label: LinkedIn
+            url: https://www.linkedin.com/in/john-bodamer
+      - name: Heejun Kwon
+        image: "Heejun K.png"
+        affiliation: Mechanical Engineering
+        project: Collaborative Robotic Disassembly
+        links:
+          - label: LinkedIn
+            url: https://www.linkedin.com/in/zach-smith-39b982239/
       - name: Matthew Rubino
         affiliation: MS at Cornell
         project: STREAM software/AI; ACM SenSys co-author; Agrusa Innovation Competition winner
