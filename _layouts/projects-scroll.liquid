@@ -249,7 +249,6 @@ layout: page
   }
 
   .project-section {
-    display: flow-root;
     padding: 3.5rem 0;
     border-bottom: 1px solid var(--dssi-line);
   }
@@ -268,9 +267,19 @@ layout: page
     text-decoration: none;
   }
 
+  .project-body {
+    display: grid;
+    grid-template-columns: minmax(0, 0.58fr) minmax(320px, 0.42fr);
+    gap: 2rem;
+    align-items: start;
+  }
+
   .project-section.reverse .project-image {
-    float: left;
-    margin: 0.35rem 2rem 1rem 0;
+    order: 2;
+  }
+
+  .project-section.reverse .project-details {
+    order: 1;
   }
 
   .project-title {
@@ -290,7 +299,7 @@ layout: page
   }
 
   .project-details h2 {
-    margin-top: 1.5rem;
+    margin-top: 0;
     color: var(--global-theme-color);
     font-size: 0.9rem;
     font-weight: 800;
@@ -310,12 +319,10 @@ layout: page
   }
 
   .project-image {
-    float: right;
-    width: min(56%, 720px);
     overflow: visible;
     height: auto;
     min-height: 0;
-    margin: 0.35rem 0 1rem 2rem;
+    margin: 0;
     border: 1px solid var(--dssi-line);
     border-radius: 8px;
     background: transparent;
@@ -361,11 +368,15 @@ layout: page
       padding: 3rem 0;
     }
 
+    .project-body {
+      grid-template-columns: 1fr;
+      gap: 1.4rem;
+    }
+
     .project-image,
-    .project-section.reverse .project-image {
-      float: none;
-      width: 100%;
-      margin: 0 0 1.4rem;
+    .project-section.reverse .project-image,
+    .project-section.reverse .project-details {
+      order: initial;
       min-height: 0;
     }
   }
@@ -450,25 +461,27 @@ layout: page
             {% if project.description %}
               <p class="project-description">{{ project.description }}</p>
             {% endif %}
-            <div class="project-image">
-              {% if project.img %}
-              {% assign project_image_src = project.img | relative_url %}
-              {% if project.link %}
-                {% if project.link contains 'http' %}
-                  {% assign project_href = project.link %}
-                {% else %}
-                  {% assign project_href = project.link | relative_url %}
+            <div class="project-body">
+              <div class="project-image">
+                {% if project.img %}
+                  {% assign project_image_src = project.img | relative_url | bust_file_cache %}
+                  {% if project.link %}
+                    {% if project.link contains 'http' %}
+                      {% assign project_href = project.link %}
+                    {% else %}
+                      {% assign project_href = project.link | relative_url %}
+                    {% endif %}
+                    <a class="project-image-link" href="{{ project_href }}" {% if project.link contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %} aria-label="Open {{ project.title }}">
+                      <img src="{{ project_image_src }}" alt="{{ project.title }}">
+                    </a>
+                  {% else %}
+                    <img src="{{ project_image_src }}" alt="{{ project.title }}">
+                  {% endif %}
                 {% endif %}
-                <a class="project-image-link" href="{{ project_href }}" {% if project.link contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %} aria-label="Open {{ project.title }}">
-                  <img src="{{ project_image_src }}" alt="{{ project.title }}">
-                </a>
-              {% else %}
-                <img src="{{ project_image_src }}" alt="{{ project.title }}">
-              {% endif %}
-              {% endif %}
-            </div>
-            <div class="project-details">
-              {{ project.content }}
+              </div>
+              <div class="project-details">
+                {{ project.content }}
+              </div>
             </div>
           </div>
         </article>

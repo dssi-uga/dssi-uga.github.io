@@ -71,9 +71,6 @@ nav_order: 5
       <img src="{{ '/assets/img/gallery/IMG_5572.JPG' | relative_url }}" alt="IMG 5572" loading="lazy">
     </figure>
     <figure class="gallery-item">
-      <img src="{{ '/assets/img/gallery/IMG_5575.JPG' | relative_url }}" alt="IMG 5575" loading="lazy">
-    </figure>
-    <figure class="gallery-item">
       <img src="{{ '/assets/img/gallery/IMG_5576.JPG' | relative_url }}" alt="IMG 5576" loading="lazy">
     </figure>
     <figure class="gallery-item">
@@ -81,9 +78,6 @@ nav_order: 5
     </figure>
     <figure class="gallery-item">
       <img src="{{ '/assets/img/gallery/IMG_5589.JPG' | relative_url }}" alt="IMG 5589" loading="lazy">
-    </figure>
-    <figure class="gallery-item">
-      <img src="{{ '/assets/img/gallery/IMG_5590.JPG' | relative_url }}" alt="IMG 5590" loading="lazy">
     </figure>
     <figure class="gallery-item">
       <img src="{{ '/assets/img/gallery/IMG_5595.JPG' | relative_url }}" alt="IMG 5595" loading="lazy">
@@ -105,9 +99,6 @@ nav_order: 5
     </figure>
     <figure class="gallery-item">
       <img src="{{ '/assets/img/gallery/lab-equipment-1.jpg' | relative_url }}" alt="lab equipment 1" loading="lazy">
-    </figure>
-    <figure class="gallery-item">
-      <img src="{{ '/assets/img/gallery/lab-equipment-5.jpg' | relative_url }}" alt="lab equipment 5" loading="lazy">
     </figure>
     <figure class="gallery-item">
       <img src="{{ '/assets/img/gallery/lab-equipment-6.jpg' | relative_url }}" alt="lab equipment 6" loading="lazy">
