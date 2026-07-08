@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-01'
+  last_updated: '2026-07-08'
 papers:
   IOX-e6wAAAAJ:-f6ydRqryjwC:
     citations: 98
@@ -126,7 +126,7 @@ papers:
     title: Supporting Information Multitask Lasso Model for Investigating Multimodule Design Factors, Operational Factors and Covariates in Tubular Microbial Fuel Cells
     year: Unknown Year
   IOX-e6wAAAAJ:UeHWp8X0CEIC:
-    citations: 70
+    citations: 71
     title: 'A forecasting framework for predicting perceived fatigue: Using time series methods to forecast ratings of perceived exertion with features from wearable sensors'
     year: '2021'
   IOX-e6wAAAAJ:UebtZRa9Y70C:
@@ -214,7 +214,7 @@ papers:
     title: Human Digital Twin, Precision Healthcare, Health Monitoring, Anomaly Detection, Statistical and Machine Learning Models
     year: '2025'
   IOX-e6wAAAAJ:hqOjcs7Dif8C:
-    citations: 140
+    citations: 141
     title: Unsupervised learning for the droplet evolution prediction and process dynamics understanding in inkjet printing
     year: '2020'
   IOX-e6wAAAAJ:iH-uZ7U-co4C:
@@ -226,7 +226,7 @@ papers:
     title: Investigation of Heterogeneity Sources for Occupational Task Recognition via Transfer Learning
     year: '2021'
   IOX-e6wAAAAJ:j3f4tGmQtD8C:
-    citations: 11
+    citations: 12
     title: "Adapting OpenAI\u2019s CLIP model for few-shot image inspection in manufacturing quality control: An expository case study with multiple application examples"
     year: '2026'
   IOX-e6wAAAAJ:kNdYIx-mwKoC:
@@ -250,7 +250,7 @@ papers:
     title: 'EthicalFab: Toward ethical fabrication process through privacy-preserving illegal product detection'
     year: '2025'
   IOX-e6wAAAAJ:qUcmZB5y_30C:
-    citations: 26
+    citations: 25
     title: Human reliability modeling in occupational environments toward a safe and productive operator 4.0
     year: '2023'
   IOX-e6wAAAAJ:qjMakFHDy7sC:
@@ -270,7 +270,7 @@ papers:
     title: Variation analysis and visualization of manufacturing processes via augmented reality
     year: '2016'
   IOX-e6wAAAAJ:u-x6o8ySG0sC:
-    citations: 38
+    citations: 39
     title: Online droplet anomaly detection from streaming videos in inkjet printing
     year: '2021'
   IOX-e6wAAAAJ:ufrVoPGSRksC:
