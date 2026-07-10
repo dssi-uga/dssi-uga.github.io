@@ -114,16 +114,16 @@ member_groups:
       - name: Maya Nessmith
         role: Undergraduate Researcher
         image: "Maya Nessmith.png"
-        focus: Behavioural and imitation learning for robotics.
-        project: Behavioural/Imitation Learning with Robotics
+        focus: Behavioral cloning and imitation learning for robotics.
+        project: Behavioral Cloning with Robotics
         links:
           - label: LinkedIn
             url: http://www.linkedin.com/in/mayanessmith
       - name: Jeffrey Franklin Cooper Shane
         role: Undergraduate Researcher
         image: "Jeffrey Franklin Cooper Shane.jpg"
-        focus: Behavioural and imitation learning for robotics.
-        project: Behavioural/Imitation Learning with Robotics
+        focus: Behavioral cloning and imitation learning for robotics.
+        project: Behavioral Cloning with Robotics
         links:
           - label: LinkedIn
             url: http://www.linkedin.com/in/cooper-shane-147391328
