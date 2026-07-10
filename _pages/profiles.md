@@ -85,16 +85,6 @@ member_groups:
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/penuel-yeboah-476905291
-      - name: Zhengyao Liew
-        role: Undergraduate Researcher
-        unit: School of Computing and College of Engineering
-        image: Zhengyao.jpg
-        email: zhengyao.liew@uga.edu
-        focus: LLM applications for manufacturing.
-        project: LLM applications for manufacturing
-        links:
-          - label: LinkedIn
-            url: https://www.linkedin.com/in/zhengyaoliew/
       - name: John Braswell
         role: Undergraduate Researcher
         unit: Mechanical Engineering
@@ -121,6 +111,22 @@ member_groups:
         links:
           - label: LinkedIn
             url: https://www.linkedin.com/in/zach-smith-39b982239/
+      - name: Maya Nessmith
+        role: Undergraduate Researcher
+        image: "Maya Nessmith.png"
+        focus: Behavioural and imitation learning for robotics.
+        project: Behavioural/Imitation Learning with Robotics
+        links:
+          - label: LinkedIn
+            url: http://www.linkedin.com/in/mayanessmith
+      - name: Jeffrey Franklin Cooper Shane
+        role: Undergraduate Researcher
+        image: "Jeffrey Franklin Cooper Shane.jpg"
+        focus: Behavioural and imitation learning for robotics.
+        project: Behavioural/Imitation Learning with Robotics
+        links:
+          - label: LinkedIn
+            url: http://www.linkedin.com/in/cooper-shane-147391328
 
 alumni_groups:
   - title: Graduate Alumni
@@ -171,6 +177,13 @@ alumni_groups:
         project: "System Informatics for 3D Printing of Teeth Mold"
   - title: Undergraduate and Pre-College Alumni
     people:
+      - name: Zhengyao Liew
+        image: Zhengyao.jpg
+        affiliation: School of Computing and College of Engineering
+        project: LLM applications for manufacturing
+        links:
+          - label: LinkedIn
+            url: https://www.linkedin.com/in/zhengyaoliew/
       - name: Adam Tayara
         image: Adam.jpg
         affiliation: Mechanical Engineering
