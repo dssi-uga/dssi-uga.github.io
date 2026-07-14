@@ -1,6 +1,6 @@
-# Data Science and System Informatics (DSSI) Lab Website
+# MERIT Lab Website
 
-This is the source code for the official website of the **Data Science and System Informatics (DSSI) Lab** at the University of Georgia (UGA), directed by Dr. Hongyue Sun.
+This is the source code for the official website of the **MERIT: Manufacturing Empowered by Robotics, Intelligence, and Trustworthy Systems Lab** at the University of Georgia (UGA), directed by Dr. Hongyue Sun.
 
 The live website is hosted on GitHub Pages and can be accessed here: **[https://dssi-uga.github.io](https://dssi-uga.github.io)**
 
