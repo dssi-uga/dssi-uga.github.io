@@ -11,6 +11,7 @@ nav_order: 4
   .news-archive {
     --news-blue: #003cff;
     --news-red: #d00000;
+    --news-green: #198754;
     --news-gold: #b8860b;
     --news-text: var(--global-text-color);
     --news-muted: #4f5965;
@@ -20,6 +21,7 @@ nav_order: 4
   html[data-theme='dark'] .news-archive {
     --news-blue: #7fa2ff;
     --news-red: #ff6f6f;
+    --news-green: #4ade80;
     --news-gold: #ffd166;
     --news-muted: #cbd3dc;
   }
@@ -53,6 +55,10 @@ nav_order: 4
     font-weight: 800;
   }
 
+  .news-label-award {
+    color: var(--news-green);
+  }
+
   .news-label-service {
     color: var(--news-gold);
   }
@@ -68,15 +74,15 @@ nav_order: 4
     <h2>2026</h2>
     <ul>
       <li><span class='news-label'>[Media]</span> The Autoinspector robotic-inspection framework was accepted to ASME MSEC 2026. <span class='news-date-inline'>(2026/05)</span></li>
-      <li><span class='news-label'>[Award]</span> The team received a $600K NSF CICI grant for a manufacturing-security living lab. <span class='news-date-inline'>(2026/05)</span></li>
-      <li><span class='news-label'>[Award]</span> PhD student Wuyang Chen was named a Finalist for the IISE M&amp;D Best Student Paper Award. <span class='news-date-inline'>(2026/05)</span></li>
+      <li><span class='news-label news-label-award'>[Award]</span> The team received a $600K NSF CICI grant for a manufacturing-security living lab. <span class='news-date-inline'>(2026/05)</span></li>
+      <li><span class='news-label news-label-award'>[Award]</span> PhD student Wuyang Chen was named a Finalist for the IISE M&amp;D Best Student Paper Award. <span class='news-date-inline'>(2026/05)</span></li>
     </ul>
   </section>
 
   <section class='news-year'>
     <h2>2025</h2>
     <ul>
-      <li><span class='news-label'>[Award]</span> MERIT received a Honda climate-smart manufacturing project. <span class='news-date-inline'>(2025/09)</span></li>
+      <li><span class='news-label news-label-award'>[Award]</span> MERIT received a Honda climate-smart manufacturing project. <span class='news-date-inline'>(2025/09)</span></li>
       <li><span class='news-label news-label-service'>[Service]</span> Dr. Sun began service as Associate Editor of ASME JCISE. <span class='news-date-inline'>(2025/09)</span></li>
       <li><span class='news-label news-label-service'>[Service]</span> MERIT organized the 2nd Convergent Safety Symposium. <span class='news-date-inline'>(2025/09)</span></li>
       <li><span class='news-label news-label-service'>[Service]</span> Dr. Sun served as Chair of the INFORMS QSR Section. <span class='news-date-inline'>(2025/09)</span></li>
@@ -96,23 +102,23 @@ nav_order: 4
     <h2>2023</h2>
     <ul>
       <li><span class='news-label'>[Event]</span> Dr. Sun moved to the University of Georgia and launched the MERIT Lab. <span class='news-date-inline'>(2023/08)</span></li>
-      <li><span class='news-label'>[Award]</span> Dr. Sun received the SME Outstanding Young Manufacturing Engineer Award. <span class='news-date-inline'>(2023/08)</span></li>
-      <li><span class='news-label'>[Award]</span> Dr. Sun received the University at Buffalo Exceptional Scholar - Young Investigator Award. <span class='news-date-inline'>(2023/08)</span></li>
-      <li><span class='news-label'>[Award]</span> The team was awarded the $566K NSF Ethical Industry 4.0 project. <span class='news-date-inline'>(2023/08)</span></li>
+      <li><span class='news-label news-label-award'>[Award]</span> Dr. Sun received the SME Outstanding Young Manufacturing Engineer Award. <span class='news-date-inline'>(2023/08)</span></li>
+      <li><span class='news-label news-label-award'>[Award]</span> Dr. Sun received the University at Buffalo Exceptional Scholar - Young Investigator Award. <span class='news-date-inline'>(2023/08)</span></li>
+      <li><span class='news-label news-label-award'>[Award]</span> The team was awarded the $566K NSF Ethical Industry 4.0 project. <span class='news-date-inline'>(2023/08)</span></li>
     </ul>
   </section>
 
   <section class='news-year'>
     <h2>2022</h2>
     <ul>
-      <li><span class='news-label'>[Award]</span> The team won 1st place and $6,000 at the University at Buffalo Agrusa Innovation Competition for an interactive digital twin in cyber manufacturing, with work published at ACM SenSys. <span class='news-date-inline'>(2022/04)</span></li>
+      <li><span class='news-label news-label-award'>[Award]</span> The team won 1st place and $6,000 at the University at Buffalo Agrusa Innovation Competition for an interactive digital twin in cyber manufacturing, with work published at ACM SenSys. <span class='news-date-inline'>(2022/04)</span></li>
     </ul>
   </section>
 
   <section class='news-year'>
     <h2>2021</h2>
     <ul>
-      <li><span class='news-label'>[Award]</span> MERIT launched the STREAM platform under a $2.33M NSF Future Manufacturing Research Grant for multi-stage distributed future manufacturing. <span class='news-date-inline'>(2021/09)</span></li>
+      <li><span class='news-label news-label-award'>[Award]</span> MERIT launched the STREAM platform under a $2.33M NSF Future Manufacturing Research Grant for multi-stage distributed future manufacturing. <span class='news-date-inline'>(2021/09)</span></li>
     </ul>
   </section>
 

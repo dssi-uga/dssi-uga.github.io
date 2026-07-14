@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-PhD student Wuyang Chen was named a Finalist for the IISE M&D Best Student Paper Award.
+PhD student Wuyang Chen was named a finalist for the IISE M&D Best Student Paper Award.

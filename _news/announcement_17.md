@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-The Autoinspector robotic-inspection framework was accepted to ASME MSEC 2026.
+The AutoInspector Robotic Inspection framework was accepted to ASME MSEC 2026.
