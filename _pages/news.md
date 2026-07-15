@@ -73,6 +73,7 @@ nav_order: 4
   <section class='news-year'>
     <h2>2026</h2>
     <ul>
+      <li><span class='news-label'>[Event]</span> MERIT Lab conducted a summer camp. <span class='news-date-inline'>(2026/07)</span></li>
       <li><span class='news-label'>[Media]</span> The Autoinspector robotic-inspection framework was accepted to ASME MSEC 2026. <span class='news-date-inline'>(2026/05)</span></li>
       <li><span class='news-label news-label-award'>[Award]</span> The team received a $600K NSF CICI grant for a manufacturing-security living lab. <span class='news-date-inline'>(2026/05)</span></li>
       <li><span class='news-label news-label-award'>[Award]</span> PhD student Wuyang Chen was named a Finalist for the IISE M&amp;D Best Student Paper Award. <span class='news-date-inline'>(2026/05)</span></li>
