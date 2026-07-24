@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-07-08'
+  last_updated: '2026-07-24'
 papers:
   IOX-e6wAAAAJ:-f6ydRqryjwC:
-    citations: 98
+    citations: 99
     title: 'Towards artificial general intelligence (agi) in the internet of things (iot): Opportunities and challenges'
     year: '2023'
   IOX-e6wAAAAJ:0EnyYjriUFMC:
@@ -10,7 +10,7 @@ papers:
     title: Spatiotemporal fusion network for the droplet behavior recognition in inkjet printing
     year: '2020'
   IOX-e6wAAAAJ:2osOgNQ5qMEC:
-    citations: 102
+    citations: 103
     title: 'A review of modeling bioelectrochemical systems: engineering and statistical aspects'
     year: '2016'
   IOX-e6wAAAAJ:3fE2CSJIrl8C:
@@ -30,7 +30,7 @@ papers:
     title: Investigation of heterogeneity sources for occupational task recognition via transfer learning
     year: '2021'
   IOX-e6wAAAAJ:5nxA0vEk-isC:
-    citations: 20
+    citations: 21
     title: Quantifying the CVD-grown two-dimensional materials via image clustering
     year: '2021'
   IOX-e6wAAAAJ:7PzlFSSx8tAC:
@@ -126,7 +126,7 @@ papers:
     title: Supporting Information Multitask Lasso Model for Investigating Multimodule Design Factors, Operational Factors and Covariates in Tubular Microbial Fuel Cells
     year: Unknown Year
   IOX-e6wAAAAJ:UeHWp8X0CEIC:
-    citations: 71
+    citations: 72
     title: 'A forecasting framework for predicting perceived fatigue: Using time series methods to forecast ratings of perceived exertion with features from wearable sensors'
     year: '2021'
   IOX-e6wAAAAJ:UebtZRa9Y70C:
@@ -162,7 +162,7 @@ papers:
     title: Logistic regression for crystal growth process modeling through hierarchical nonnegative garrote-based variable selection
     year: '2016'
   IOX-e6wAAAAJ:_FxGoFyzp5QC:
-    citations: 31
+    citations: 32
     title: A data analytic end-to-end framework for the automated quantification of ergonomic risk factors across multiple tasks using a single wearable sensor
     year: '2022'
   IOX-e6wAAAAJ:_Qo2XoVZTnwC:
@@ -170,7 +170,7 @@ papers:
     title: Developing Measurement Models Using Bayesian Neural Networks
     year: '2025'
   IOX-e6wAAAAJ:_kc_bZDykSQC:
-    citations: 26
+    citations: 27
     title: Ensemble modeling of in situ features for printed electronics manufacturing with in situ process control potential
     year: '2017'
   IOX-e6wAAAAJ:aqlVkmm33-oC:
@@ -218,7 +218,7 @@ papers:
     title: Unsupervised learning for the droplet evolution prediction and process dynamics understanding in inkjet printing
     year: '2020'
   IOX-e6wAAAAJ:iH-uZ7U-co4C:
-    citations: 3
+    citations: 4
     title: "CrossMatAgent: AI\u2010Assisted Design of Manufacturable Metamaterial Patterns via Multi\u2010Agent Generative Framework"
     year: '2025'
   IOX-e6wAAAAJ:isC4tDSrTZIC:
@@ -226,7 +226,7 @@ papers:
     title: Investigation of Heterogeneity Sources for Occupational Task Recognition via Transfer Learning
     year: '2021'
   IOX-e6wAAAAJ:j3f4tGmQtD8C:
-    citations: 12
+    citations: 13
     title: "Adapting OpenAI\u2019s CLIP model for few-shot image inspection in manufacturing quality control: An expository case study with multiple application examples"
     year: '2026'
   IOX-e6wAAAAJ:kNdYIx-mwKoC:
@@ -250,7 +250,7 @@ papers:
     title: 'EthicalFab: Toward ethical fabrication process through privacy-preserving illegal product detection'
     year: '2025'
   IOX-e6wAAAAJ:qUcmZB5y_30C:
-    citations: 25
+    citations: 27
     title: Human reliability modeling in occupational environments toward a safe and productive operator 4.0
     year: '2023'
   IOX-e6wAAAAJ:qjMakFHDy7sC:
