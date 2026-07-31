@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-24'
+  last_updated: '2026-07-31'
 papers:
   IOX-e6wAAAAJ:-f6ydRqryjwC:
     citations: 99
@@ -49,6 +49,10 @@ papers:
     citations: 29
     title: Cyber coordinated simulation for distributed multi-stage additive manufacturing systems
     year: '2020'
+  IOX-e6wAAAAJ:BqipwSGYUEgC:
+    citations: 0
+    title: Diffusion-corrected Autoregressive Fourier Neural Operator for Droplet Evolution Prediction
+    year: '2026'
   IOX-e6wAAAAJ:HDshCWvjkbEC:
     citations: 1
     title: Investigating Jet Stability in Inkjet Printing Through a Novel Sensing Modality
@@ -70,7 +74,7 @@ papers:
     title: Quality modeling of printed electronics in aerosol jet printing based on microscopic images
     year: '2017'
   IOX-e6wAAAAJ:L8Ckcad2t8MC:
-    citations: 31
+    citations: 32
     title: Multiclass reinforced active learning for droplet pinch-off behaviors identification in inkjet printing
     year: '2023'
   IOX-e6wAAAAJ:LkGwnXOMwfcC:
@@ -214,11 +218,11 @@ papers:
     title: Human Digital Twin, Precision Healthcare, Health Monitoring, Anomaly Detection, Statistical and Machine Learning Models
     year: '2025'
   IOX-e6wAAAAJ:hqOjcs7Dif8C:
-    citations: 141
+    citations: 142
     title: Unsupervised learning for the droplet evolution prediction and process dynamics understanding in inkjet printing
     year: '2020'
   IOX-e6wAAAAJ:iH-uZ7U-co4C:
-    citations: 4
+    citations: 3
     title: "CrossMatAgent: AI\u2010Assisted Design of Manufacturable Metamaterial Patterns via Multi\u2010Agent Generative Framework"
     year: '2025'
   IOX-e6wAAAAJ:isC4tDSrTZIC:
@@ -242,7 +246,7 @@ papers:
     title: Irregular surface temperature monitoring in liver procurement via time-vertex signal processing
     year: '2024'
   IOX-e6wAAAAJ:mVmsd5A6BfQC:
-    citations: 35
+    citations: 36
     title: Droplet evolution prediction in material jetting via tensor time series analysis
     year: '2023'
   IOX-e6wAAAAJ:maZDTaKrznsC:
@@ -270,7 +274,7 @@ papers:
     title: Variation analysis and visualization of manufacturing processes via augmented reality
     year: '2016'
   IOX-e6wAAAAJ:u-x6o8ySG0sC:
-    citations: 39
+    citations: 40
     title: Online droplet anomaly detection from streaming videos in inkjet printing
     year: '2021'
   IOX-e6wAAAAJ:ufrVoPGSRksC:
