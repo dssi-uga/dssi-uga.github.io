@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-31'
+  last_updated: '2026-08-19'
 papers:
   IOX-e6wAAAAJ:-f6ydRqryjwC:
     citations: 99
@@ -10,11 +10,11 @@ papers:
     title: Spatiotemporal fusion network for the droplet behavior recognition in inkjet printing
     year: '2020'
   IOX-e6wAAAAJ:2osOgNQ5qMEC:
-    citations: 103
+    citations: 101
     title: 'A review of modeling bioelectrochemical systems: engineering and statistical aspects'
     year: '2016'
   IOX-e6wAAAAJ:3fE2CSJIrl8C:
-    citations: 24
+    citations: 25
     title: Nearest neighbor gaussian process emulation for multi-dimensional array responses in freeze nano 3d printing of energy devices
     year: '2020'
   IOX-e6wAAAAJ:4DMP91E08xMC:
@@ -82,7 +82,7 @@ papers:
     title: Ensemble engineering and statistical modeling for parameter calibration towards optimal design of microbial fuel cells
     year: '2017'
   IOX-e6wAAAAJ:M3NEmzRMIkIC:
-    citations: 3
+    citations: 4
     title: "AI\u2010Directed 3D Printing of Hierarchical Polyurethane Foams"
     year: '2026'
   IOX-e6wAAAAJ:M3ejUd6NZC8C:
@@ -94,7 +94,7 @@ papers:
     title: Multitask lasso model for investigating multimodule design factors, operational factors, and covariates in tubular microbial fuel cells
     year: '2015'
   IOX-e6wAAAAJ:NMxIlDl6LWMC:
-    citations: 0
+    citations: 1
     title: 'IntrAgent: An LLM Agent for Content-Grounded Information Retrieval through Literature Review'
     year: '2026'
   IOX-e6wAAAAJ:QIV2ME_5wuYC:
@@ -125,12 +125,8 @@ papers:
     citations: 19
     title: Online domain adaptation for continuous cross-subject liver viability evaluation based on irregular thermal data
     year: '2022'
-  IOX-e6wAAAAJ:ULOm3_A8WrAC:
-    citations: 0
-    title: Supporting Information Multitask Lasso Model for Investigating Multimodule Design Factors, Operational Factors and Covariates in Tubular Microbial Fuel Cells
-    year: Unknown Year
   IOX-e6wAAAAJ:UeHWp8X0CEIC:
-    citations: 72
+    citations: 67
     title: 'A forecasting framework for predicting perceived fatigue: Using time series methods to forecast ratings of perceived exertion with features from wearable sensors'
     year: '2021'
   IOX-e6wAAAAJ:UebtZRa9Y70C:
@@ -154,11 +150,11 @@ papers:
     title: 3D Printing Innovations in Polymeric Porous and Patterned Architecture
     year: '2026'
   IOX-e6wAAAAJ:YOwf2qJgpHMC:
-    citations: 12
+    citations: 11
     title: Supervised subgraph augmented non-negative matrix factorization for interpretable manufacturing time series data analytics
     year: '2020'
   IOX-e6wAAAAJ:YsMSGLbcyi4C:
-    citations: 3
+    citations: 4
     title: Cyber-coordinated simulation models for multi-stage additive manufacturing of energy products
     year: '2018'
   IOX-e6wAAAAJ:Zph67rFs4hoC:
@@ -182,8 +178,8 @@ papers:
     title: The impact of varying patient populations on the in-control performance of the risk-adjusted CUSUM chart
     year: '2015'
   IOX-e6wAAAAJ:bEWYMUwI8FkC:
-    citations: 2
-    title: 'Human Digital Twin: Data, Models, Applications, and Challenges'
+    citations: 3
+    title: 'Human digital twin: data, models, applications, and challenges'
     year: '2025'
   IOX-e6wAAAAJ:blknAaTinKkC:
     citations: 1
@@ -210,8 +206,8 @@ papers:
     title: Model calibration in inkjet printing process
     year: '2023'
   IOX-e6wAAAAJ:hFOr9nPyWt4C:
-    citations: 6
-    title: Functional ANOVA for upper extremity fatigue analysis during dynamic order picking
+    citations: 5
+    title: Functional anova for upper extremity fatigue analysis during dynamic order picking
     year: '2023'
   IOX-e6wAAAAJ:hMod-77fHWUC:
     citations: 0
@@ -230,7 +226,7 @@ papers:
     title: Investigation of Heterogeneity Sources for Occupational Task Recognition via Transfer Learning
     year: '2021'
   IOX-e6wAAAAJ:j3f4tGmQtD8C:
-    citations: 13
+    citations: 15
     title: "Adapting OpenAI\u2019s CLIP model for few-shot image inspection in manufacturing quality control: An expository case study with multiple application examples"
     year: '2026'
   IOX-e6wAAAAJ:kNdYIx-mwKoC:
@@ -254,7 +250,7 @@ papers:
     title: 'EthicalFab: Toward ethical fabrication process through privacy-preserving illegal product detection'
     year: '2025'
   IOX-e6wAAAAJ:qUcmZB5y_30C:
-    citations: 27
+    citations: 28
     title: Human reliability modeling in occupational environments toward a safe and productive operator 4.0
     year: '2023'
   IOX-e6wAAAAJ:qjMakFHDy7sC:
@@ -262,11 +258,11 @@ papers:
     title: Geometric Deep Learning for Shape Correspondence in Mass Customization by 3D Printing
     year: '2020'
   IOX-e6wAAAAJ:qxL8FJ1GzNcC:
-    citations: 25
+    citations: 26
     title: 'Analyzing risk of service failures in heavy haul rail lines: A hybrid approach for imbalanced data'
     year: '2022'
   IOX-e6wAAAAJ:r0BpntZqJG4C:
-    citations: 4
+    citations: 5
     title: Process Control for Direct Ink Writing of Composite Materials via Reinforcement Learning
     year: '2025'
   IOX-e6wAAAAJ:roLk4NBRz8UC:
