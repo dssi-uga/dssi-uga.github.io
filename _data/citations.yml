@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-19'
+  last_updated: '2026-08-24'
 papers:
   IOX-e6wAAAAJ:-f6ydRqryjwC:
     citations: 99
@@ -118,7 +118,7 @@ papers:
     title: Human Reliability Modeling in Occupational Environments Toward a Safe and Productive Operator 4.0
     year: '2023'
   IOX-e6wAAAAJ:TQgYirikUcIC:
-    citations: 1
+    citations: 2
     title: High-Fidelity Sensing Modality for Anomaly Detection in Inkjet Printing
     year: '2025'
   IOX-e6wAAAAJ:Tyk-4Ss8FVUC:
@@ -162,7 +162,7 @@ papers:
     title: Logistic regression for crystal growth process modeling through hierarchical nonnegative garrote-based variable selection
     year: '2016'
   IOX-e6wAAAAJ:_FxGoFyzp5QC:
-    citations: 32
+    citations: 33
     title: A data analytic end-to-end framework for the automated quantification of ergonomic risk factors across multiple tasks using a single wearable sensor
     year: '2022'
   IOX-e6wAAAAJ:_Qo2XoVZTnwC:
@@ -206,7 +206,7 @@ papers:
     title: Model calibration in inkjet printing process
     year: '2023'
   IOX-e6wAAAAJ:hFOr9nPyWt4C:
-    citations: 5
+    citations: 6
     title: Functional anova for upper extremity fatigue analysis during dynamic order picking
     year: '2023'
   IOX-e6wAAAAJ:hMod-77fHWUC:
@@ -214,7 +214,7 @@ papers:
     title: Human Digital Twin, Precision Healthcare, Health Monitoring, Anomaly Detection, Statistical and Machine Learning Models
     year: '2025'
   IOX-e6wAAAAJ:hqOjcs7Dif8C:
-    citations: 142
+    citations: 143
     title: Unsupervised learning for the droplet evolution prediction and process dynamics understanding in inkjet printing
     year: '2020'
   IOX-e6wAAAAJ:iH-uZ7U-co4C:
