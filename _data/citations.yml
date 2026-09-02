@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-08-24'
+  last_updated: '2026-09-02'
 papers:
   IOX-e6wAAAAJ:-f6ydRqryjwC:
-    citations: 99
+    citations: 100
     title: 'Towards artificial general intelligence (agi) in the internet of things (iot): Opportunities and challenges'
     year: '2023'
   IOX-e6wAAAAJ:0EnyYjriUFMC:
@@ -46,7 +46,7 @@ papers:
     title: 'Classifying tasks performed by electrical line workers using a wrist-worn sensor: A data analytic approach'
     year: '2022'
   IOX-e6wAAAAJ:9yKSN-GCB0IC:
-    citations: 29
+    citations: 30
     title: Cyber coordinated simulation for distributed multi-stage additive manufacturing systems
     year: '2020'
   IOX-e6wAAAAJ:BqipwSGYUEgC:
@@ -94,7 +94,7 @@ papers:
     title: Multitask lasso model for investigating multimodule design factors, operational factors, and covariates in tubular microbial fuel cells
     year: '2015'
   IOX-e6wAAAAJ:NMxIlDl6LWMC:
-    citations: 1
+    citations: 2
     title: 'IntrAgent: An LLM Agent for Content-Grounded Information Retrieval through Literature Review'
     year: '2026'
   IOX-e6wAAAAJ:QIV2ME_5wuYC:
@@ -146,7 +146,7 @@ papers:
     title: Functional graphical models for manufacturing process modeling
     year: '2017'
   IOX-e6wAAAAJ:YFjsv_pBGBYC:
-    citations: 0
+    citations: 1
     title: 3D Printing Innovations in Polymeric Porous and Patterned Architecture
     year: '2026'
   IOX-e6wAAAAJ:YOwf2qJgpHMC:
@@ -182,7 +182,7 @@ papers:
     title: 'Human digital twin: data, models, applications, and challenges'
     year: '2025'
   IOX-e6wAAAAJ:blknAaTinKkC:
-    citations: 1
+    citations: 2
     title: System-level multi-stage modeling and multi-criteria optimization of direct ink writing
     year: '2026'
   IOX-e6wAAAAJ:d1gkVwhDpl0C:
